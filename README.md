@@ -21,7 +21,7 @@ Your team's mission is to **transform this prototype into a full-scale Learning 
 ### Option 1: Standard Node.js / npm (Recommended for all platforms)
 ```bash
 # 1. Clone or extract the repository
-cd "prototype by ai1"
+cd "Mansala Web"
 
 # 2. Start the local server
 npm start
@@ -55,7 +55,7 @@ Staff authentication is handled on the login portal at [`login.html`](http://loc
 ## 🌐 Application Architecture & Pages
 
 ```
-prototype by ai1/
+Mansala Web/
 ├── assets/
 │   └── images/                     # Official logos (dark, light, transparent PNGs)
 ├── css/
