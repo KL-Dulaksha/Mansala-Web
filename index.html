@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>මංසල – Mansala | Empowering O/L Students in Science &amp; Mathematics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4.5">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     SITE HEADER & NAVIGATION
+     ═══════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+      <img src="assets/images/logo-light.png" alt="මංසල Logo" class="site-logo-img">
+      <span class="logo-title logo-nav">මංසල</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="index.html" class="active" data-en="Home" data-si="මුල් පිටුව">Home</a>
+      <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+      
+      <!-- Study Hub Grouped Dropdown -->
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-trigger " aria-expanded="false" aria-haspopup="true">
+          <span data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</span>
+          <svg class="lucide lucide-chevron-down" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="resources.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-book-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+              <span class="nav-dropdown-desc" data-en="Past Papers, Notes &amp; Marking Schemes" data-si="පසුගිය ප්‍රශ්න පත්‍ර, සටහන් සහ ලකුණු දීමේ පටිපාටි">Past Papers, Notes &amp; Marking Schemes</span>
+            </div>
+          </a>
+          <a href="quizzes.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-help-circle" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+              <span class="nav-dropdown-desc" data-en="Self-Paced Topic Assessments" data-si="ස්වයං අධ්‍යයන මාතෘකා ඇගයීම්">Self-Paced Topic Assessments</span>
+            </div>
+          </a>
+          <a href="mentorship.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-users" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+              <span class="nav-dropdown-desc" data-en="Undergraduate Cohort Guidance" data-si="විශ්වවිද්‍යාල ශිෂ්‍ය මගපෙන්වීම">Undergraduate Cohort Guidance</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="" data-en="About" data-si="අප ගැන">About</a>
+      <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+    </nav>
+    
+    <!-- Header Right Actions: Support a Cause CTA & Language Switcher -->
+    <div class="header-actions">
+      <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--sm nav-donate-btn" title="Support a Cause" aria-label="Support a Cause">
+        <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+        <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+      </a>
+
+      <!-- Bilingual Language Toggle Button -->
+      <button class="lang-toggle-btn" id="langToggleBtn" type="button" aria-label="Switch Language (English / Sinhala)" title="Switch Language">
+        <span class="lang-opt active" data-lang-code="en">EN</span>
+        <span class="lang-divider">|</span>
+        <span class="lang-opt" data-lang-code="si">සිං</span>
+      </button>
+
+      <!-- Mobile Navigation Hamburger Drawer -->
+      <details class="nav-mobile">
+        <summary aria-label="Open menu"><svg class="lucide lucide-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></summary>
+        <div class="nav-mobile-panel">
+          <!-- Main Section -->
+          <a href="index.html" class="active" data-en="Home" data-si="මුල් පිටුව">Home</a>
+          <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+          <a href="about.html" class="" data-en="About" data-si="අප ගැන">About</a>
+          <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+
+          <!-- Study Hub Mobile Sub-section -->
+          <div class="nav-mobile-divider"></div>
+          <div class="nav-mobile-section-title" data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</div>
+          <a href="resources.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-book-open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+          </a>
+          <a href="quizzes.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-help-circle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            <span data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+          </a>
+          <a href="mentorship.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-users" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+          </a>
+
+          <!-- Mobile Action Button -->
+          <div class="nav-mobile-actions">
+            <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--full nav-mobile-donate-btn">
+              <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+              <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+            </a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════
+     1. HERO SECTION (DUAL-WING REFRAMED)
+     ═══════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <span class="hero-badge-pill" data-en="Students' Union • Faculty of Science • University of Ruhuna" data-si="විද්‍යා පීඨ ශිෂ්‍ය සංගමය • රුහුණ විශ්වවිද්‍යාලය"><span class="pill-dot"></span> Students' Union • Faculty of Science • University of Ruhuna</span>
+      <h1 data-en="Undergraduates in Service of the Community &amp; Future Generations" data-si="ප්‍රජා සුබසාධනය සහ අනාගත පරපුර උදෙසා සරසවි සිසු මෙහෙවර">Undergraduates in Service of the Community &amp; Future Generations</h1>
+      <div class="hero-subheading" data-en="මංසල – Community Outreach &amp; Educational Movement" data-si="මංසල – ප්‍රජා සත්කාරක හා අධ්‍යාපනික ව්‍යාපාරය">මංසල – ප්‍රජා සත්කාරක හා අධ්‍යාපනික ව්‍යාපාරය</div>
+      <p class="hero-desc" data-en="A flagship humanitarian and educational movement by undergraduates of the Faculty of Science, University of Ruhuna. Spearheading emergency disaster &amp; flood relief, rural school infrastructure aid, and a 100% free G.C.E. O/L Science &amp; Mathematics study portal." data-si="රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය ප්‍රජාව විසින් මෙහෙයවන මානුෂීය සහ අධ්‍යාපනික ව්‍යාපාරයකි. ආපදා සහ ගංවතුර සහන සේවා, ග්‍රාමීය පාසල් යටිතල පහසුකම් සංවර්ධනය සහ 100% නොමිලේ සා/පෙළ විද්‍යාව හා ගණිතය ඉගෙනුම් ද්වාරය මෙහි අන්තර්ගත වේ.">
+        A flagship humanitarian and educational movement by undergraduates of the Faculty of Science, University of Ruhuna. Spearheading emergency disaster &amp; flood relief, rural school infrastructure aid, and a 100% free G.C.E. O/L Science &amp; Mathematics study portal.
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn--primary btn--lg">
+          <svg class="lucide lucide-heart-handshake icon-sm" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+          <span data-en="Explore Community &amp; Relief Projects" data-si="ප්‍රජා සහ සහන ව්‍යාපෘති ගවේෂණය">Explore Community &amp; Relief Projects</span>
+        </a>
+        <a href="#study-hub-section" class="btn btn--outline-white btn--lg">
+          <svg class="lucide lucide-book-open icon-sm" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span data-en="Enter Study Hub" data-si="අධ්‍යාපන පියසට පිවිසෙන්න">Enter Study Hub</span>
+        </a>
+      </div>
+      <div class="hero-trust-bar">
+        <div class="hero-trust-item"><svg class="lucide lucide-check icon-sm text-accent" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> <span data-en="100% Free Educational Access" data-si="100% නොමිලේ අධ්‍යාපනික ප්‍රවේශය">100% Free Educational Access</span></div>
+        <div class="hero-trust-item"><svg class="lucide lucide-check icon-sm text-accent" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> <span data-en="Disaster Relief &amp; School Aid" data-si="ආපදා සහන සහ පාසල් ආධාර">Disaster Relief &amp; School Aid</span></div>
+        <div class="hero-trust-item"><svg class="lucide lucide-check icon-sm text-accent" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> <span data-en="Undergraduate Voluntary Movement" data-si="සරසවි සිසු ස්වේච්ඡා මෙහෙවර">Undergraduate Voluntary Movement</span></div>
+      </div>
+    </div>
+    <div class="hero-brand-card">
+      <img src="assets/images/logo-transparent.png" alt="මංසල Official Identity" class="hero-logo-img">
+      <div class="hero-brand-badge">
+        <span class="badge-dot"></span> <span data-en="Official Movement Identity" data-si="නිල ව්‍යාපාරික අනන්‍යතාව">Official Movement Identity</span>
+      </div>
+      <p class="hero-brand-caption">
+        <strong>විද්‍යා පීඨ ශිෂ්‍ය සංගමය</strong><br>
+        <span data-en="Faculty of Science Students' Union • University of Ruhuna" data-si="විද්‍යා පීඨ ශිෂ්‍ය සංගමය • රුහුණ විශ්වවිද්‍යාලය">Faculty of Science Students' Union • University of Ruhuna</span>
+      </p>
+      <div class="hero-brand-stats hero-brand-stats--3col">
+        <div class="brand-stat">
+          <span class="brand-stat-num">15+</span>
+          <span class="brand-stat-lbl" data-en="Outreach &amp; Relief Missions" data-si="ප්‍රජා මෙහෙයුම්">Outreach &amp; Relief Missions</span>
+        </div>
+        <div class="brand-stat">
+          <span class="brand-stat-num">2,500+</span>
+          <span class="brand-stat-lbl" data-en="Students &amp; Families" data-si="සිසුන් හා පවුල්">Students &amp; Families</span>
+        </div>
+        <div class="brand-stat">
+          <span class="brand-stat-num">100%</span>
+          <span class="brand-stat-lbl" data-en="Audited Trust" data-si="විගණනය කළ විශ්වාසය">Audited Trust</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     2. DUAL-WING GATEWAY (PATHWAY SELECTION)
+     ═══════════════════════════════════════════════ -->
+<section class="section gateway-section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar" data-en="Two Core Wings of Mansala" data-si="මංසල මූලික අංශ ද්විත්වය">Two Core Wings of Mansala</span>
+      <h2 data-en="How Would You Like to Engage?" data-si="ඔබ අප හා එක්වීමට කැමති කෙසේද?">How Would You Like to Engage?</h2>
+      <p class="section__subtitle" data-en="Choose your pathway below to support humanitarian community causes or access 100% free G.C.E. O/L study materials." data-si="මානුෂීය ප්‍රජා සත්කාර සඳහා දායක වීමට හෝ නොමිලේ සා/පෙළ ඉගෙනුම් ද්‍රව්‍ය ලබා ගැනීමට පහතින් ඔබගේ අංශය තෝරාගන්න.">
+        Choose your pathway below to support humanitarian community causes or access 100% free G.C.E. O/L study materials.
+      </p>
+    </div>
+
+    <div class="gateway-grid">
+      <!-- Wing 1: Community & Humanitarian Outreach -->
+      <div class="gateway-card gateway-card--relief">
+        <div class="gateway-card-top">
+          <span class="gateway-wing-badge badge--relief">
+            <svg class="lucide lucide-heart-handshake" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+            <span data-en="Humanitarian &amp; Outreach Wing" data-si="මානුෂීය සහ ප්‍රජා සත්කාරක අංශය">Humanitarian &amp; Outreach Wing</span>
+          </span>
+          <span class="gateway-target-audience" data-en="For Donors, Alumni &amp; Public" data-si="ආධාරකරුවන්, ආදි සිසුන් සහ ප්‍රජාව සඳහා">For Donors, Alumni &amp; Public</span>
+        </div>
+        <h3 class="gateway-title" data-en="Community Welfare, Disaster Relief &amp; School Aid" data-si="ප්‍රජා සුබසාධනය, ආපදා සහන සහ පාසල් ආධාර">Community Welfare, Disaster Relief &amp; School Aid</h3>
+        <p class="gateway-desc" data-en="Direct undergraduate-led fieldwork delivering emergency flood relief, school library &amp; laboratory donations, and educational seminars across rural Sri Lanka." data-si="ගංවතුර ආපදා සහන, ග්‍රාමීය පාසල් පුස්තකාල හා විද්‍යාගාර උපකරණ පරිත්‍යාග සහ අධ්‍යාපනික සම්මන්ත්‍රණ සෘජුවම විශ්වවිද්‍යාල සිසුන් විසින් මෙහෙයවනු ලැබේ.">
+          Direct undergraduate-led fieldwork delivering emergency flood relief, school library &amp; laboratory donations, and educational seminars across rural Sri Lanka.
+        </p>
+        <ul class="gateway-features">
+          <li>
+            <svg class="lucide lucide-check-circle-2 text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span data-en="Emergency flood cleanup &amp; ration drives in affected areas" data-si="ගංවතුරෙන් ආපදාවට පත් ප්‍රදේශ පිරිසිදු කිරීම සහ වියළි ආහාර බෙදා හැරීම">Emergency flood cleanup &amp; ration drives in affected areas</span>
+          </li>
+          <li>
+            <svg class="lucide lucide-check-circle-2 text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span data-en="Science lab apparatus, library books &amp; stationery kits to rural schools" data-si="ග්‍රාමීය පාසල් සඳහා විද්‍යාගාර උපකරණ, පුස්තකාල පොත් සහ ලිපිද්‍රව්‍ය ආධාර">Science lab apparatus, library books &amp; stationery kits to rural schools</span>
+          </li>
+          <li>
+            <svg class="lucide lucide-check-circle-2 text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span data-en="Volunteer-led motivational &amp; academic regional seminars" data-si="ස්වේච්ඡා නායකත්වයෙන් යුත් ප්‍රාදේශීය අධ්‍යාපන සම්මන්ත්‍රණ">Volunteer-led motivational &amp; academic regional seminars</span>
+          </li>
+        </ul>
+        <div class="gateway-actions">
+          <a href="projects.html#upcoming-seminars" class="btn btn--primary">
+            <svg class="lucide lucide-heart-handshake icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+            <span data-en="Support an Active Cause" data-si="සක්‍රීය ව්‍යාපෘතියකට දායක වන්න">Support an Active Cause</span> &rarr;
+          </a>
+          <a href="projects.html#past-seminars" class="btn btn--outline">
+            <span data-en="View Past Field Recaps" data-si="පසුගිය ක්ෂේත්‍ර වාර්තා බලන්න">View Past Field Recaps</span> &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Wing 2: Free G.C.E. O/L Study Portal -->
+      <div class="gateway-card gateway-card--academic">
+        <div class="gateway-card-top">
+          <span class="gateway-wing-badge badge--academic">
+            <svg class="lucide lucide-graduation-cap" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            <span data-en="Academic Empowerment Wing" data-si="අධ්‍යාපනික සවිබලගැන්වීමේ අංශය">Academic Empowerment Wing</span>
+          </span>
+          <span class="gateway-target-audience" data-en="For Students, Parents &amp; Teachers" data-si="සිසුන්, දෙමාපියන් සහ ගුරුවරුන් සඳහා">For Students, Parents &amp; Teachers</span>
+        </div>
+        <h3 class="gateway-title" data-en="Free G.C.E. O/L Science &amp; Maths Study Portal" data-si="නොමිලේ සා/පෙළ විද්‍යාව හා ගණිතය අධ්‍යාපන පියස">Free G.C.E. O/L Science &amp; Maths Study Portal</h3>
+        <p class="gateway-desc" data-en="Curated learning resources, topic-wise practice quizzes, and structured undergraduate mentorship designed to help every student achieve exam distinction." data-si="විෂය නිර්දේශයට අනුකූල ඉගෙනුම් සම්පත්, ප්‍රශ්නාවලි සහ විශ්වවිද්‍යාල සිසුන්ගේ උපදේශනය තුළින් සා/පෙළ විශිෂ්ට සාමාර්ථයකට මග පෙන්වයි.">
+          Curated learning resources, topic-wise practice quizzes, and structured undergraduate mentorship designed to help every student achieve exam distinction.
+        </p>
+        <ul class="gateway-features">
+          <li>
+            <svg class="lucide lucide-check-circle-2 text-primary" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span data-en="Term test papers, model papers &amp; marking schemes" data-si="වාර විභාග ප්‍රශ්න පත්‍ර, ආදර්ශ ප්‍රශ්න පත්‍ර සහ ලකුණු දීමේ පටිපාටි">Term test papers, model papers &amp; marking schemes</span>
+          </li>
+          <li>
+            <svg class="lucide lucide-check-circle-2 text-primary" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span data-en="Interactive topic-based quizzes with step-by-step explanations" data-si="පියවරෙන් පියවර විවරණ සහිත අන්තර්ක්‍රියාකාරී ප්‍රශ්නාවලි">Interactive topic-based quizzes with step-by-step explanations</span>
+          </li>
+          <li>
+            <svg class="lucide lucide-check-circle-2 text-primary" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span data-en="1:5 Mentor-to-Student ratio with Ruhuna Science undergraduates" data-si="රුහුණ විද්‍යා පීඨ සිසුන් සමග 1:5 සමීප උපදේශක සම්බන්ධතාවය">1:5 Mentor-to-Student ratio with Ruhuna Science undergraduates</span>
+          </li>
+        </ul>
+        <div class="gateway-actions">
+          <a href="resources.html" class="btn btn--secondary btn--sm">
+            <span data-en="Download Papers &amp; Notes" data-si="ප්‍රශ්න පත්‍ර හා සටහන් ලබාගන්න">Download Papers &amp; Notes</span> &rarr;
+          </a>
+          <a href="quizzes.html" class="btn btn--outline btn--sm">
+            <span data-en="Practise Quizzes" data-si="ප්‍රශ්නාවලි පුහුණු වන්න">Practise Quizzes</span> &rarr;
+          </a>
+          <a href="mentorship.html" class="btn btn--outline btn--sm">
+            <span data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span> &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     3. RECENT FIELD & RELIEF HIGHLIGHTS
+     ═══════════════════════════════════════════════ -->
+<section class="section highlights-section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar" data-en="Field Impact in Action" data-si="ක්‍රියාකාරී ක්ෂේත්‍ර මෙහෙවර">Field Impact in Action</span>
+      <h2 data-en="Recent Outreach &amp; Relief Highlights" data-si="මෑතකාලීන ප්‍රජා සත්කාරක සහ සහන මෙහෙයුම්">Recent Outreach &amp; Relief Highlights</h2>
+      <p class="section__subtitle" data-en="A glimpse into our recent on-the-ground volunteer missions across the Southern Province and beyond." data-si="දකුණු පළාත සහ ඒ අවට ප්‍රදේශවල අප විසින් ක්‍රියාත්මක කරන ලද මෑතකාලීන ස්වේච්ඡා මෙහෙයුම් කිහිපයක්.">
+        A glimpse into our recent on-the-ground volunteer missions across the Southern Province and beyond.
+      </p>
+    </div>
+
+    <div class="highlights-grid" id="homepage-highlights-grid">
+      <!-- Populated dynamically via renderHomepageHighlights() -->
+    </div>
+  </div>
+</section>
+
+<!-- Anchor for direct Study Hub navigation -->
+<div id="study-hub-section" style="scroll-margin-top: 90px;"></div>
+
+<!-- ═══════════════════════════════════════════════
+     2. ABOUT THE PROGRAMME (SIMPLIFIED & ACTION-DRIVEN)
+     ═══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="intro-card">
+      <span class="section__eyebrow--bar">About the Programme</span>
+      <h2 data-en="Community-Driven Educational Outreach" data-si="ප්‍රජා මූලික අධ්‍යාපනික සත්කාරය">Community-Driven Educational Outreach</h2>
+      <p class="intro-card__text">
+        මංසල is a community-driven educational outreach initiative organised by the Students' Union of the Faculty of Science, University of Ruhuna. The programme aims to make O/L Science and Mathematics education more accessible through free learning resources, interactive assessments, and a structured mentorship programme.
+      </p>
+      <div class="intro-card__action">
+        <a href="about.html" class="btn btn--secondary btn--lg">Discover Our Initiative  <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     3. OUR KEY SUPPORT AREAS (VALUE PROPOSITION)
+     ═══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Our Key Support Areas</span>
+      <h2 data-en="How We Support Your Learning" data-si="අප ඔබේ ඉගෙනුමට සහය වන්නේ කෙසේද">How We Support Your Learning</h2>
+      <p class="section__subtitle" style="max-width: 680px;">
+        Three integrated educational pillars built to prepare G.C.E. Ordinary Level candidates for examination success.
+      </p>
+    </div>
+
+    <div class="grid grid--3">
+      <!-- Card 01: Free Learning Resources -->
+      <div class="support-card">
+        <div class="support-card__header">
+          <div class="support-card__icon support-card__icon--science">
+            <svg class="lucide lucide-graduation-cap" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+          </div>
+          <span class="support-card__number">01</span>
+        </div>
+        <h3>Free Learning Resources</h3>
+        <p class="support-card__desc">Syllabus-aligned revision materials and paper collections compiled for direct exam practice.</p>
+        <ul class="support-card__list">
+          <li>O/L Science and Mathematics past papers.</li>
+          <li>Model papers, notes, and marking schemes.</li>
+          <li>Organised learning materials.</li>
+        </ul>
+        <div class="support-card__footer">
+          <a href="resources.html" class="support-card__link">Explore Resources  <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+      </div>
+
+      <!-- Card 02: 1:5 Student Mentorship -->
+      <div class="support-card support-card--featured">
+        <div class="support-card__header">
+          <div class="support-card__icon support-card__icon--amber">
+            <svg class="lucide lucide-life-buoy" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle></svg>
+          </div>
+          <span class="support-card__number">02</span>
+        </div>
+        <h3>1:5 Student Mentorship</h3>
+        <p class="support-card__desc">Focused small-group academic guidance connecting undergraduates with O/L candidates.</p>
+        <ul class="support-card__list">
+          <li>University undergraduate mentors.</li>
+          <li>One mentor supports five O/L students.</li>
+          <li>Personalised academic guidance.</li>
+        </ul>
+        <div class="support-card__footer">
+          <a href="mentorship.html" class="support-card__link">Learn About Mentorship  <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+      </div>
+
+      <!-- Card 03: Interactive Assessments -->
+      <div class="support-card">
+        <div class="support-card__header">
+          <div class="support-card__icon support-card__icon--maths">
+            <svg class="lucide lucide-clipboard-list" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg>
+          </div>
+          <span class="support-card__number">03</span>
+        </div>
+        <h3>Interactive Assessments</h3>
+        <p class="support-card__desc">Self-paced diagnostic quizzes that highlight knowledge gaps and measure revision progress.</p>
+        <ul class="support-card__list">
+          <li>Subject-based quizzes.</li>
+          <li>Topic-specific practice.</li>
+          <li>Opportunities to assess understanding.</li>
+        </ul>
+        <div class="support-card__footer">
+          <a href="quizzes.html" class="support-card__link">Try Practice Quizzes  <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     4. CURRICULAR FRAMEWORK (COMPACT EDUCATIONAL FOCUS)
+     ═══════════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow">Academic Curriculum Focus</span>
+      <h2 data-en="Targeted Syllabus Coverage for O/L Success" data-si="සා/පෙළ ජයග්‍රහණයට විෂය නිර්දේශ ආවරණය">Targeted Syllabus Coverage for O/L Success</h2>
+      <p class="section__subtitle">Direct intervention targeting the most challenging components of the G.C.E. Ordinary Level syllabus.</p>
+    </div>
+
+    <div class="curriculum-focus-grid">
+      <!-- Science Focus -->
+      <div class="curriculum-focus-card curriculum-focus-card--science">
+        <h3>
+          <span>Science (විද්‍යාව)</span>
+          <span class="badge badge--science">Grade 10 &amp; 11</span>
+        </h3>
+        <p>Comprehensive coverage spanning Physics, Chemistry, and Biology with an emphasis on experimental questions and structured essay precision.</p>
+        <div class="curriculum-topics-strip">
+          <span class="curriculum-topic-tag">Mechanics &amp; Motion</span>
+          <span class="curriculum-topic-tag">Chemical Equations</span>
+          <span class="curriculum-topic-tag">Acids &amp; Bases</span>
+          <span class="curriculum-topic-tag">Human Biology</span>
+          <span class="curriculum-topic-tag">Electricity</span>
+          <span class="curriculum-topic-tag">Practical Lab Summaries</span>
+        </div>
+      </div>
+
+      <!-- Mathematics Focus -->
+      <div class="curriculum-focus-card curriculum-focus-card--maths">
+        <h3>
+          <span>Mathematics (ගණිතය)</span>
+          <span class="badge badge--maths">Grade 10 &amp; 11</span>
+        </h3>
+        <p>Conceptual foundation and methodical problem-solving workflows covering algebra, geometry theorems, and exam-standard calculation steps.</p>
+        <div class="curriculum-topics-strip">
+          <span class="curriculum-topic-tag">Simultaneous Equations</span>
+          <span class="curriculum-topic-tag">Quadratic Graphing</span>
+          <span class="curriculum-topic-tag">Geometric Theorems</span>
+          <span class="curriculum-topic-tag">Trigonometry</span>
+          <span class="curriculum-topic-tag">Matrices</span>
+          <span class="curriculum-topic-tag">Marking Rubrics</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Answering Methodology Callout Banner -->
+    <div class="curriculum-method-banner">
+      <div class="curriculum-method-content">
+        <h4>Undergraduate Answering Precision &amp; Technique</h4>
+        <p>Our volunteer mentors sat these exact national examinations. They know where marks are typically lost and teach candidates how to write clear, examiner-aligned answers.</p>
+      </div>
+      <div>
+        <a href="about.html" class="btn btn--secondary btn--sm" style="border-color: rgba(255,255,255,0.4); color: #FFFFFF;">Programme Background on About Page  <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     5. FEATURED LEARNING RESOURCES (PRIORITISED)
+     ═══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Academic Repository</span>
+      <h2>Curated Study Dossiers</h2>
+      <p class="section__subtitle">Download syllabus-aligned revision materials prepared for O/L Science &amp; Mathematics candidates.</p>
+    </div>
+
+    <div class="resource-dossier-grid" id="homepage-dossier-grid">
+      <!-- Populated dynamically via renderHomepageDossiers() -->
+    </div>
+    <div class="text-center mt-8">
+      <a href="resources.html" class="btn btn--primary btn--lg">Explore All Learning Resources  <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     6. TEST YOUR KNOWLEDGE (INTERACTIVE QUIZ PREVIEW)
+     ═══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Interactive Self-Assessment</span>
+      <h2 data-en="Test Your Knowledge" data-si="ඔබේ දැනුම පරීක්ෂා කරගන්න">Test Your Knowledge</h2>
+      <p class="section__subtitle">Try our interactive quizzes to assess your understanding and track your progress.</p>
+    </div>
+
+    <div id="homepage-quiz-container">
+      <!-- Populated dynamically via renderHomepageFeaturedQuiz() -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     7. THE 1:5 MENTORSHIP PROGRAMME (ALIGNED 1:5 MODEL)
+     ═══════════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Cohort Guidance Model</span>
+      <h2 data-en="The 1 : 5 Mentorship Programme" data-si="1 : 5 සුවිශේෂී උපදේශන වැඩසටහන">The 1 : 5 Mentorship Programme</h2>
+      <p class="section__subtitle">Personalised academic guidance connecting university undergraduate mentors with small cohorts of five O/L candidates.</p>
+    </div>
+
+    <!-- 2-Column Overview Cards -->
+    <div class="grid grid--2 mb-8">
+      <div class="card" style="border-top: 3px solid var(--clr-accent);">
+        <h4 style="font-size: 1.15rem; margin-bottom: 12px; color: var(--clr-primary);">What Mentors Provide</h4>
+        <ul style="display: flex; flex-direction: column; gap: 10px;">
+          <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: var(--clr-text-mid); line-height: 1.5;">
+            <svg class="lucide lucide-check icon-sm text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--clr-accent); flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg>
+            <span>Subject-specific guidance targeting difficult concepts in O/L Science and Mathematics.</span>
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: var(--clr-text-mid); line-height: 1.5;">
+            <svg class="lucide lucide-check icon-sm text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--clr-accent); flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg>
+            <span>Structured weekly revision sessions and regular progress review check-ins.</span>
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: var(--clr-text-mid); line-height: 1.5;">
+            <svg class="lucide lucide-check icon-sm text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--clr-accent); flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg>
+            <span>Step-by-step past paper discussions, marking scheme breakdowns, and model answers.</span>
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: var(--clr-text-mid); line-height: 1.5;">
+            <svg class="lucide lucide-check icon-sm text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--clr-accent); flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg>
+            <span>Personalised study schedules and proven time-management techniques for exam day.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card" style="border-top: 3px solid var(--clr-primary);">
+        <h4 style="font-size: 1.15rem; margin-bottom: 12px; color: var(--clr-primary);">Direct Benefits for Students</h4>
+        <ul style="display: flex; flex-direction: column; gap: 10px;">
+          <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: var(--clr-text-mid); line-height: 1.5;">
+            <svg class="lucide lucide-check icon-sm text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--clr-accent); flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg>
+            <span><strong>100% Free:</strong> No charges, fees, or hidden conditions for any participant.</span>
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: var(--clr-text-mid); line-height: 1.5;">
+            <svg class="lucide lucide-check icon-sm text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--clr-accent); flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg>
+            <span><strong>Dedicated Guidance:</strong> The structured 1:5 ratio ensures every student receives dedicated academic guidance.</span>
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: var(--clr-text-mid); line-height: 1.5;">
+            <svg class="lucide lucide-check icon-sm text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--clr-accent); flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg>
+            <span><strong>Relatable Mentors:</strong> Guided by undergraduate achievers who recently cleared O/Ls.</span>
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: var(--clr-text-mid); line-height: 1.5;">
+            <svg class="lucide lucide-check icon-sm text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--clr-accent); flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg>
+            <span><strong>Confidence &amp; Mastery:</strong> Overcome subject apprehension through structured practice.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Full-Width 1:5 Structural Tree Model -->
+    <div class="mentor-tree-diagram" aria-label="1 to 5 Mentorship Structural Model">
+      <!-- Top Central Hub: 1 University Mentor -->
+      <div class="mentor-hub-card">
+        <span class="badge badge--success" style="margin-bottom: 6px;">Undergraduate Volunteer</span>
+        <h3 style="color: #FFFFFF; font-size: 1.2rem; margin-bottom: 4px;">University Mentor (University of Ruhuna)</h3>
+        <p style="color: #D1D5DB; font-size: 0.88rem; max-width: 580px; margin: 0 auto; line-height: 1.5;">
+          Guides small group of 5 candidates &bull; Diagnoses syllabus gaps &bull; Analyzes marking schemes &bull; Tracks progress
+        </p>
+      </div>
+
+      <!-- Connector line -->
+      <div class="mentor-tree-connector" aria-hidden="true">
+        <div class="mentor-tree-stem"></div>
+        <div class="mentor-tree-bar"></div>
+      </div>
+
+      <!-- 5 Mentees Grid -->
+      <div class="mentee-cards-grid">
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-01</div>
+          <strong>O/L Candidate 01</strong>
+          <span class="mentee-sub">Science &amp; Maths Core</span>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-02</div>
+          <strong>O/L Candidate 02</strong>
+          <span class="mentee-sub">Theory &amp; Concept Revision</span>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-03</div>
+          <strong>O/L Candidate 03</strong>
+          <span class="mentee-sub">Model Paper Practice</span>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-04</div>
+          <strong>O/L Candidate 04</strong>
+          <span class="mentee-sub">Structured Essay Guidance</span>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-05</div>
+          <strong>O/L Candidate 05</strong>
+          <span class="mentee-sub">Doubt Clearing &amp; Methods</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="mentorship.html" class="btn btn--primary btn--lg">Explore the Mentorship Programme  <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     8. FINAL CALL TO ACTION
+     ═══════════════════════════════════════════════ -->
+<section class="section section--primary">
+  <div class="container text-center">
+    <h2 style="color: #FFFFFF; margin-bottom: 12px;">Ready to Start Learning?</h2>
+    <p class="section__subtitle" style="color: rgba(255,255,255,0.9); max-width: 650px; margin-inline: auto; text-align: center; margin-bottom: 24px;">
+      Explore free learning resources, challenge yourself with interactive quizzes, or discover how our mentorship programme can support your O/L journey.
+    </p>
+    <div class="cta-banner-buttons">
+      <a href="resources.html" class="cta-btn cta-btn--primary" data-en="Browse Resources" data-si="සම්පත් පිරික්සන්න">Browse Resources</a>
+      <a href="quizzes.html" class="cta-btn cta-btn--secondary" data-en="Try a Quiz" data-si="ප්‍රශ්නාවලියක් අත්හදා බලන්න">Try a Quiz</a>
+      <a href="mentorship.html" class="cta-btn cta-btn--secondary" data-en="Explore Mentorship" data-si="උපදේශනය ගැන දැනගන්න">Explore Mentorship</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ═══════════════════════════════════════════════
+     9. FOOTER (KEEP)
+     ═══════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+            <img src="assets/images/logo-transparent.png" alt="මංසල Logo" class="site-logo-img">
+            <span class="logo-title">මංසල</span>
+          </a>
+          <p data-en="An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics." data-si="සා/පෙළ සිසුන්ට විද්‍යාව සහ ගණිතය විෂයයන් සඳහා සහයෝගය දක්වමින් රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය විසින් සංවිධානය කරනු ලබන අධ්‍යාපනික වැඩසටහනකි.">An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Navigation" data-si="සංචලනය">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-en="Home" data-si="මුල් පිටුව">Home</a></li>
+            <li><a href="about.html" data-en="About" data-si="අප ගැන">About</a></li>
+            <li><a href="projects.html" data-en="Projects" data-si="ප්‍රජා ව්‍යාපෘති">Projects</a></li>
+            <li><a href="resources.html" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</a></li>
+            <li><a href="quizzes.html" data-en="Quizzes" data-si="ප්‍රශ්නාවලි">Quizzes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Programme" data-si="වැඩසටහන">Programme</h4>
+          <ul>
+            <li><a href="mentorship.html" data-en="Mentorship" data-si="උපදේශනය">Mentorship</a></li>
+            <li><a href="contact.html" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a></li>
+            <li><a href="about.html#documents" data-en="Documents" data-si="ලේඛන">Documents</a></li>
+            <li><a href="login.html" data-en="Staff &amp; Coordinator Portal" data-si="කාර්ය මණ්ඩල සහ සම්බන්ධීකාරක පිවිසුම">Staff &amp; Coordinator Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Contact" data-si="සම්බන්ධ වන්න">Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@manasala.ruh.ac.lk">contact@manasala.ruh.ac.lk</a></li>
+            <li><a href="tel:+94412222681">+94 41 2222681</a></li>
+            <li data-en="University of Ruhuna, Wellamadama, Matara" data-si="රුහුණ විශ්වවිද්‍යාලය, වැල්ලමඩම, මාතර">University of Ruhuna, Wellamadama, Matara</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-en="&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna." data-si="&copy; මංසල – Mansala. විද්‍යා පීඨ ශිෂ්‍ය සංගමය, රුහුණ විශ්වවිද්‍යාලය.">&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna.</span>
+        <span data-en="Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna." data-si="රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය මඟින් මෙහෙයවනු ලබන නිල අධ්‍යාපනික සත්කාරයකි.">Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/dashboard-db.js"></script>
+  <!-- Official Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>if(typeof lucide==='undefined'){document.write('<script src="js/lucide.js"><\/script>');}</script>
+  <script src="js/lang.js"></script>
+
+  <script>
+    /* ═══════════════════════════════════════════════
+       DYNAMIC HOMEPAGE CONTENT ENGINE (MansalaDB Sync)
+       ═══════════════════════════════════════════════ */
+
+    function isSinhala() {
+      if (window.MansalaLang && typeof window.MansalaLang.getLanguage === 'function') {
+        return window.MansalaLang.getLanguage() === 'si';
+      }
+      return (localStorage.getItem('mansala_lang') || 'en') === 'si';
+    }
+
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return '';
+      return String(str).replace(/[&<>"']/g, function(m) {
+        switch (m) {
+          case '&': return '&amp;';
+          case '<': return '&lt;';
+          case '>': return '&gt;';
+          case '"': return '&quot;';
+          case "'": return '&#039;';
+          default: return m;
+        }
+      });
+    }
+
+    // 1. Render 3 Most Recently Updated Outreach / Completed Projects
+    function renderHomepageHighlights() {
+      const container = document.getElementById('homepage-highlights-grid');
+      if (!container) return;
+
+      const isSi = isSinhala();
+      let projects = [];
+
+      try {
+        if (typeof MansalaDB !== 'undefined' && typeof MansalaDB.getPastProjects === 'function') {
+          projects = MansalaDB.getPastProjects();
+        }
+      } catch (e) {
+        console.warn('Could not load projects from MansalaDB:', e);
+      }
+
+      if (!projects || projects.length === 0) {
+        projects = [
+          {
+            id: 'past-kamburupitiya-flood-restoration',
+            category: 'relief',
+            schoolName: 'Flood Recovery & School Cleanup – Akuressa',
+            schoolNameSi: 'ගංවතුර පුනරුත්ථාපනය සහ පාසල් පිරිසිදු කිරීම – අකුරැස්ස',
+            summary: 'Undergraduates cleared flood mud from classrooms and homes, restoring learning facilities and distributing essential dry rations & stationery packs to affected families.',
+            summarySi: 'ගංවතුරින් විපතට පත් නිවාස සහ පන්තිකාමර පිරිසිදු කර යථා තත්ත්වයට පත් කරමින්, වියළි ආහාර සහ අත්‍යවශ්‍ය පාසල් උපකරණ බෙදා දීමට සරසවි සිසුන් එක් විය.',
+            beneficiaryText: '65 Families & 1 School Restored',
+            beneficiaryTextSi: 'පවුල් 65ක් සහ පාසලක් යථා තත්ත්වයට'
+          },
+          {
+            id: 'past-hambantota-lab-donation',
+            category: 'school-aid',
+            schoolName: 'Science Lab Apparatus & Library Book Drive',
+            schoolNameSi: 'විද්‍යාගාර උපකරණ සහ පුස්තකාල පොත් පරිත්‍යාගය',
+            summary: 'Equipped two underprivileged rural schools in Hambantota with practical Science glassware, measurement tools, desks, and 450+ curated study books.',
+            summarySi: 'හම්බන්තොට දුෂ්කර පාසල් දෙකක් සඳහා ප්‍රායෝගික විද්‍යාගාර වීදුරු උපකරණ, මිනුම් උපකරණ, ඩෙස්ක්-පුටු සහ අධ්‍යාපනික පොත් 450කට අධික ප්‍රමාණයක් පරිත්‍යාග කරන ලදී.',
+            beneficiaryText: '2 Schools & 320+ Students Impacted',
+            beneficiaryTextSi: 'පාසල් 2ක් සහ සිසුන් 320+ දෙනෙකුට ප්‍රතිලාභ'
+          },
+          {
+            id: 'past-walasmulla-science-seminar',
+            category: 'seminar',
+            schoolName: 'Empowering Rural Candidates for O/L Success',
+            schoolNameSi: 'සා/පෙළ සිසුන් විභාගයට සූදානම් කිරීමේ සම්මන්ත්‍රණ',
+            summary: 'Conducted full-day interactive revision sessions covering complex Physics, Chemistry, and Geometry modules, supplemented with printed revision model booklets.',
+            summarySi: 'භෞතික විද්‍යාව, රසායන විද්‍යාව සහ ජ්‍යාමිතිය සංකීර්ණ කොටස් ආවරණය කරමින් මුද්‍රිත ආදර්ශ ප්‍රශ්න පත්‍ර සහිතව පවත්වන ලද එක්දින සම්මන්ත්‍රණ මාලාව.',
+            beneficiaryText: '480+ Rural Students Trained',
+            beneficiaryTextSi: 'ග්‍රාමීය සිසුන් 480+ දෙනෙකු පුහුණු කෙරිණි'
+          }
+        ];
+      }
+
+      const top3 = projects.slice(0, 3);
+
+      container.innerHTML = top3.map(p => {
+        const cat = p.category || 'seminar';
+        const catBadgeClass = cat === 'relief' ? 'badge--flood' : (cat === 'school-aid' ? 'badge--aid' : 'badge--seminar');
+        const catLabel = cat === 'relief' 
+          ? (isSi ? 'ආපදා සහ ගංවතුර සහන' : 'Disaster & Flood Relief')
+          : (cat === 'school-aid' 
+            ? (isSi ? 'පාසල් ආධාර සහ පරිත්‍යාග' : 'School Aid & Donations') 
+            : (isSi ? 'අධ්‍යාපනික සම්මන්ත්‍රණ' : 'Educational Seminars'));
+        
+        const title = (isSi && p.schoolNameSi) ? p.schoolNameSi : (p.schoolName || 'Community Outreach Mission');
+        const summary = (isSi && p.summarySi) ? p.summarySi : (p.summary || '');
+        const metric = (isSi && p.beneficiaryTextSi) ? p.beneficiaryTextSi : (p.beneficiaryText || `${p.studentsReached || '300+'} Beneficiaries Impacted`);
+
+        return `
+          <div class="highlight-card">
+            <span class="highlight-badge ${catBadgeClass}">
+              <span class="badge-dot"></span>
+              <span>${catLabel}</span>
+            </span>
+            <h4 class="highlight-title">${escapeHtml(title)}</h4>
+            <p class="highlight-text">${escapeHtml(summary)}</p>
+            <div class="highlight-metric-pill">
+              <svg class="lucide lucide-check-circle" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span>${escapeHtml(metric)}</span>
+            </div>
+            <a href="projects.html?view=${p.id}" class="highlight-link" onclick="sessionStorage.setItem('open_project_id', '${p.id}')">
+              <span>${isSi ? 'ක්ෂේත්‍ර වාර්තාව කියවන්න' : 'Read Field Report'}</span> &rarr;
+            </a>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // 2. Render 3 Most Recently Added/Updated Learning Resources (1 Master + 2 Stack)
+    function renderHomepageDossiers() {
+      const container = document.getElementById('homepage-dossier-grid');
+      if (!container) return;
+
+      const isSi = isSinhala();
+      let list = [];
+
+      try {
+        if (typeof MansalaDB !== 'undefined' && typeof MansalaDB.getResources === 'function') {
+          list = MansalaDB.getResources().filter(r => !r.status || r.status === 'published');
+        }
+      } catch (e) {
+        console.warn('Could not load resources from MansalaDB:', e);
+      }
+
+      if (!list || list.length < 3) {
+        list = [
+          {
+            id: 'res-7',
+            title: '2023 G.C.E. O/L Science — Complete Examination Dossier & Marking Scheme',
+            subject: 'Science',
+            subjectKey: 'science',
+            type: 'Past Paper & Marking Scheme',
+            grade: 'Grade 10 & 11',
+            size: '2.4 MB',
+            desc: 'An exhaustive review document containing the full 2023 national examination paper (Parts I, II & Structured Essay), complete with an annotated marking scheme, mentor commentary on frequent errors, and model answer formulations.',
+            downloadUrl: '#download-sci-2023-master-dossier'
+          },
+          {
+            id: 'res-8',
+            title: 'Simultaneous Equations & Quadratic Graphing',
+            subject: 'Mathematics',
+            subjectKey: 'maths',
+            type: 'Revision Guide',
+            grade: 'Grade 11 • Unit 07',
+            size: '1.8 MB',
+            desc: 'Comprehensive step-by-step revision guide on algebraic elimination, substitution, and graphical solutions with 15 worked model exam questions.',
+            downloadUrl: '#download-maths-notes-simultaneous'
+          },
+          {
+            id: 'res-9',
+            title: 'Chemical Reactions, Acids & Bases Summary',
+            subject: 'Science',
+            subjectKey: 'science',
+            type: 'Concept Summary',
+            grade: 'Grade 10 & 11 • Chemistry',
+            size: '3.1 MB',
+            desc: 'Clear classification of chemical reaction types, balancing complex equations, pH scale applications, and laboratory test summaries for quick recall.',
+            downloadUrl: '#download-sci-notes-chemical-reactions'
+          }
+        ];
+      }
+
+      const masterRes = list[0];
+      const stackRes1 = list[1];
+      const stackRes2 = list[2];
+
+      const masterSubKey = masterRes.subjectKey === 'maths' ? 'maths' : 'science';
+      const stack1SubKey = stackRes1.subjectKey === 'maths' ? 'maths' : 'science';
+      const stack2SubKey = stackRes2.subjectKey === 'maths' ? 'maths' : 'science';
+
+      container.innerHTML = `
+        <!-- Left: Featured Master Dossier Card -->
+        <div class="master-resource-card">
+          <div>
+            <span class="master-tag">
+              <svg class="lucide lucide-star icon-xs" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block; vertical-align: -1px; margin-right: 4px; fill: currentColor;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              ${isSi ? 'විශේෂ ප්‍රධාන ලිපිගොනුව' : 'Featured Master Dossier'}
+            </span>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+              <span class="badge badge--${masterSubKey}">${escapeHtml(masterRes.subject)}</span>
+              <span class="badge badge--neutral">${escapeHtml(masterRes.type)}</span>
+            </div>
+            <h3>${escapeHtml(masterRes.title)}</h3>
+            <p>${escapeHtml(masterRes.desc)}</p>
+            <div class="master-meta-strip">
+              <span>&bull; REF: ${escapeHtml((masterRes.id || 'RES').toUpperCase())}</span>
+              <span>&bull; GRADE: ${escapeHtml(masterRes.grade || '10 & 11')}</span>
+              <span>&bull; FORMAT: PDF</span>
+              <span>&bull; SIZE: ${escapeHtml(masterRes.size || '2.4 MB')}</span>
+            </div>
+          </div>
+          <div>
+            <a href="resources.html" class="btn btn--primary btn--lg" onclick="downloadHomepageResource('${masterRes.id}', event)">
+              <span>${isSi ? 'සම්පූර්ණ ලිපිගොනුව බාගත කරන්න (PDF)' : 'Download Full Dossier (PDF)'}</span>
+              <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Structured Subject Revision Modules -->
+        <div class="resource-stack">
+          <!-- Module 1 -->
+          <div class="resource-stack-card">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
+                <div style="display: flex; gap: 6px;">
+                  <span class="badge badge--${stack1SubKey}">${escapeHtml(stackRes1.subject)}</span>
+                  <span class="badge badge--neutral">${escapeHtml(stackRes1.type)}</span>
+                </div>
+                <span style="font-family: var(--ff-mono); font-size: 0.72rem; color: var(--clr-text-light);">${escapeHtml(stackRes1.size || '1.8 MB')}</span>
+              </div>
+              <h4>${escapeHtml(stackRes1.title)}</h4>
+              <p>${escapeHtml(stackRes1.desc)}</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--clr-border-light); padding-top: 10px;">
+              <span style="font-family: var(--ff-mono); font-size: 0.72rem; color: var(--clr-text-light);">${escapeHtml(stackRes1.grade || 'Grade 10 & 11')}</span>
+              <a href="resources.html" class="btn btn--secondary btn--sm" onclick="downloadHomepageResource('${stackRes1.id}', event)">${isSi ? 'සටහන් බාගත කරන්න' : 'Download Notes'}</a>
+            </div>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="resource-stack-card">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
+                <div style="display: flex; gap: 6px;">
+                  <span class="badge badge--${stack2SubKey}">${escapeHtml(stackRes2.subject)}</span>
+                  <span class="badge badge--neutral">${escapeHtml(stackRes2.type)}</span>
+                </div>
+                <span style="font-family: var(--ff-mono); font-size: 0.72rem; color: var(--clr-text-light);">${escapeHtml(stackRes2.size || '3.1 MB')}</span>
+              </div>
+              <h4>${escapeHtml(stackRes2.title)}</h4>
+              <p>${escapeHtml(stackRes2.desc)}</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--clr-border-light); padding-top: 10px;">
+              <span style="font-family: var(--ff-mono); font-size: 0.72rem; color: var(--clr-text-light);">${escapeHtml(stackRes2.grade || 'Grade 10 & 11')}</span>
+              <a href="resources.html" class="btn btn--secondary btn--sm" onclick="downloadHomepageResource('${stackRes2.id}', event)">${isSi ? 'සටහන් බාගත කරන්න' : 'Download Notes'}</a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // 3. Render Most Recently Added/Updated Featured Quiz
+    function renderHomepageFeaturedQuiz() {
+      const container = document.getElementById('homepage-quiz-container');
+      if (!container) return;
+
+      const isSi = isSinhala();
+      let quizzes = [];
+
+      try {
+        if (typeof MansalaDB !== 'undefined' && typeof MansalaDB.getQuizzes === 'function') {
+          quizzes = MansalaDB.getQuizzes().filter(q => !q.status || q.status === 'published');
+        }
+      } catch (e) {
+        console.warn('Could not load quizzes from MansalaDB:', e);
+      }
+
+      if (!quizzes || quizzes.length === 0) {
+        quizzes = [
+          {
+            id: 'quiz-forces-motion',
+            title: 'Forces & Motion',
+            subject: 'Science',
+            subjectKey: 'science',
+            topic: 'Physics',
+            difficulty: 'Medium',
+            difficultyBadge: 'badge--medium',
+            desc: "Test your understanding of Newton's Laws, types of forces, friction, and motion concepts. This quiz covers key examination topics from the O/L Science syllabus.",
+            questionsCount: 5,
+            duration: '~12 min'
+          }
+        ];
+      }
+
+      const q = quizzes[0];
+      const subKey = q.subjectKey === 'maths' ? 'maths' : 'science';
+      const qCount = q.questionsCount || (q.questions ? q.questions.length : 5);
+      const qDuration = q.duration || '~15 min';
+
+      container.innerHTML = `
+        <div class="quiz-card card--featured">
+          <div class="quiz-card__info">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;">
+              <span class="badge badge--${subKey}">${escapeHtml(q.subject)}</span>
+              <span class="badge badge--neutral">${escapeHtml(q.topic || q.subject)}</span>
+              <span class="badge ${escapeHtml(q.difficultyBadge || 'badge--medium')}">${escapeHtml(q.difficulty)}</span>
+            </div>
+            <h3>${escapeHtml(q.title)} — ${isSi ? 'පුහුණු ප්‍රශ්නාවලිය' : 'Quick Review Quiz'}</h3>
+            <p>${escapeHtml(q.desc)}</p>
+            <ul class="text-sm text-mid" style="display: flex; flex-direction: column; gap: 4px; margin-bottom: 16px;">
+              <li>${isSi ? 'කාලය:' : 'Duration:'} ${escapeHtml(qDuration)}</li>
+              <li>${qCount} ${isSi ? 'බහුවරණ ප්‍රශ්න' : 'multiple-choice questions'}</li>
+              <li>${isSi ? 'ක්ෂණික ලකුණු සහ පැහැදිලි කිරීම්' : 'Instant results & worked explanations'}</li>
+            </ul>
+            <div class="btn-group mt-2">
+              <a href="quizzes.html?quiz=${q.id}" class="btn btn--accent btn--lg">${isSi ? 'ප්‍රශ්නාවලිය අරඹන්න' : 'Start Quiz'}</a>
+              <a href="quizzes.html" class="btn btn--ghost">
+                <span>${isSi ? 'සියලු ප්‍රශ්නාවලි බලන්න' : 'Browse All Quizzes'}</span>
+                <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function downloadHomepageResource(resId, event) {
+      if (typeof MansalaDB !== 'undefined' && typeof MansalaDB.getResources === 'function') {
+        const list = MansalaDB.getResources();
+        const target = list.find(r => r.id === resId);
+        if (target && target.fileData) {
+          if (event) event.preventDefault();
+          const a = document.createElement('a');
+          a.href = target.fileData;
+          a.download = (target.fileName || `${target.title.replace(/[^a-zA-Z0-9_-]/g, '_')}.pdf`);
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          return;
+        }
+      }
+    }
+
+    function renderDynamicHomepage() {
+      renderHomepageHighlights();
+      renderHomepageDossiers();
+      renderHomepageFeaturedQuiz();
+      if (typeof lucide !== 'undefined' && lucide.createIcons) {
+        lucide.createIcons();
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderDynamicHomepage();
+    });
+
+    window.addEventListener('storage', () => {
+      renderDynamicHomepage();
+    });
+
+    window.addEventListener('mansala:langchange', () => {
+      renderDynamicHomepage();
+    });
+  </script>
+</body>
+</html>

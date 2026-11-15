@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Programme — මංසල Mansala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4.5">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     SITE HEADER & NAVIGATION
+     ═══════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+      <img src="assets/images/logo-light.png" alt="මංසල Logo" class="site-logo-img">
+      <span class="logo-title logo-nav">මංසල</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="index.html" class="" data-en="Home" data-si="මුල් පිටුව">Home</a>
+      <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+      
+      <!-- Study Hub Grouped Dropdown -->
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-trigger " aria-expanded="false" aria-haspopup="true">
+          <span data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</span>
+          <svg class="lucide lucide-chevron-down" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="resources.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-book-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+              <span class="nav-dropdown-desc" data-en="Past Papers, Notes &amp; Marking Schemes" data-si="පසුගිය ප්‍රශ්න පත්‍ර, සටහන් සහ ලකුණු දීමේ පටිපාටි">Past Papers, Notes &amp; Marking Schemes</span>
+            </div>
+          </a>
+          <a href="quizzes.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-help-circle" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+              <span class="nav-dropdown-desc" data-en="Self-Paced Topic Assessments" data-si="ස්වයං අධ්‍යයන මාතෘකා ඇගයීම්">Self-Paced Topic Assessments</span>
+            </div>
+          </a>
+          <a href="mentorship.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-users" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+              <span class="nav-dropdown-desc" data-en="Undergraduate Cohort Guidance" data-si="විශ්වවිද්‍යාල ශිෂ්‍ය මගපෙන්වීම">Undergraduate Cohort Guidance</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="active" data-en="About" data-si="අප ගැන">About</a>
+      <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+    </nav>
+    
+    <!-- Header Right Actions: Support a Cause CTA & Language Switcher -->
+    <div class="header-actions">
+      <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--sm nav-donate-btn" title="Support a Cause" aria-label="Support a Cause">
+        <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+        <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+      </a>
+
+      <!-- Bilingual Language Toggle Button -->
+      <button class="lang-toggle-btn" id="langToggleBtn" type="button" aria-label="Switch Language (English / Sinhala)" title="Switch Language">
+        <span class="lang-opt active" data-lang-code="en">EN</span>
+        <span class="lang-divider">|</span>
+        <span class="lang-opt" data-lang-code="si">සිං</span>
+      </button>
+
+      <!-- Mobile Navigation Hamburger Drawer -->
+      <details class="nav-mobile">
+        <summary aria-label="Open menu"><svg class="lucide lucide-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></summary>
+        <div class="nav-mobile-panel">
+          <!-- Main Section -->
+          <a href="index.html" class="" data-en="Home" data-si="මුල් පිටුව">Home</a>
+          <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+          <a href="about.html" class="active" data-en="About" data-si="අප ගැන">About</a>
+          <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+
+          <!-- Study Hub Mobile Sub-section -->
+          <div class="nav-mobile-divider"></div>
+          <div class="nav-mobile-section-title" data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</div>
+          <a href="resources.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-book-open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+          </a>
+          <a href="quizzes.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-help-circle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            <span data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+          </a>
+          <a href="mentorship.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-users" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+          </a>
+
+          <!-- Mobile Action Button -->
+          <div class="nav-mobile-actions">
+            <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--full nav-mobile-donate-btn">
+              <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+              <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+            </a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ═══════════════════════════════════════════════
+     PAGE HEADER
+     ═══════════════════════════════════════════════ -->
+<section class="page-header">
+  <div class="container">
+    <span class="section__eyebrow--bar" style="color: rgba(255,255,255,0.85); margin-bottom: 8px;">Students' Union • Faculty of Science • University of Ruhuna</span>
+    <h1 data-en="About මංසල – Mansala" data-si="මංසල පිළිබඳව">About මංසල – Mansala</h1>
+    <p class="section__subtitle" style="color: rgba(255, 255, 255, 0.9); max-width: 760px; margin-inline: 0; text-align: left;" data-en="Institutional background, humanitarian outreach vision, academic mission, and volunteer fieldwork framework of the flagship student movement at the University of Ruhuna." data-si="රුහුණ විශ්වවිද්‍යාලයීය ප්‍රමුඛ ශිෂ්‍ය ව්‍යාපාරයේ ආයතනික පසුබිම, මානුෂීය ප්‍රජා සත්කාරක දැක්ම, අධ්‍යාපනික මෙහෙවර සහ ස්වේච්ඡා ක්ෂේත්‍ර ක්‍රියාකාරී ව්‍යුහය.">
+      Institutional background, humanitarian outreach vision, academic mission, and volunteer fieldwork framework of the flagship student movement at the University of Ruhuna.
+    </p>
+  </div>
+</section>
+
+<main id="main-content">
+
+<!-- ═══════════════════════════════════════════════
+     1. PROGRAMME INTRODUCTION
+     ═══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="prose-container">
+      <div class="section__header">
+        <span class="section__eyebrow--bar">Movement Overview</span>
+        <h2 data-en="A Dual Movement of Humanitarian Relief &amp; Academic Empowerment" data-si="මානුෂීය සත්කාරය සහ අධ්‍යාපනික සවිබල ගැන්වීම">A Dual Movement of Humanitarian Relief &amp; Academic Empowerment</h2>
+      </div>
+      <p class="prose-lead" data-en="&lt;strong&gt;මංසල – Mansala&lt;/strong&gt; is a flagship humanitarian and educational outreach movement organised and spearheaded by the Students' Union of the Faculty of Science, University of Ruhuna. Born from a profound sense of social accountability and empathy, Mansala channels the collective energy, intellectual capability, and volunteer spirit of university undergraduates to serve both vulnerable community families and underprivileged rural schools across Sri Lanka." data-si="&lt;strong&gt;මංසල – Mansala&lt;/strong&gt; යනු රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය මඟින් මෙහෙයවනු ලබන ප්‍රමුඛ මානුෂීය සහ අධ්‍යාපනික සත්කාරක ව්‍යාපාරයකි. ගැඹුරු සමාජ වගකීමක් සහ සහකම්පනයක් පෙරදැරිව බිහිවූ මංසල, විශ්වවිද්‍යාල උපාධි අපේක්ෂකයන්ගේ සාමූහික ශක්තිය, බුද්ධිමය දායකත්වය සහ ස්වේච්ඡා මෙහෙවර තුළින් ශ්‍රී ලංකාව පුරා අවදානමට ලක් වූ ප්‍රජාවන්ට සහ අඩු පහසුකම් සහිත ග්‍රාමීය පාසල්වලට සේවය කිරීමට කැපවී සිටී.">
+        <strong>මංසල – Mansala</strong> is a flagship humanitarian and educational outreach movement organised and spearheaded by the Students' Union of the Faculty of Science, University of Ruhuna. Born from a profound sense of social accountability and empathy, Mansala channels the collective energy, intellectual capability, and volunteer spirit of university undergraduates to serve both vulnerable community families and underprivileged rural schools across Sri Lanka.
+      </p>
+      <p data-en="Operating through two complementary wings — the &lt;strong&gt;Humanitarian &amp; Outreach Wing&lt;/strong&gt; and the &lt;strong&gt;Academic Empowerment Wing&lt;/strong&gt; — Mansala provides rapid, frontline assistance during regional emergencies (such as monsoon floods and natural disasters), delivers direct infrastructure and laboratory apparatus aid to under-resourced schools, and maintains a completely free national study portal for G.C.E. Ordinary Level (O/L) Science and Mathematics candidates." data-si="ප්‍රධාන අංශ ද්විත්වයක් ඔස්සේ ක්‍රියාත්මක වන මංසල — එනම් &lt;strong&gt;මානුෂීය සහ ප්‍රජා සත්කාරක අංශය&lt;/strong&gt; සහ &lt;strong&gt;අධ්‍යාපනික සවිබලගැන්වීමේ අංශය&lt;/strong&gt; — වාරකන් ගංවතුර සහ ආපදා හමුවේ පෙරමුණේ හදිසි ආධාර සැලසීම, අඩු පහසුකම් සහිත පාසල් සඳහා යටිතල පහසුකම් සහ විද්‍යාගාර උපකරණ පරිත්‍යාග කිරීම සහ සාමාන්‍ය පෙළ විද්‍යාව හා ගණිතය සිසුන් වෙනුවෙන් 100% නොමිලේ ජාතික අධ්‍යාපන පියසක් පවත්වාගෙන යාම සිදු කරයි.">
+        Operating through two complementary wings — the <strong>Humanitarian &amp; Outreach Wing</strong> and the <strong>Academic Empowerment Wing</strong> — Mansala provides rapid, frontline assistance during regional emergencies (such as monsoon floods and natural disasters), delivers direct infrastructure and laboratory apparatus aid to under-resourced schools, and maintains a completely free national study portal for G.C.E. Ordinary Level (O/L) Science and Mathematics candidates.
+      </p>
+      <p data-en="Every donation, relief package, seminar session, and revision dossier is delivered transparently and entirely free of charge. By connecting higher education directly with grassroots communities, Mansala proves that student-led solidarity can bridge systemic educational gaps and uplift vulnerable lives in times of urgent need." data-si="සෑම ආධාරයක්, සහන පැකේජයක්, සම්මන්ත්‍රණ සැසියක් සහ පුනරීක්ෂණ ලේඛනයක්ම පූර්ණ විනිවිදභාවයකින් යුතුව සම්පූර්ණයෙන්ම නොමිලේ ලබා දේ. උසස් අධ්‍යාපනය සෘජුවම බිම් මට්ටමේ ප්‍රජාවන් සමඟ සම්බන්ධ කිරීමෙන්, ක්‍රමවේදීය අධ්‍යාපන පරතරයන් පියවීමට සහ හදිසි අවශ්‍යතාවලදී අවදානමට ලක් වූ ජීවිත නගාසිටුවීමට ශිෂ්‍ය සහයෝගීතාවයට හැකි බව මංසල සනාථ කරයි.">
+        Every donation, relief package, seminar session, and revision dossier is delivered transparently and entirely free of charge. By connecting higher education directly with grassroots communities, Mansala proves that student-led solidarity can bridge systemic educational gaps and uplift vulnerable lives in times of urgent need.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     2. BACKGROUND & PURPOSE
+     ═══════════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="prose-container">
+      <div class="section__header">
+        <span class="section__eyebrow--bar">The Context</span>
+        <h2 data-en="Background &amp; Purpose" data-si="පසුබිම සහ අරමුණ">Background &amp; Purpose</h2>
+        <p class="section__subtitle">Why Mansala expanded beyond traditional academic boundaries</p>
+      </div>
+      <p>
+        Sri Lanka's rural educational landscape faces profound systemic disparities. Students in underserved rural districts often lack access to well-equipped science laboratories, updated library collections, and qualified subject teachers. Consequently, pass rates in foundational subjects such as G.C.E. Ordinary Level Science and Mathematics remain significantly depressed compared to urban centres.
+      </p>
+      <p>
+        Compounding this educational divide, recurring seasonal natural disasters — particularly monsoon-triggered floods and landslides in the Southern Province and surrounding districts — routinely inundate rural classrooms, destroy school libraries, and displace vulnerable farming and daily-wage families. Under such extreme strain, children's education is often the first casualty.
+      </p>
+      <p>
+        Recognising that academic excellence cannot flourish in isolation from social welfare, the Faculty of Science Students' Union broadened Mansala from an O/L revision workshop into a comprehensive dual-wing intervention model: combining emergency flood relief and tangible school infrastructure aid with high-impact, free academic resources and mentorship.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     3. VISION STATEMENT
+     ═══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div style="max-width: 860px; margin-inline: auto;">
+      <div class="section__header">
+        <span class="section__eyebrow--bar">Guiding Light</span>
+        <h2 data-en="Our Vision" data-si="අපගේ දැක්ම">Our Vision</h2>
+      </div>
+
+      <div class="statement-card statement-card--vision" style="margin-inline: 0; width: 100%;">
+        <div class="statement-card__inner">
+          <span class="statement-card__badge statement-card__badge--vision">The Vision</span>
+          <blockquote class="statement-card__quote" data-en="&ldquo;A Sri Lanka where geographical, economic, and climatic vulnerabilities never compromise a child&rsquo;s right to quality education and dignified community welfare, achieved through active student solidarity and academic excellence.&rdquo;" data-si="&ldquo;භූගෝලීය, ආර්ථික හෝ ආපදාමය බාධාවන් කිසිදු දරුවෙකුගේ ගුණාත්මක අධ්‍යාපනයට සහ ප්‍රජා සුබසාධනයට බාධාවක් නොවන, විශ්වවිද්‍යාල ශිෂ්‍ය සහයෝගීතාවයෙන් සවිමත් වූ ශ්‍රී ලංකාවක් නිර්මාණය කිරීම.&rdquo;">
+            &ldquo;A Sri Lanka where geographical, economic, and climatic vulnerabilities never compromise a child&rsquo;s right to quality education and dignified community welfare, achieved through active student solidarity and academic excellence.&rdquo;
+          </blockquote>
+          <div class="statement-card__meta">
+            <strong>National Humanitarian Equity &bull; Academic Distinction</strong>
+            <span>Core guiding principle of the Faculty of Science Students' Union, University of Ruhuna</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     4. MISSION STATEMENT
+     ═══════════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="max-width: 860px; margin-inline: auto;">
+      <div class="section__header">
+        <span class="section__eyebrow--bar">Action &amp; Delivery</span>
+        <h2 data-en="Our Mission" data-si="අපගේ මෙහෙවර">Our Mission</h2>
+      </div>
+
+      <div class="statement-card statement-card--mission" style="margin-inline: 0; width: 100%;">
+        <div class="statement-card__inner">
+          <span class="statement-card__badge statement-card__badge--mission">The Mission</span>
+          <blockquote class="statement-card__quote" data-en="&ldquo;To rapidly mobilise university volunteer resources, expertise, and community goodwill to provide frontline disaster relief, equip rural classrooms, and deliver 100% free, syllabus-aligned Science and Mathematics learning materials and small-group mentorship to every aspiring student.&rdquo;" data-si="&ldquo;හදිසි ආපදා සහන සැලසීම, ග්‍රාමීය පාසල් යටිතල පහසුකම් සංවර්ධනය කිරීම සහ සාමාන්‍ය පෙළ සිසුන් වෙනුවෙන් නොමිලේ ගුණාත්මක විද්‍යාව හා ගණිතය ඉගෙනුම් ද්‍රව්‍ය සහ මගපෙන්වීම සලසා දීම උදෙසා විශ්වවිද්‍යාල ශිෂ්‍ය ප්‍රජාව බලමුළු ගැන්වීම.&rdquo;">
+            &ldquo;To rapidly mobilise university volunteer resources, expertise, and community goodwill to provide frontline disaster relief, equip rural classrooms, and deliver 100% free, syllabus-aligned Science and Mathematics learning materials and small-group mentorship to every aspiring student.&rdquo;
+          </blockquote>
+          <div class="statement-card__meta">
+            <strong>Undergraduate Action &bull; Grassroots Delivery Framework</strong>
+            <span>Translating science education and student compassion into tangible community impact</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     5. KEY OBJECTIVES
+     ═══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Strategic Roadmap</span>
+      <h2 data-en="Key Strategic Objectives" data-si="ප්‍රධාන උපායමාර්ගික අරමුණු">Key Strategic Objectives</h2>
+      <p class="section__subtitle">Six foundational commitments driving Mansala's humanitarian and educational impact.</p>
+    </div>
+
+    <div class="grid grid--3">
+
+      <!-- Objective 1 -->
+      <div class="card">
+        <div class="card__icon card__icon--amber">
+          <svg class="lucide lucide-heart-handshake" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+        </div>
+        <h3>Emergency Disaster &amp; Flood Relief</h3>
+        <p>Rapidly deploy volunteer taskforces to flood- and landslide-affected regions to conduct school cleanups, restore sanitation, and deliver dry food rations to vulnerable families.</p>
+      </div>
+
+      <!-- Objective 2 -->
+      <div class="card">
+        <div class="card__icon card__icon--science">
+          <svg class="lucide lucide-school" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M18 4.933V21"></path><path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6"></path><path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11"></path><path d="M6 4.933V21"></path><circle cx="12" cy="9" r="2"></circle></svg>
+        </div>
+        <h3>Rural School Aid &amp; Science Labs</h3>
+        <p>Directly equip under-resourced rural schools with science laboratory apparatus, glassware, chemicals, library books, and essential student stationery kits.</p>
+      </div>
+
+      <!-- Objective 3 -->
+      <div class="card">
+        <div class="card__icon card__icon--maths">
+          <svg class="lucide lucide-book-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+        </div>
+        <h3>Free Curated Study Dossiers</h3>
+        <p>Author and publish comprehensive, syllabus-aligned revision dossiers, model examination papers, and detailed marking schemes with 100% free digital access.</p>
+      </div>
+
+      <!-- Objective 4 -->
+      <div class="card">
+        <div class="card__icon card__icon--science">
+          <svg class="lucide lucide-users" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        </div>
+        <h3>1:5 Mentorship &amp; Seminars</h3>
+        <p>Conduct intensive, volunteer-led regional problem-solving seminars and structured small-group mentorship to build student confidence and examination mastery.</p>
+      </div>
+
+      <!-- Objective 5 -->
+      <div class="card">
+        <div class="card__icon card__icon--amber">
+          <svg class="lucide lucide-shield-check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+        </div>
+        <h3>100% Transparent Governance</h3>
+        <p>Maintain total transparency in all community funding, bank transfers, and relief procurement with published audit recaps and verified deposit slips.</p>
+      </div>
+
+      <!-- Objective 6 -->
+      <div class="card">
+        <div class="card__icon card__icon--maths">
+          <svg class="lucide lucide-award" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+        </div>
+        <h3>Cultivate Civic Leadership</h3>
+        <p>Nurture a generation of university undergraduates with frontline empathy, crisis-response leadership, pedagogical skills, and deep civic commitment.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     6. INTENDED BENEFICIARIES
+     ═══════════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Community Stakeholders</span>
+      <h2 data-en="Intended Beneficiaries" data-si="ප්‍රතිලාභී පාර්ශ්වයන්">Intended Beneficiaries</h2>
+      <p class="section__subtitle">Whom the Mansala movement serves and empowers across Sri Lanka.</p>
+    </div>
+    <div class="grid grid--2">
+
+      <!-- Beneficiary 1 -->
+      <div class="card">
+        <div class="card__icon card__icon--science">
+          <svg class="lucide lucide-user-check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 11 2 2 4-4"></path><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+        </div>
+        <h3>O/L Students &amp; Rural Candidates</h3>
+        <p>Secondary school students in underprivileged and rural districts preparing for the G.C.E. O/L examination. They receive free master study dossiers, interactive diagnostic quizzes, regional seminar training, and 1:5 mentorship to achieve academic distinction.</p>
+      </div>
+
+      <!-- Beneficiary 2 -->
+      <div class="card">
+        <div class="card__icon card__icon--amber">
+          <svg class="lucide lucide-home" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        </div>
+        <h3>Disaster-Affected Families &amp; Communities</h3>
+        <p>Vulnerable families hit by natural calamities such as seasonal floods and landslides. Mansala deploys volunteer taskforces to deliver essential food dry rations, clean water kits, and emergency recovery assistance during acute crises.</p>
+      </div>
+
+      <!-- Beneficiary 3 -->
+      <div class="card">
+        <div class="card__icon card__icon--maths">
+          <svg class="lucide lucide-school" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M18 4.933V21"></path><path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6"></path><path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11"></path><path d="M6 4.933V21"></path><circle cx="12" cy="9" r="2"></circle></svg>
+        </div>
+        <h3>Under-Resourced Schools &amp; Regional Teachers</h3>
+        <p>Rural primary and secondary schools facing acute infrastructure and lab deficits. Mansala donates science laboratory equipment, restores library bookshelves, provides classroom stationery packs, and supplies teachers with quality curriculum revision materials.</p>
+      </div>
+
+      <!-- Beneficiary 4 -->
+      <div class="card">
+        <div class="card__icon card__icon--science">
+          <svg class="lucide lucide-graduation-cap" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+        </div>
+        <h3>Undergraduate Volunteers &amp; Emerging Leaders</h3>
+        <p>University of Ruhuna undergraduates who dedicate their talent and energy. Through real-world fieldwork, logistics management, teaching, and crisis relief, they cultivate unmatched leadership, civic empathy, and professional maturity.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     7. TWO CORE OPERATIONAL WINGS
+     ═══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Operational Architecture</span>
+      <h2 data-en="Two Core Wings of Mansala" data-si="මංසල ප්‍රධාන අංශ ද්විත්වය">Two Core Wings of Mansala</h2>
+      <p class="section__subtitle">Our dual pillars combining frontline humanitarian aid with 100% free national academic empowerment.</p>
+    </div>
+    <div class="grid grid--2">
+
+      <!-- Wing 1: Humanitarian Outreach & Relief -->
+      <div class="subject-support-card" style="border-top: 4px solid var(--clr-accent);">
+        <div class="subject-support-card__header" style="display: block; margin-bottom: 14px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <span style="font-size: 11px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.08em; color: var(--clr-accent);">Disaster Relief &bull; School Aid</span>
+            <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--clr-accent);">● මානුෂීය සත්කාරය</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div class="card__icon card__icon--amber" style="width: 42px; height: 42px; margin-bottom: 0; flex-shrink: 0;">
+              <svg class="lucide lucide-heart-handshake" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+            </div>
+            <h3 style="margin-bottom: 0; font-size: 1.28rem; line-height: 1.3;" data-en="Humanitarian &amp; Outreach Wing" data-si="මානුෂීය සහ ප්‍රජා සත්කාරක අංශය">Humanitarian &amp; Outreach Wing</h3>
+          </div>
+        </div>
+        <p style="font-size: 0.92rem; color: var(--clr-text-mid); margin-top: 10px;">
+          Direct undergraduate-led fieldwork delivering emergency crisis relief and restoring educational infrastructure across rural Sri Lanka:
+        </p>
+        <ul>
+          <li><strong>Emergency Flood &amp; Disaster Cleanup:</strong> Hands-on volunteer taskforces assisting flooded schools and homes with mud clearance and sanitary restorations.</li>
+          <li><strong>Dry Ration &amp; Family Care Packages:</strong> Essential food hampers and emergency welfare kits for displaced and flood-affected households.</li>
+          <li><strong>Science Lab Apparatus Donations:</strong> Donating essential glassware, basic equipment, and chemical sets to schools with neglected laboratories.</li>
+          <li><strong>School Library &amp; Stationery Kits:</strong> Providing textbooks, reading material, and full stationery packages to underprivileged children.</li>
+          <li><strong>100% Transparent Audits:</strong> Publicly published verified transfer slips, project completion recaps, and exact expenditure accounting.</li>
+        </ul>
+        <div style="border-top: 1px solid var(--clr-border-light); padding-top: 14px; margin-top: auto;">
+          <a href="projects.html" class="btn btn--secondary btn--sm">View Active &amp; Completed Projects <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+      </div>
+
+      <!-- Wing 2: Academic Empowerment & Study Hub -->
+      <div class="subject-support-card" style="border-top: 4px solid var(--clr-primary);">
+        <div class="subject-support-card__header" style="display: block; margin-bottom: 14px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <span style="font-size: 11px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.08em; color: var(--clr-primary);">Study Hub &bull; O/L Seminars</span>
+            <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #1d4ed8;">● අධ්‍යාපනික සවිබල ගැන්වීම</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div class="card__icon card__icon--science" style="width: 42px; height: 42px; margin-bottom: 0; flex-shrink: 0;">
+              <svg class="lucide lucide-graduation-cap" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+            </div>
+            <h3 style="margin-bottom: 0; font-size: 1.28rem; line-height: 1.3;" data-en="Academic Empowerment Wing" data-si="අධ්‍යාපනික සවිබලගැන්වීමේ අංශය">Academic Empowerment Wing</h3>
+          </div>
+        </div>
+        <p style="font-size: 0.92rem; color: var(--clr-text-mid); margin-top: 10px;">
+          Curated learning resources, topic-wise practice quizzes, and structured undergraduate mentorship designed to help every student achieve exam distinction:
+        </p>
+        <ul>
+          <li><strong>Curated Study Dossiers:</strong> Chapter-by-chapter revision notes, term papers, and step-by-step model marking schemes for Science and Mathematics.</li>
+          <li><strong>Regional In-Person Seminars:</strong> Full-day academic workshops with exam question paper walkthroughs conducted directly in rural schools.</li>
+          <li><strong>Interactive Diagnostic Quizzes:</strong> Instant self-assessment quizzes with real-time scoring, timers, and comprehensive explanatory answers.</li>
+          <li><strong>1:5 Undergraduate Mentorship:</strong> Small cohort mentoring connecting Ruhuna Science undergraduates with students requiring personalized guidance.</li>
+          <li><strong>100% Free &amp; Open Access:</strong> Zero registration fees, open PDF downloads, and unrestricted access for all teachers, parents, and students.</li>
+        </ul>
+        <div style="border-top: 1px solid var(--clr-border-light); padding-top: 14px; margin-top: auto;">
+          <a href="resources.html" class="btn btn--primary btn--sm">Enter Free Study Hub <svg class="lucide lucide-arrow-right icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     8. UNIVERSITY STUDENT VOLUNTEERS
+     ═══════════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Our Driving Force</span>
+      <h2 data-en="University Student Volunteers" data-si="විශ්වවිද්‍යාල ශිෂ්‍ය ස්වේච්ඡා බලකාය">University Student Volunteers</h2>
+      <p class="section__subtitle">The heart, hands, and intellect driving the Mansala movement.</p>
+    </div>
+    <div style="max-width: 820px; margin-bottom: 28px; margin-inline: 0;">
+      <p style="color: var(--clr-text-mid); font-size: 1.05rem; line-height: 1.6; text-align: left; margin: 0;">
+        At the core of Mansala are the <strong>undergraduate volunteers from the University of Ruhuna</strong>. These dedicated students — across disciplines of Physical Science, Biological Science, Mathematics, and Computer Science — unite under the Faculty of Science Students' Union to dedicate their time, knowledge, and physical labour to transform lives.
+      </p>
+    </div>
+    <div class="grid grid--3">
+
+      <!-- Role 1 -->
+      <div class="card">
+        <div class="card__icon card__icon--amber">
+          <svg class="lucide lucide-shield-alert" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+        </div>
+        <h3>Field Relief Volunteers</h3>
+        <p>Lead on-the-ground emergency flood cleanup operations, mud clearance, dry ration packaging, and family welfare distributions in affected regions.</p>
+      </div>
+
+      <!-- Role 2 -->
+      <div class="card">
+        <div class="card__icon card__icon--science">
+          <svg class="lucide lucide-package" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+        </div>
+        <h3>School Aid &amp; Lab Curators</h3>
+        <p>Coordinate school infrastructure assessments, procure laboratory apparatus and chemicals, and organise book collections for rural school libraries.</p>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="card">
+        <div class="card__icon card__icon--maths">
+          <svg class="lucide lucide-file-text" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        </div>
+        <h3>Academic Content Authors</h3>
+        <p>Research and author curriculum-aligned master revision dossiers, step-by-step marking schemes, and regional seminar test papers for O/L Science and Mathematics.</p>
+      </div>
+
+      <!-- Role 4 -->
+      <div class="card">
+        <div class="card__icon card__icon--science">
+          <svg class="lucide lucide-users" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+        </div>
+        <h3>Undergraduate Mentors</h3>
+        <p>Conduct structured 1:5 small-group mentoring sessions, resolve challenging questions, and provide empathetic academic coaching to help students excel.</p>
+      </div>
+
+      <!-- Role 5 -->
+      <div class="card">
+        <div class="card__icon card__icon--amber">
+          <svg class="lucide lucide-check-circle" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        </div>
+        <h3>Quiz &amp; Assessment Designers</h3>
+        <p>Design interactive topic-wise multiple choice and short-answer diagnostic assessments with immediate scoring and full solution breakdowns.</p>
+      </div>
+
+      <!-- Role 6 -->
+      <div class="card">
+        <div class="card__icon card__icon--maths">
+          <svg class="lucide lucide-layout" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><line x1="3" x2="21" y1="9" y2="9"></line><line x1="9" x2="9" y1="21" y2="9"></line></svg>
+        </div>
+        <h3>Logistics &amp; Platform Engineers</h3>
+        <p>Manage the open-access Study Hub, deploy regional seminar audiovisual setups, and ensure transparent public tracking of community initiatives.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     9. OFFICIAL DOCUMENTATION
+     ═══════════════════════════════════════════════ -->
+<section class="section" id="documents">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Institutional Transparency</span>
+      <h2 data-en="Official Documentation" data-si="නිල ලේඛන හා ප්‍රකාශන">Official Documentation</h2>
+      <p class="section__subtitle">Institutional endorsements, faculty approvals, and transparency records.</p>
+    </div>
+
+    <div class="grid grid--2 mt-6">
+
+      <!-- Doc 1 -->
+      <div class="doc-card">
+        <div class="doc-card__icon"><svg class="lucide lucide-file-text" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></div>
+        <div>
+          <div class="doc-card__title">University Lecturer's Letter Regarding Mansala</div>
+          <div class="doc-card__meta" style="margin: 8px 0;">
+            <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #d97706;" data-en="● Verification in Progress" data-si="● තහවුරු කිරීම ක්‍රියාත්මකයි">● Verification in Progress</span>
+          </div>
+          <div class="doc-card__info">
+            <span data-en="Date: Verified Programme Letter" data-si="දිනය: තහවුරු කළ නිල ලිපිය">Date: Verified Programme Letter</span> &bull;
+            <span>Format: PDF</span>
+          </div>
+          <button class="btn btn--secondary btn--sm" disabled aria-disabled="true" data-en="⬇ Download PDF (Pending Publication)" data-si="⬇ PDF බාගත කරන්න (ප්‍රකාශනය වෙමින් පවතී)">⬇ Download PDF (Pending Publication)</button>
+        </div>
+      </div>
+
+      <!-- Doc 2 -->
+      <div class="doc-card">
+        <div class="doc-card__icon"><svg class="lucide lucide-file-text" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></div>
+        <div>
+          <div class="doc-card__title" data-en="Dean's Letter — Programme Endorsement" data-si="පීඨාධිපතිතුමන්ගේ නිල නිර්දේශ ලිපිය">Dean's Letter — Programme Endorsement</div>
+          <div style="background: var(--clr-bg-alt); padding: 8px 12px; border-radius: var(--radius-sm); font-size: 0.82rem; color: var(--clr-text-mid); margin: 8px 0;">
+            <div><strong data-en="Document Title:" data-si="ලේඛන මාතෘකාව:">Document Title:</strong> <span data-en="Official Letter of Faculty Endorsement" data-si="විද්‍යා පීඨ නිල නිර්දේශ ලිපිය">Official Letter of Faculty Endorsement</span></div>
+            <div><strong data-en="Issued By:" data-si="නිකුත් කළේ:">Issued By:</strong> <span data-en="Dean, Faculty of Science, University of Ruhuna" data-si="පීඨාධිපති, විද්‍යා පීඨය, රුහුණ විශ්වවිද්‍යාලය">Dean, Faculty of Science, University of Ruhuna</span></div>
+            <div><strong data-en="Ref ID:" data-si="යොමු අංකය:">Ref ID:</strong> UOR/SCI/EDU/DOC-02</div>
+          </div>
+          <div class="doc-card__meta" style="margin: 8px 0;">
+            <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #059669;" data-en="● Official Endorsement" data-si="● නිල නිර්දේශය">● Official Endorsement</span>
+          </div>
+          <div class="doc-card__info">
+            <span data-en="Date: Verified Programme Letter" data-si="දිනය: තහවුරු කළ නිල ලිපිය">Date: Verified Programme Letter</span> &bull;
+            <span>Format: PDF</span>
+          </div>
+          <button class="btn btn--secondary btn--sm" disabled aria-disabled="true" data-en="⬇ Download PDF (Pending Publication)" data-si="⬇ PDF බාගත කරන්න (ප්‍රකාශනය වෙමින් පවතී)">⬇ Download PDF (Pending Publication)</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     10. DUAL-PATHWAY PRE-FOOTER CTA
+     ═══════════════════════════════════════════════ -->
+<section class="section section--primary" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; text-align: center; padding: 64px 20px;">
+  <div class="container" style="max-width: 820px; margin: 0 auto;">
+    <span class="section__eyebrow--bar section__eyebrow--centered" style="color: #ea580c; margin-bottom: 8px;" data-en="Be Part of the Impact" data-si="මෙහෙවරේ කොටස්කරුවෙකු වන්න">Be Part of the Impact</span>
+    <h2 style="color: #FFFFFF; margin-bottom: 14px; font-size: 2rem;" data-en="Join the Mansala Movement Today" data-si="අදම මංසල ව්‍යාපාරය හා අත්වැල් බැඳගන්න">Join the Mansala Movement Today</h2>
+    <p style="color: #cbd5e1; font-size: 1.05rem; margin-bottom: 32px; line-height: 1.6;" data-en="Whether you are an O/L student preparing for your examinations, an alumnus or donor wishing to support emergency flood relief and rural school aid, or an undergraduate eager to volunteer, your journey with Mansala starts here." data-si="ඔබ විභාගයට සූදානම් වන සා/පෙළ සිසුවෙකු වුවද, ආපදා සහන සහ පාසල් ආධාර සඳහා දායක වීමට කැමති ආදි සිසුවෙකු හෝ ආධාරකරුවෙකු වුවද, ස්වේච්ඡාවෙන් එක්වන සරසවි සිසුවෙකු වුවද, ඔබේ මංසල ගමන මෙතැනින් ඇරඹේ.">
+      Whether you are an O/L student preparing for your examinations, an alumnus or donor wishing to support emergency flood relief and rural school aid, or an undergraduate eager to volunteer, your journey with Mansala starts here.
+    </p>
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+      <a href="projects.html" class="btn btn--secondary" style="background: #ea580c; color: #ffffff; border: none; font-weight: 700; padding: 12px 24px; box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);">
+        <span data-en="Support a Community Cause &rarr;" data-si="ප්‍රජා ව්‍යාපෘතියකට ආධාර කරන්න &rarr;">Support a Community Cause &rarr;</span>
+      </a>
+      <a href="resources.html" class="btn btn--outline" style="background: transparent; color: #ffffff; border: 1.5px solid rgba(255, 255, 255, 0.4); font-weight: 600; padding: 12px 24px;">
+        <span data-en="Access Free Study Hub" data-si="නොමිලේ අධ්‍යාපන පියසට පිවිසෙන්න">Access Free Study Hub</span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+            <img src="assets/images/logo-transparent.png" alt="මංසල Logo" class="site-logo-img">
+            <span class="logo-title">මංසල</span>
+          </a>
+          <p data-en="An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics." data-si="සා/පෙළ සිසුන්ට විද්‍යාව සහ ගණිතය විෂයයන් සඳහා සහයෝගය දක්වමින් රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය විසින් සංවිධානය කරනු ලබන අධ්‍යාපනික වැඩසටහනකි.">An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Navigation" data-si="සංචලනය">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-en="Home" data-si="මුල් පිටුව">Home</a></li>
+            <li><a href="about.html" data-en="About" data-si="අප ගැන">About</a></li>
+            <li><a href="projects.html" data-en="Projects" data-si="ප්‍රජා ව්‍යාපෘති">Projects</a></li>
+            <li><a href="resources.html" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</a></li>
+            <li><a href="quizzes.html" data-en="Quizzes" data-si="ප්‍රශ්නාවලි">Quizzes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Programme" data-si="වැඩසටහන">Programme</h4>
+          <ul>
+            <li><a href="mentorship.html" data-en="Mentorship" data-si="උපදේශනය">Mentorship</a></li>
+            <li><a href="contact.html" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a></li>
+            <li><a href="about.html#documents" data-en="Documents" data-si="ලේඛන">Documents</a></li>
+            <li><a href="login.html" data-en="Staff &amp; Coordinator Portal" data-si="කාර්ය මණ්ඩල සහ සම්බන්ධීකාරක පිවිසුම">Staff &amp; Coordinator Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Contact" data-si="සම්බන්ධ වන්න">Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@manasala.ruh.ac.lk">contact@manasala.ruh.ac.lk</a></li>
+            <li><a href="tel:+94412222681">+94 41 2222681</a></li>
+            <li data-en="University of Ruhuna, Wellamadama, Matara" data-si="රුහුණ විශ්වවිද්‍යාලය, වැල්ලමඩම, මාතර">University of Ruhuna, Wellamadama, Matara</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-en="&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna." data-si="&copy; මංසල – Mansala. විද්‍යා පීඨ ශිෂ්‍ය සංගමය, රුහුණ විශ්වවිද්‍යාලය.">&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna.</span>
+        <span data-en="Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna." data-si="රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය මඟින් මෙහෙයවනු ලබන නිල අධ්‍යාපනික සත්කාරයකි.">Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Official Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>if(typeof lucide==='undefined'){document.write('<script src="js/lucide.js"><\/script>');}</script>
+  <script>document.addEventListener('DOMContentLoaded',function(){if(typeof lucide!=='undefined'&&lucide.createIcons){lucide.createIcons();}});</script>
+  <script src="js/lang.js"></script>
+</body>
+</html>

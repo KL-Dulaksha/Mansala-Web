@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Resources — මංසල Mansala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4.5">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+  <div class="container">
+    <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+      <img src="assets/images/logo-light.png" alt="මංසල Logo" class="site-logo-img">
+      <span class="logo-title logo-nav">මංසල</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="index.html" class="" data-en="Home" data-si="මුල් පිටුව">Home</a>
+      <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+      
+      <!-- Study Hub Grouped Dropdown -->
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-trigger active" aria-expanded="false" aria-haspopup="true">
+          <span data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</span>
+          <svg class="lucide lucide-chevron-down" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="resources.html" class="nav-dropdown-item active" role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-book-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+              <span class="nav-dropdown-desc" data-en="Past Papers, Notes &amp; Marking Schemes" data-si="පසුගිය ප්‍රශ්න පත්‍ර, සටහන් සහ ලකුණු දීමේ පටිපාටි">Past Papers, Notes &amp; Marking Schemes</span>
+            </div>
+          </a>
+          <a href="quizzes.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-help-circle" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+              <span class="nav-dropdown-desc" data-en="Self-Paced Topic Assessments" data-si="ස්වයං අධ්‍යයන මාතෘකා ඇගයීම්">Self-Paced Topic Assessments</span>
+            </div>
+          </a>
+          <a href="mentorship.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-users" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+              <span class="nav-dropdown-desc" data-en="Undergraduate Cohort Guidance" data-si="විශ්වවිද්‍යාල ශිෂ්‍ය මගපෙන්වීම">Undergraduate Cohort Guidance</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="" data-en="About" data-si="අප ගැන">About</a>
+      <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+    </nav>
+    
+    <!-- Header Right Actions: Support a Cause CTA & Language Switcher -->
+    <div class="header-actions">
+      <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--sm nav-donate-btn" title="Support a Cause" aria-label="Support a Cause">
+        <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+        <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+      </a>
+
+      <!-- Bilingual Language Toggle Button -->
+      <button class="lang-toggle-btn" id="langToggleBtn" type="button" aria-label="Switch Language (English / Sinhala)" title="Switch Language">
+        <span class="lang-opt active" data-lang-code="en">EN</span>
+        <span class="lang-divider">|</span>
+        <span class="lang-opt" data-lang-code="si">සිං</span>
+      </button>
+
+      <!-- Mobile Navigation Hamburger Drawer -->
+      <details class="nav-mobile">
+        <summary aria-label="Open menu"><svg class="lucide lucide-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></summary>
+        <div class="nav-mobile-panel">
+          <!-- Main Section -->
+          <a href="index.html" class="" data-en="Home" data-si="මුල් පිටුව">Home</a>
+          <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+          <a href="about.html" class="" data-en="About" data-si="අප ගැන">About</a>
+          <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+
+          <!-- Study Hub Mobile Sub-section -->
+          <div class="nav-mobile-divider"></div>
+          <div class="nav-mobile-section-title" data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</div>
+          <a href="resources.html" class="nav-mobile-item-sub active">
+            <svg class="lucide lucide-book-open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+          </a>
+          <a href="quizzes.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-help-circle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            <span data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+          </a>
+          <a href="mentorship.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-users" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+          </a>
+
+          <!-- Mobile Action Button -->
+          <div class="nav-mobile-actions">
+            <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--full nav-mobile-donate-btn">
+              <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+              <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+            </a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <!-- Page Header (Dark Hero Banner) -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <span>Learning Resources</span>
+        </nav>
+        <h1 data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</h1>
+        <p class="section__subtitle" data-en="Browse educational materials for O/L Science and Mathematics — past papers, model papers, notes, and revision guides." data-si="සා/පෙළ විද්‍යාව හා ගණිතය විෂයයන් සඳහා පසුගිය ප්‍රශ්න පත්‍ර, ආදර්ශ ප්‍රශ්න පත්‍ර, කෙටි සටහන් සහ පුනරීක්ෂණ මාර්ගෝපදේශ.">Browse educational materials for O/L Science and Mathematics — past papers, model papers, notes, and revision guides.</p>
+      </div>
+    </section>
+
+    <!-- Short Introductory Description -->
+    <section class="resources-intro-section">
+      <div class="container">
+        <p class="resources-intro-text">
+          The මංසල resource library brings together curated study materials to support O/L students preparing for Science and Mathematics examinations. Resources are organised by subject, material type, and year so you can quickly find what you need for syllabus revision and examination practice.
+        </p>
+      </div>
+    </section>
+
+    <!-- Prominent Search & Filter Experience (SkillBridge Inspired) -->
+    <section class="resources-search-section">
+      <div class="container">
+        <div class="resources-search-container">
+          
+          <!-- Unified Search Bar Row -->
+          <div class="search-bar-row">
+            <div class="search-input-wrapper">
+              <svg class="lucide lucide-search search-input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+              <input 
+                type="text" 
+                id="resource-search" 
+                class="search-input-field" 
+                placeholder="Search by title, subject, or topic..." 
+                aria-label="Search by title, subject, or topic"
+                autocomplete="off"
+              >
+              <button 
+                type="button" 
+                id="search-clear-btn" 
+                class="search-clear-btn" 
+                title="Clear search" 
+                aria-label="Clear search"
+                style="display: none;"
+              >&times;</button>
+            </div>
+
+            <!-- Filters Toggle Button -->
+            <button 
+              type="button" 
+              id="toggle-filters-btn" 
+              class="btn-filters-toggle" 
+              aria-expanded="false" 
+              aria-controls="filter-panel"
+            >
+              <svg class="lucide lucide-sliders-horizontal icon-sm" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5H3"></path><path d="M12 19H3"></path><path d="M14 3v4"></path><path d="M16 17v4"></path><path d="M21 12h-9"></path><path d="M21 19h-5"></path><path d="M21 5h-7"></path><path d="M8 10v4"></path><path d="M8 12H3"></path></svg>
+              <span>Filters</span>
+              <span id="filter-active-count" class="filter-count-badge" style="display: none;">0</span>
+            </button>
+          </div>
+
+          <!-- Active Filter Tags Strip -->
+          <div id="active-filters-bar" class="active-filters-bar" style="display: none;">
+            <span class="active-filters-label">Active:</span>
+            <div id="active-chips-container" style="display: contents;"></div>
+            <button type="button" id="btn-clear-all-chips" class="btn-clear-all-link">Clear all</button>
+          </div>
+
+          <!-- Clean Expandable Filter Panel -->
+          <div id="filter-panel" class="filter-expandable-panel" role="region" aria-label="Resource filter options">
+            <div class="filter-panel-grid">
+              
+              <!-- Category: Subject -->
+              <div class="filter-panel-category">
+                <span class="filter-category-heading">Subject</span>
+                <div class="filter-pills-wrap" data-filter-group="subject">
+                  <button type="button" class="filter-choice-pill is-active" data-value="all">All</button>
+                  <button type="button" class="filter-choice-pill" data-value="science">Science</button>
+                  <button type="button" class="filter-choice-pill" data-value="mathematics">Mathematics</button>
+                </div>
+              </div>
+
+              <!-- Category: Material Type -->
+              <div class="filter-panel-category">
+                <span class="filter-category-heading">Material Type</span>
+                <div class="filter-pills-wrap" data-filter-group="type">
+                  <button type="button" class="filter-choice-pill is-active" data-value="all">All</button>
+                  <button type="button" class="filter-choice-pill" data-value="past-papers">Past Papers</button>
+                  <button type="button" class="filter-choice-pill" data-value="model-papers">Model Papers</button>
+                  <button type="button" class="filter-choice-pill" data-value="notes">Notes</button>
+                  <button type="button" class="filter-choice-pill" data-value="marking-schemes">Marking Schemes</button>
+                  <button type="button" class="filter-choice-pill" data-value="revision-materials">Revision Materials</button>
+                </div>
+              </div>
+
+              <!-- Category: Year -->
+              <div class="filter-panel-category">
+                <span class="filter-category-heading">Year</span>
+                <div class="filter-pills-wrap" data-filter-group="year">
+                  <button type="button" class="filter-choice-pill is-active" data-value="all">All Years</button>
+                  <button type="button" class="filter-choice-pill" data-value="2024">2024</button>
+                  <button type="button" class="filter-choice-pill" data-value="2023">2023</button>
+                  <button type="button" class="filter-choice-pill" data-value="2022">2022</button>
+                  <button type="button" class="filter-choice-pill" data-value="2021">2021</button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Filter Panel Action Row -->
+            <div class="filter-panel-footer">
+              <button type="button" id="btn-panel-reset" class="filter-reset-action">
+                <svg class="lucide lucide-rotate-ccw icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+                Clear All Filters
+              </button>
+              <button type="button" id="btn-panel-close" class="filter-close-action">Done</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="resources-results-section">
+      <div class="container">
+        
+        <!-- Action Bar: Heading, Dynamic Count, Subtitle & Sorting Dropdown -->
+        <div class="results-action-bar">
+          <div class="results-info-group">
+            <h2 data-en="Available Learning Resources" data-si="පවතින ඉගෙනුම් සම්පත්">Available Learning Resources</h2>
+            <div class="results-subtitle-wrap">
+              <span id="results-count" class="results-count-badge" data-en="Showing 1–9 of 25 resources" data-si="සම්පත් 25 න් 1–9 පෙන්වයි">Showing 1–9 of 25 resources</span>
+              <span class="results-sep">•</span>
+              <span data-en="Find past papers, model papers, notes and revision materials." data-si="පසුගිය ප්‍රශ්න පත්‍ර, ආදර්ශ ප්‍රශ්න පත්‍ර, කෙටි සටහන් සහ පුනරීක්ෂණ ද්‍රව්‍ය සොයාගන්න.">Find past papers, model papers, notes and revision materials.</span>
+            </div>
+          </div>
+
+          <!-- Sorting Dropdown -->
+          <div class="sort-control-wrap">
+            <label for="sort-dropdown" class="sort-label" data-en="Sort by:" data-si="අනුපිළිවෙල:">Sort by:</label>
+            <select id="sort-dropdown" class="sort-select" aria-label="Sort resources">
+              <option value="newest" selected data-en="Newest First" data-si="නවතම පළමුව">Newest First</option>
+              <option value="oldest" data-en="Oldest First" data-si="පැරණිතම පළමුව">Oldest First</option>
+              <option value="title-asc" data-en="Title A–Z" data-si="මාතෘකාව A–Z">Title A–Z</option>
+              <option value="title-desc" data-en="Title Z–A" data-si="මාතෘකාව Z–A">Title Z–A</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 3-Column Resource Grid (Displays exactly 9 resources per page) -->
+        <div id="resources-grid" class="resources-grid" role="region" aria-label="Resource items catalog">
+          <article class="resource-card" data-id="res-1">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge badge--science">Science</span>
+                <span class="badge badge--neutral">Past Paper</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">2023</span>
+            </div>
+            
+            <h3 class="resource-card__title">O/L Science — 2023 Past Paper</h3>
+            <p class="resource-card__desc">Complete G.C.E. Ordinary Level Science examination paper from the 2023 national examination. Includes all sections, multiple choice, and structured essay questions.</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                2023
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                2.4 MB
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                Grade 10 & 11
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-url="#download-ol-sci-2023" class="btn-download-pdf" data-title="O/L Science — 2023 Past Paper" aria-label="Download O/L Science — 2023 Past Paper as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                Download PDF
+              </a>
+            </div>
+          </article>
+          <article class="resource-card" data-id="res-2">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge badge--maths">Mathematics</span>
+                <span class="badge badge--neutral">Model Paper</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">2024</span>
+            </div>
+            
+            <h3 class="resource-card__title">Mathematics Model Paper — Algebra & Geometry</h3>
+            <p class="resource-card__desc">A model paper focusing on algebraic expressions, quadratic equations, and geometric proofs aligned with the O/L syllabus. Ideal for structured practice.</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                2024
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                1.8 MB
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                Grade 11
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-url="#download-ol-maths-model-alg-geom" class="btn-download-pdf" data-title="Mathematics Model Paper — Algebra & Geometry" aria-label="Download Mathematics Model Paper — Algebra & Geometry as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                Download PDF
+              </a>
+            </div>
+          </article>
+          <article class="resource-card" data-id="res-3">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge badge--science">Science</span>
+                <span class="badge badge--neutral">Notes</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">2023</span>
+            </div>
+            
+            <h3 class="resource-card__title">Science Revision Notes — Energy & Force</h3>
+            <p class="resource-card__desc">Concise revision notes covering key concepts in energy, work, power, and force. Includes diagrams, formulae, and worked examples for quick review.</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                2023
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                3.1 MB
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                Grade 11 Physics
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-url="#download-ol-sci-notes-energy-force" class="btn-download-pdf" data-title="Science Revision Notes — Energy & Force" aria-label="Download Science Revision Notes — Energy & Force as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                Download PDF
+              </a>
+            </div>
+          </article>
+          <article class="resource-card" data-id="res-4">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge badge--maths">Mathematics</span>
+                <span class="badge badge--neutral">Marking Scheme</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">2023</span>
+            </div>
+            
+            <h3 class="resource-card__title">O/L Mathematics — 2023 Marking Scheme</h3>
+            <p class="resource-card__desc">Official-style marking scheme for the 2023 O/L Mathematics paper. Contains step-by-step marking guidelines and acceptable alternative answers.</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                2023
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                1.2 MB
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                Grade 11
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-url="#download-ol-maths-2023-marking" class="btn-download-pdf" data-title="O/L Mathematics — 2023 Marking Scheme" aria-label="Download O/L Mathematics — 2023 Marking Scheme as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                Download PDF
+              </a>
+            </div>
+          </article>
+          <article class="resource-card" data-id="res-5">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge badge--science">Science</span>
+                <span class="badge badge--neutral">Model Paper</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">2024</span>
+            </div>
+            
+            <h3 class="resource-card__title">Science Model Paper — Biology & Chemistry</h3>
+            <p class="resource-card__desc">A comprehensive model paper covering biology (human body systems, ecology) and chemistry (atoms, chemical reactions) for O/L preparation.</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                2024
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                2.7 MB
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                Grade 10 & 11
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-url="#download-ol-sci-model-bio-chem" class="btn-download-pdf" data-title="Science Model Paper — Biology & Chemistry" aria-label="Download Science Model Paper — Biology & Chemistry as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                Download PDF
+              </a>
+            </div>
+          </article>
+          <article class="resource-card" data-id="res-6">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge badge--maths">Mathematics</span>
+                <span class="badge badge--neutral">Revision Materials</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">2023</span>
+            </div>
+            
+            <h3 class="resource-card__title">Revision Guide — Trigonometry & Statistics</h3>
+            <p class="resource-card__desc">A structured revision guide covering trigonometric ratios, data representation, and statistical measures. Includes practice questions with answers.</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                2023
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                2.0 MB
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                Grade 11
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-url="#download-ol-maths-guide-trig-stats" class="btn-download-pdf" data-title="Revision Guide — Trigonometry & Statistics" aria-label="Download Revision Guide — Trigonometry & Statistics as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                Download PDF
+              </a>
+            </div>
+          </article>
+          <article class="resource-card" data-id="res-7">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge badge--science">Science</span>
+                <span class="badge badge--neutral">Past Paper</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">2023</span>
+            </div>
+            
+            <h3 class="resource-card__title">2023 G.C.E. O/L Science — Complete Examination Dossier</h3>
+            <p class="resource-card__desc">An exhaustive review document containing the full 2023 national examination paper, complete with an annotated marking scheme, mentor commentary on frequent errors, and model answers.</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                2023
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                2.4 MB
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                Grade 10 & 11
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-url="#download-sci-2023-master-dossier" class="btn-download-pdf" data-title="2023 G.C.E. O/L Science — Complete Examination Dossier" aria-label="Download 2023 G.C.E. O/L Science — Complete Examination Dossier as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                Download PDF
+              </a>
+            </div>
+          </article>
+          <article class="resource-card" data-id="res-8">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge badge--maths">Mathematics</span>
+                <span class="badge badge--neutral">Notes</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">2024</span>
+            </div>
+            
+            <h3 class="resource-card__title">Mathematics Notes — Simultaneous Equations & Quadratics</h3>
+            <p class="resource-card__desc">Comprehensive step-by-step revision guide on algebraic elimination, substitution, and graphical parabolas solutions with 15 worked model exam questions.</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                2024
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                1.8 MB
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                Grade 11
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-url="#download-maths-notes-simultaneous" class="btn-download-pdf" data-title="Mathematics Notes — Simultaneous Equations & Quadratics" aria-label="Download Mathematics Notes — Simultaneous Equations & Quadratics as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                Download PDF
+              </a>
+            </div>
+          </article>
+          <article class="resource-card" data-id="res-9">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge badge--science">Science</span>
+                <span class="badge badge--neutral">Notes</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">2024</span>
+            </div>
+            
+            <h3 class="resource-card__title">Science Concept Summary — Chemical Reactions, Acids & Bases</h3>
+            <p class="resource-card__desc">Clear classification of chemical reaction types, balancing complex equations, pH scale applications, and laboratory test summaries for quick recall.</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                2024
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                3.1 MB
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                Grade 11 Chemistry
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-url="#download-sci-notes-chemical-reactions" class="btn-download-pdf" data-title="Science Concept Summary — Chemical Reactions, Acids & Bases" aria-label="Download Science Concept Summary — Chemical Reactions, Acids & Bases as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                Download PDF
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Numbered Pagination Component (SkillBridge Style) -->
+        <nav id="resources-pagination" class="pagination-container" aria-label="Learning resources pagination">
+          <button type="button" class="pagination-btn pagination-btn--prev" disabled aria-label="Previous page">
+            <svg class="lucide lucide-chevron-left" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+          </button>
+          <button type="button" class="pagination-page-btn is-active" aria-current="page" data-page="1">1</button>
+          <button type="button" class="pagination-page-btn" data-page="2">2</button>
+          <button type="button" class="pagination-page-btn" data-page="3">3</button>
+          <button type="button" class="pagination-btn pagination-btn--next" aria-label="Next page" data-page="2">
+            <svg class="lucide lucide-chevron-right" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+          </button>
+        </nav>
+
+        <!-- Empty State Container -->
+        <div id="resources-empty-state" class="resources-empty-state">
+          <div class="empty-state-icon-box" aria-hidden="true">
+            <svg class="lucide lucide-file-question icon-xl" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M12 17h.01"></path><path d="M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3"></path></svg>
+          </div>
+          <h3 class="empty-state-heading">No learning resources found</h3>
+          <p class="empty-state-message">We couldn't find any materials matching your search criteria. Try adjusting your search keywords or clearing active filters.</p>
+          <button type="button" id="btn-empty-clear" class="btn btn--primary">
+            Clear All Filters
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+    <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+            <img src="assets/images/logo-transparent.png" alt="මංසල Logo" class="site-logo-img">
+            <span class="logo-title">මංසල</span>
+          </a>
+          <p data-en="An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics." data-si="සා/පෙළ සිසුන්ට විද්‍යාව සහ ගණිතය විෂයයන් සඳහා සහයෝගය දක්වමින් රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය විසින් සංවිධානය කරනු ලබන අධ්‍යාපනික වැඩසටහනකි.">An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Navigation" data-si="සංචලනය">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-en="Home" data-si="මුල් පිටුව">Home</a></li>
+            <li><a href="about.html" data-en="About" data-si="අප ගැන">About</a></li>
+            <li><a href="projects.html" data-en="Projects" data-si="ප්‍රජා ව්‍යාපෘති">Projects</a></li>
+            <li><a href="resources.html" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</a></li>
+            <li><a href="quizzes.html" data-en="Quizzes" data-si="ප්‍රශ්නාවලි">Quizzes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Programme" data-si="වැඩසටහන">Programme</h4>
+          <ul>
+            <li><a href="mentorship.html" data-en="Mentorship" data-si="උපදේශනය">Mentorship</a></li>
+            <li><a href="contact.html" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a></li>
+            <li><a href="about.html#documents" data-en="Documents" data-si="ලේඛන">Documents</a></li>
+            <li><a href="login.html" data-en="Staff &amp; Coordinator Portal" data-si="කාර්ය මණ්ඩල සහ සම්බන්ධීකාරක පිවිසුම">Staff &amp; Coordinator Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Contact" data-si="සම්බන්ධ වන්න">Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@manasala.ruh.ac.lk">contact@manasala.ruh.ac.lk</a></li>
+            <li><a href="tel:+94412222681">+94 41 2222681</a></li>
+            <li data-en="University of Ruhuna, Wellamadama, Matara" data-si="රුහුණ විශ්වවිද්‍යාලය, වැල්ලමඩම, මාතර">University of Ruhuna, Wellamadama, Matara</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-en="&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna." data-si="&copy; මංසල – Mansala. විද්‍යා පීඨ ශිෂ්‍ය සංගමය, රුහුණ විශ්වවිද්‍යාලය.">&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna.</span>
+        <span data-en="Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna." data-si="රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය මඟින් මෙහෙයවනු ලබන නිල අධ්‍යාපනික සත්කාරයකි.">Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search, Filter & Pagination Engine Script -->
+  <script src="js/dashboard-db.js"></script>
+  <script>
+    (function() {
+      // Configuration: Exactly 9 resources per page (3x3 grid)
+      const ITEMS_PER_PAGE = 9;
+
+      // Complete Curated Resources Dataset
+      let DEFAULT_RESOURCES = [
+      {
+            "id": "res-1",
+            "title": "O/L Science \u2014 2023 Past Paper",
+            "titleSi": "සා/පෙළ විද්‍යාව — 2023 පසුගිය ප්‍රශ්න පත්‍රය",
+            "descSi": "2023 ජාතික විභාගයේ සම්පූර්ණ අ.පො.ස. සාමාන්‍ය පෙළ විද්‍යාව ප්‍රශ්න පත්‍රය. සියලුම කොටස්, බහුවරණ සහ ව්‍යුහගත රචනා ප්‍රශ්න ඇතුළත් වේ.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Past Paper",
+            "typeKey": "past-papers",
+            "year": "2023",
+            "grade": "Grade 10 & 11",
+            "size": "2.4 MB",
+            "desc": "Complete G.C.E. Ordinary Level Science examination paper from the 2023 national examination. Includes all sections, multiple choice, and structured essay questions.",
+            "topics": "physics chemistry biology national examination past paper structured essay questions ruhuna",
+            "downloadUrl": "#download-ol-sci-2023"
+      },
+      {
+            "id": "res-2",
+            "title": "Mathematics Model Paper \u2014 Algebra & Geometry",
+            "titleSi": "ගණිතය ආදර්ශ ප්‍රශ්න පත්‍රය — වීජ ගණිතය සහ ජ්‍යාමිතිය",
+            "descSi": "සා/පෙළ විෂය නිර්දේශගත වීජීය ප්‍රකාශන, වර්ගජ සමීකරණ සහ ජ්‍යාමිතික සාධන කෙරෙහි අවධානය යොමු කළ ආදර්ශ ප්‍රශ්න පත්‍රය. ව්‍යුහගත පුහුණුව සඳහා ඉතා යෝග්‍ය වේ.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Model Paper",
+            "typeKey": "model-papers",
+            "year": "2024",
+            "grade": "Grade 11",
+            "size": "1.8 MB",
+            "desc": "A model paper focusing on algebraic expressions, quadratic equations, and geometric proofs aligned with the O/L syllabus. Ideal for structured practice.",
+            "topics": "mathematics algebra geometry quadratic equations proofs theorems riders model paper exam practice",
+            "downloadUrl": "#download-ol-maths-model-alg-geom"
+      },
+      {
+            "id": "res-3",
+            "title": "Science Revision Notes \u2014 Energy & Force",
+            "titleSi": "විද්‍යාව පුනරීක්ෂණ සටහන් — ශක්තිය සහ බලය",
+            "descSi": "ශක්තිය, කාර්යය, ක්ෂමතාව සහ බලය පිළිබඳ මූලික සංකල්ප ආවරණය වන කෙටි පුනරීක්ෂණ සටහන්. රූප සටහන් සහ සූත්‍ර ඇතුළත් වේ.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Notes",
+            "typeKey": "notes",
+            "year": "2023",
+            "grade": "Grade 11 Physics",
+            "size": "3.1 MB",
+            "desc": "Concise revision notes covering key concepts in energy, work, power, and force. Includes diagrams, formulae, and worked examples for quick review.",
+            "topics": "science physics energy force work power mechanics newton laws worked examples revision notes",
+            "downloadUrl": "#download-ol-sci-notes-energy-force"
+      },
+      {
+            "id": "res-4",
+            "title": "O/L Mathematics \u2014 2023 Marking Scheme",
+            "titleSi": "සා/පෙළ ගණිතය — 2023 ලකුණු දීමේ පටිපාටිය",
+            "descSi": "2023 සා/පෙළ ගණිතය ප්‍රශ්න පත්‍රය සඳහා වන නිල ලකුණු දීමේ පටිපාටිය. පියවරෙන් පියවර ලකුණු ලබාදීමේ මාර්ගෝපදේශ ඇතුළත් වේ.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Marking Scheme",
+            "typeKey": "marking-schemes",
+            "year": "2023",
+            "grade": "Grade 11",
+            "size": "1.2 MB",
+            "desc": "Official-style marking scheme for the 2023 O/L Mathematics paper. Contains step-by-step marking guidelines and acceptable alternative answers.",
+            "topics": "mathematics marking scheme 2023 answers step by step solutions rubric exam scoring",
+            "downloadUrl": "#download-ol-maths-2023-marking"
+      },
+      {
+            "id": "res-5",
+            "title": "Science Model Paper \u2014 Biology & Chemistry",
+            "titleSi": "විද්‍යාව ආදර්ශ ප්‍රශ්න පත්‍රය — ජීව විද්‍යාව සහ රසායන විද්‍යාව",
+            "descSi": "සා/පෙළ සූදානම සඳහා ජීව විද්‍යාව (මානව දේහ පද්ධති, පරිසර විද්‍යාව) සහ රසායන විද්‍යාව (පරමාණු, රසායනික ප්‍රතික්‍රියා) ආවරණය වන විස්තීර්ණ ආදර්ශ ප්‍රශ්න පත්‍රය.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Model Paper",
+            "typeKey": "model-papers",
+            "year": "2024",
+            "grade": "Grade 10 & 11",
+            "size": "2.7 MB",
+            "desc": "A comprehensive model paper covering biology (human body systems, ecology) and chemistry (atoms, chemical reactions) for O/L preparation.",
+            "topics": "science biology chemistry human body ecology atoms chemical reactions model exam paper",
+            "downloadUrl": "#download-ol-sci-model-bio-chem"
+      },
+      {
+            "id": "res-6",
+            "title": "Revision Guide \u2014 Trigonometry & Statistics",
+            "titleSi": "පුනරීක්ෂණ මාර්ගෝපදේශය — ත්‍රිකෝණමිතිය සහ සංඛ්‍යානය",
+            "descSi": "ත්‍රිකෝණමිතික අනුපාත, දත්ත නිරූපණය සහ සංඛ්‍යානමය මිමි ආවරණය වන ව්‍යුහගත පුනරීක්ෂණ මාර්ගෝපදේශය.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Revision Materials",
+            "typeKey": "revision-materials",
+            "year": "2023",
+            "grade": "Grade 11",
+            "size": "2.0 MB",
+            "desc": "A structured revision guide covering trigonometric ratios, data representation, and statistical measures. Includes practice questions with answers.",
+            "topics": "mathematics trigonometry statistics data analysis ratios angles elevation depression revision guide",
+            "downloadUrl": "#download-ol-maths-guide-trig-stats"
+      },
+      {
+            "id": "res-7",
+            "title": "2023 G.C.E. O/L Science \u2014 Complete Examination Dossier",
+            "titleSi": "2023 අ.පො.ස. සා/පෙළ විද්‍යාව — සම්පූර්ණ විභාග ලේඛනය",
+            "descSi": "2023 සම්පූර්ණ ජාතික විභාග ප්‍රශ්න පත්‍රය, විවරණ සහිත ලකුණු දීමේ පටිපාටිය සහ සිසුන් නිතර සිදුකරන වැරදි පිළිබඳ උපදේශක සටහන්.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Past Paper",
+            "typeKey": "past-papers",
+            "year": "2023",
+            "grade": "Grade 10 & 11",
+            "size": "2.4 MB",
+            "desc": "An exhaustive review document containing the full 2023 national examination paper, complete with an annotated marking scheme, mentor commentary on frequent errors, and model answers.",
+            "topics": "science master dossier past paper marking scheme commentary frequent errors 2023 national exam",
+            "downloadUrl": "#download-sci-2023-master-dossier"
+      },
+      {
+            "id": "res-8",
+            "title": "Mathematics Notes \u2014 Simultaneous Equations & Quadratics",
+            "titleSi": "ගණිතය සටහන් — සමගාමී සමීකරණ සහ වර්ගජ ප්‍රකාශන",
+            "descSi": "වීජීය ආදේශය, ඉවත් කිරීම සහ ප්‍රස්ථාරික පරාවලික විසඳුම් පිළිබඳ පියවරෙන් පියවර විභාග ආදර්ශ ප්‍රශ්න 15 ක් සහිත සවිස්තරාත්මක පුනරීක්ෂණ සටහන්.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Notes",
+            "typeKey": "notes",
+            "year": "2024",
+            "grade": "Grade 11",
+            "size": "1.8 MB",
+            "desc": "Comprehensive step-by-step revision guide on algebraic elimination, substitution, and graphical parabolas solutions with 15 worked model exam questions.",
+            "topics": "mathematics algebra simultaneous equations quadratics graphs unit 07 elimination substitution",
+            "downloadUrl": "#download-maths-notes-simultaneous"
+      },
+      {
+            "id": "res-9",
+            "title": "Science Concept Summary \u2014 Chemical Reactions, Acids & Bases",
+            "titleSi": "විද්‍යා සංකල්ප සාරාංශය — රසායනික ප්‍රතික්‍රියා, අම්ල සහ භස්ම",
+            "descSi": "රසායනික සමීකරණ තුලනය, pH පරිමාණය සහ අම්ල-භස්ම ප්‍රතික්‍රියා පිළිබඳ ප්‍රායෝගික රසායනික සංකල්ප සාරාංශය.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Notes",
+            "typeKey": "notes",
+            "year": "2024",
+            "grade": "Grade 11 Chemistry",
+            "size": "3.1 MB",
+            "desc": "Clear classification of chemical reaction types, balancing complex equations, pH scale applications, and laboratory test summaries for quick recall.",
+            "topics": "science chemistry chemical reactions acids bases salts ph scale neutralization laboratory tests",
+            "downloadUrl": "#download-sci-notes-chemical-reactions"
+      },
+      {
+            "id": "res-10",
+            "title": "O/L Mathematics \u2014 2022 Past Paper & Mentor Solutions",
+            "titleSi": "සා/පෙළ ගණිතය — 2022 පසුගිය ප්‍රශ්න පත්‍රය සහ උපදේශක විසඳුම්",
+            "descSi": "රුහුණ විශ්වවිද්‍යාල ශිෂ්‍ය උපදේශක විසඳුම් සමඟින් I කොටස (කෙටි ප්‍රශ්න) සහ II කොටස (ව්‍යුහගත ගැටළු) ඇතුළත් සම්පූර්ණ 2022 අ.පො.ස. සාමාන්‍ය පෙළ ගණිත ප්‍රශ්න පත්‍රය.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Past Paper",
+            "typeKey": "past-papers",
+            "year": "2022",
+            "grade": "Grade 10 & 11",
+            "size": "2.1 MB",
+            "desc": "Full G.C.E. Ordinary Level Mathematics examination paper from 2022 including Part I (short questions) and Part II structured problems with Ruhuna mentor solutions.",
+            "topics": "mathematics past paper 2022 solutions part I part II algebra geometry trigonometry arithmetic",
+            "downloadUrl": "#download-maths-2022-pastpaper"
+      },
+      {
+            "id": "res-11",
+            "title": "O/L Science \u2014 2022 Past Paper (Parts I & II)",
+            "titleSi": "සා/පෙළ විද්‍යාව — 2022 පසුගිය ප්‍රශ්න පත්‍රය (I සහ II කොටස්)",
+            "descSi": "බහුවරණ ප්‍රශ්න, ව්‍යුහගත රචනා සහ නිවැරදි පිළිතුරු ලිවීමේ උපදෙස් ඇතුළත් සම්පූර්ණ 2022 සා/පෙළ විද්‍යාව පසුගිය ප්‍රශ්න පත්‍රය.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Past Paper",
+            "typeKey": "past-papers",
+            "year": "2022",
+            "grade": "Grade 10 & 11",
+            "size": "2.5 MB",
+            "desc": "Complete 2022 G.C.E. O/L Science past paper covering multiple-choice questions, structured essays, and university mentor guidance on answering precision.",
+            "topics": "science past paper 2022 mcq structured essay physics chemistry biology answers",
+            "downloadUrl": "#download-sci-2022-pastpaper"
+      },
+      {
+            "id": "res-12",
+            "title": "Mathematics Revision Materials \u2014 Geometric Theorems & Proofs",
+            "titleSi": "ගණිතය පුනරීක්ෂණ ද්‍රව්‍ය — ජ්‍යාමිතික ප්‍රමේයයන් සහ සාධන",
+            "descSi": "වෘත්ත ප්‍රමේයයන්, චක්‍රීය චතුරස්‍ර සහ ස්පර්ශක සාධන පියවර රූප සටහන් ආධාරයෙන් පැහැදිලි කරන ඉක්මන් පුනරීක්ෂණ පොත් පිංච.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Revision Materials",
+            "typeKey": "revision-materials",
+            "year": "2024",
+            "grade": "Grade 10 & 11",
+            "size": "2.2 MB",
+            "desc": "Visual quick-reference booklet covering circle theorems, cyclic quadrilaterals, tangents, and standard rider proof steps with diagrammatic aids.",
+            "topics": "mathematics geometry circle theorems cyclic quadrilaterals riders proofs tangents revision guide",
+            "downloadUrl": "#download-maths-geometry-theorems"
+      },
+      {
+            "id": "res-13",
+            "title": "O/L Science \u2014 2021 Marking Scheme & Examiner Comments",
+            "titleSi": "සා/පෙළ විද්‍යාව — 2021 ලකුණු දීමේ පටිපාටිය සහ පරීක්ෂක සටහන්",
+            "descSi": "සම්මත ශ්‍රේණිගත කිරීමේ නිර්ණායක සහ උපදේශක සටහන් සහිත 2021 සා/පෙළ විද්‍යා ප්‍රශ්න පත්‍රය සඳහා වන පියවරෙන් පියවර ලකුණු දීමේ මාර්ගෝපදේශය.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Marking Scheme",
+            "typeKey": "marking-schemes",
+            "year": "2021",
+            "grade": "Grade 10 & 11",
+            "size": "1.5 MB",
+            "desc": "Step-by-step marking guidelines for the 2021 O/L Science paper with university undergraduate mentor notes detailing standard grading rubrics.",
+            "topics": "science marking scheme 2021 examiner comments grading rubrics physics chemistry biology",
+            "downloadUrl": "#download-sci-2021-marking-scheme"
+      },
+      {
+            "id": "res-14",
+            "title": "O/L Mathematics \u2014 2024 Model Examination Paper",
+            "titleSi": "සා/පෙළ ගණිතය — 2024 ආදර්ශ විභාග ප්‍රශ්න පත්‍රය",
+            "descSi": "සමබර I සහ II කොටස් බෙදාහැරීම් සහිත 2024 අ.පො.ස. සාමාන්‍ය පෙළ ගණිත විභාගය අනුකරණය කරන ජාතික මට්ටමේ ආදර්ශ ප්‍රශ්න පත්‍රය.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Model Paper",
+            "typeKey": "model-papers",
+            "year": "2024",
+            "grade": "Grade 10 & 11",
+            "size": "1.9 MB",
+            "desc": "Comprehensive national-standard model paper simulating the 2024 G.C.E. O/L Mathematics examination with balanced Part I and Part II distributions.",
+            "topics": "mathematics model paper 2024 exam simulation algebra geometry numbers matrices probability",
+            "downloadUrl": "#download-maths-2024-model"
+      },
+      {
+            "id": "res-15",
+            "title": "Science Revision Notes \u2014 Cellular Biology & Genetics",
+            "titleSi": "විද්‍යාව පුනරීක්ෂණ සටහන් — සෛල ජීව විද්‍යාව සහ ප්‍රවේණිය",
+            "descSi": "ශාක හා සත්ත්ව සෛල ව්‍යුහයන්, අනූනනය, ඌනනය, මෙන්ඩලීය ප්‍රවේණිය සහ ඒකමුහුම් අභිජනන ආවරණය වන ව්‍යුහගත පුනරීක්ෂණ සාරාංශය.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Notes",
+            "typeKey": "notes",
+            "year": "2024",
+            "grade": "Grade 10 Biology",
+            "size": "2.8 MB",
+            "desc": "Structured revision summary covering plant and animal cell structures, organelles, mitosis, meiosis, Mendelian inheritance, and monohybrid crosses.",
+            "topics": "science biology cells genetics inheritance mendel mitosis meiosis grade 10 notes",
+            "downloadUrl": "#download-sci-cellular-genetics"
+      },
+      {
+            "id": "res-16",
+            "title": "O/L Mathematics \u2014 2021 Past Paper & Step-by-Step Solutions",
+            "titleSi": "සා/පෙළ ගණිතය — 2021 පසුගිය ප්‍රශ්න පත්‍රය සහ පියවරෙන් පියවර විසඳුම්",
+            "descSi": "සියලුම ප්‍රශ්න සඳහා පියවරෙන් පියවර ගණනය කිරීම් සහ විකල්ප කෙටි ක්‍රම සහිත 2021 සාමාන්‍ය පෙළ ගණිත ප්‍රශ්න පත්‍රය.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Past Paper",
+            "typeKey": "past-papers",
+            "year": "2021",
+            "grade": "Grade 10 & 11",
+            "size": "2.3 MB",
+            "desc": "Official 2021 G.C.E. Ordinary Level Mathematics examination with fully worked step-by-step solutions compiled by university engineering undergraduates.",
+            "topics": "mathematics past paper 2021 worked solutions step by step national exam algebra geometry",
+            "downloadUrl": "#download-maths-2021-pastpaper"
+      },
+      {
+            "id": "res-17",
+            "title": "Science Model Paper \u2014 Physics Mechanics & Wave Optics",
+            "titleSi": "විද්‍යාව ආදර්ශ ප්‍රශ්න පත්‍රය — භෞතික විද්‍යා යාන්ත්‍ර විද්‍යාව සහ තරංග ප්‍රකාශ විද්‍යාව",
+            "descSi": "චලිත ප්‍රස්ථාර, ගම්‍යතාව, පරාවර්තනය, වර්තනය, කාච සහ විද්‍යුත් චුම්භක තරංග වර්ණාවලිය ආවරණය වන පිළිතුරු සහිත විශේෂිත භෞතික විද්‍යා ආදර්ශ ප්‍රශ්න පත්‍රය.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Model Paper",
+            "typeKey": "model-papers",
+            "year": "2023",
+            "grade": "Grade 11 Physics",
+            "size": "2.6 MB",
+            "desc": "Specialised physics model paper covering motion graphs, momentum, reflection, refraction, lenses, and electromagnetic wave spectra with answer key.",
+            "topics": "science physics model paper mechanics light optics lenses reflection refraction waves",
+            "downloadUrl": "#download-sci-model-physics"
+      },
+      {
+            "id": "res-18",
+            "title": "Mathematics Revision Guide \u2014 Probability & Cumulative Sets",
+            "titleSi": "ගණිතය පුනරීක්ෂණ මාර්ගෝපදේශය — සම්භාවිතාව සහ කුලක",
+            "descSi": "වෙන් රූප සටහන්, කුලක කර්ම, නියැදි අවකාශ, රුක් සටහන් සහ ස්වාධීන සිදුවීම් සම්භාවිතා ගණනය කිරීම් පිළිබඳ කෙටි පුනරීක්ෂණ මාර්ගෝපදේශය.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Revision Materials",
+            "typeKey": "revision-materials",
+            "year": "2023",
+            "grade": "Grade 11",
+            "size": "1.7 MB",
+            "desc": "Concise review of Venn diagrams, set operations, sample spaces, tree diagrams, and independent event probability calculations with past exam problems.",
+            "topics": "mathematics probability sets venn diagrams tree diagrams sample spaces statistics",
+            "downloadUrl": "#download-maths-guide-probability"
+      },
+      {
+            "id": "res-19",
+            "title": "O/L Science \u2014 2024 National Syllabus Model Dossier",
+            "titleSi": "සා/පෙළ විද්‍යාව — 2024 ජාතික විෂය නිර්දේශ ආදර්ශ ලේඛනය",
+            "descSi": "භෞතික, රසායනික සහ ජීව විද්‍යා ඒකක හරහා විභාග කේන්ද්‍රීය ගැටළු සහ සවිස්තරාත්මක විසඳුම් සහිත විස්තීර්ණ ආදර්ශ ලේඛනය.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Model Paper",
+            "typeKey": "model-papers",
+            "year": "2024",
+            "grade": "Grade 10 & 11",
+            "size": "3.0 MB",
+            "desc": "Full-length 2024 model examination dossier integrating real-life science applications, structured essays, and university mentor scoring criteria.",
+            "topics": "science model paper 2024 dossier chemistry physics biology national syllabus",
+            "downloadUrl": "#download-sci-2024-dossier"
+      },
+      {
+            "id": "res-20",
+            "title": "Mathematics Notes \u2014 Commercial Arithmetic & Compound Interest",
+            "titleSi": "ගණිතය සටහන් — වාණිජ ගණිතය සහ වැල් පොලිය",
+            "descSi": "ප්‍රතිශත, බදු, රේගු ගාස්තු, වැල් පොලිය, හීනවන ශේෂ ක්ෂයවීම් සහ කොටස් වෙළඳපල ලාභාංශ සඳහා අත්‍යවශ්‍ය සූත්‍ර සහ විසඳූ උදාහරණ.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Notes",
+            "typeKey": "notes",
+            "year": "2023",
+            "grade": "Grade 10 & 11",
+            "size": "1.6 MB",
+            "desc": "Essential formulae and worked examples for percentages, taxes, customs duty, compound interest, reducing balance depreciation, and share market dividends.",
+            "topics": "mathematics commercial arithmetic interest taxes compound interest percentages finance notes",
+            "downloadUrl": "#download-maths-notes-commercial"
+      },
+      {
+            "id": "res-21",
+            "title": "Science Revision Notes \u2014 Electricity, Magnetism & Circuits",
+            "titleSi": "විද්‍යා පුනරීක්ෂණ සටහන් — විද්‍යුතය, චුම්භකත්වය සහ පරිපථ",
+            "descSi": "ධාරාව, වෝල්ටීයතාව, ප්‍රතිරෝධය, ඕම්ගේ නියමය, ශ්‍රේණිගත/සමාන්තරගත පරිපථ, විද්‍යුත් චුම්භක ප්‍රේරණය සහ ගෘහ විදුලි රැහැන් ඇදීම පිළිබඳ විස්තීර්ණ සටහන්.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Notes",
+            "typeKey": "notes",
+            "year": "2022",
+            "grade": "Grade 11 Physics",
+            "size": "2.9 MB",
+            "desc": "Comprehensive notes covering current, voltage, resistance, Ohm's law, series/parallel circuit analysis, electromagnetic induction, and domestic wiring.",
+            "topics": "science physics electricity magnetism circuits ohms law electromagnetic induction notes",
+            "downloadUrl": "#download-sci-notes-electricity"
+      },
+      {
+            "id": "res-22",
+            "title": "O/L Mathematics \u2014 2022 Marking Scheme & Answering Rubric",
+            "titleSi": "සා/පෙළ ගණිතය — 2022 ලකුණු දීමේ පටිපාටිය සහ පිළිතුරු මාර්ගෝපදේශය",
+            "descSi": "2022 සියලුම ප්‍රශ්න සඳහා ක්‍රම ලකුණු (M), නිරවද්‍යතා ලකුණු (A), සහ ස්වාධීන ලකුණු (B) බෙදාහැරීම් සහිත සම්පූර්ණ ලකුණු දීමේ පටිපාටිය.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Marking Scheme",
+            "typeKey": "marking-schemes",
+            "year": "2022",
+            "grade": "Grade 11",
+            "size": "1.3 MB",
+            "desc": "Complete marking scheme with mark breakdowns for method marks (M), accuracy marks (A), and independent marks (B) across all 2022 questions.",
+            "topics": "mathematics marking scheme 2022 rubric answers marks breakdown exam solutions",
+            "downloadUrl": "#download-maths-2022-marking"
+      },
+      {
+            "id": "res-23",
+            "title": "Science Concept Summary \u2014 Ecology, Biomes & Environment",
+            "titleSi": "විද්‍යා සංකල්ප සාරාංශය — පරිසර විද්‍යාව, ජෛව කලාප සහ පරිසරය",
+            "descSi": "ආහාර දාම, පරිසර පිරමිඩ, ජෛව භූ-රසායනික චක්‍ර, ශ්‍රී ලංකාවේ වනාන්තර ජෛව කලාප සහ ජෛව විවිධත්ව සංරක්ෂණය පිළිබඳ කෙටි සමාලෝචන සටහන්.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Notes",
+            "typeKey": "notes",
+            "year": "2023",
+            "grade": "Grade 10 Biology",
+            "size": "2.1 MB",
+            "desc": "Quick review notes on food chains, ecological pyramids, biogeochemical cycles, Sri Lankan forest biomes, and human impacts on biodiversity conservation.",
+            "topics": "science biology ecology ecosystems environment conservation biomes biodiversity",
+            "downloadUrl": "#download-sci-ecology-summary"
+      },
+      {
+            "id": "res-24",
+            "title": "O/L Mathematics \u2014 2023 Model Paper (Part I Short Questions)",
+            "titleSi": "සා/පෙළ ගණිතය — 2023 ආදර්ශ ප්‍රශ්න පත්‍රය (I කොටස කෙටි ප්‍රශ්න)",
+            "descSi": "සියලුම මූලික ඒකක ආවරණය වන පරිදි ක්ෂණික පිළිතුරු සහ කෙටි ක්‍රම සහිත I කොටසේ කෙටි ප්‍රශ්න 50 ක දැඩි පුහුණු එකතුවක්.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "type": "Model Paper",
+            "typeKey": "model-papers",
+            "year": "2023",
+            "grade": "Grade 10 & 11",
+            "size": "1.4 MB",
+            "desc": "Intensive practice collection of 50 timed Part I short questions covering all core units with instant answer keys and mentor shortcut techniques.",
+            "topics": "mathematics model paper 2023 part I short questions speed techniques algebra geometry",
+            "downloadUrl": "#download-maths-2023-part1-model"
+      },
+      {
+            "id": "res-25",
+            "title": "Science Revision Materials \u2014 Periodic Table & Atomic Structure",
+            "titleSi": "විද්‍යාව පුනරීක්ෂණ ද්‍රව්‍ය — ආවර්තිතා වගුව සහ පරමාණුක ව්‍යුහය",
+            "descSi": "පළමු මූලද්‍රව්‍ය 20, ඉලෙක්ට්‍රොනික වින්‍යාසය, ආවර්තිතා ප්‍රවණතා, විද්‍යුත් සෘණතාව සහ බන්ධන ආකෘති පිළිබඳ දෘශ්‍ය සටහන්.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "type": "Revision Materials",
+            "typeKey": "revision-materials",
+            "year": "2024",
+            "grade": "Grade 10 & 11 Chemistry",
+            "size": "2.5 MB",
+            "desc": "Visual quick-reference charts for the first 20 elements, electron configurations, periodic trends, electronegativity, and ionic/covalent bonding models.",
+            "topics": "science chemistry periodic table atomic structure electron configuration bonding revision guide",
+            "downloadUrl": "#download-sci-periodic-table-guide"
+      }
+];
+
+      const defaultFallback = DEFAULT_RESOURCES;
+      let RESOURCES = (window.MansalaDB && MansalaDB.getResources) 
+        ? MansalaDB.getResources(null, { public: true }) 
+        : [...defaultFallback];
+      window.RESOURCES = RESOURCES;
+
+      // State Management
+      const state = {
+        search: '',
+        subject: 'all',
+        type: 'all',
+        year: 'all',
+        sort: 'newest',
+        currentPage: 1
+      };
+
+      // DOM Elements
+      const searchInput = document.getElementById('resource-search');
+      const searchClearBtn = document.getElementById('search-clear-btn');
+      const toggleFiltersBtn = document.getElementById('toggle-filters-btn');
+      const filterPanel = document.getElementById('filter-panel');
+      const filterActiveCount = document.getElementById('filter-active-count');
+      const activeFiltersBar = document.getElementById('active-filters-bar');
+      const activeChipsContainer = document.getElementById('active-chips-container');
+      const btnClearAllChips = document.getElementById('btn-clear-all-chips');
+      const btnPanelReset = document.getElementById('btn-panel-reset');
+      const btnPanelClose = document.getElementById('btn-panel-close');
+      const sortDropdown = document.getElementById('sort-dropdown');
+      const resultsCount = document.getElementById('results-count');
+      const resourcesGrid = document.getElementById('resources-grid');
+      const paginationContainer = document.getElementById('resources-pagination');
+      const emptyState = document.getElementById('resources-empty-state');
+      const btnEmptyClear = document.getElementById('btn-empty-clear');
+
+      // Human-readable labels mapping
+      const typeLabels = {
+        'all': 'All Material Types',
+        'past-papers': 'Past Papers',
+        'model-papers': 'Model Papers',
+        'notes': 'Notes',
+        'marking-schemes': 'Marking Schemes',
+        'revision-materials': 'Revision Materials'
+      };
+
+      const typeLabelsSi = {
+        'all': 'සියලු ද්‍රව්‍ය වර්ග',
+        'past-papers': 'පසුගිය ප්‍රශ්න පත්‍ර',
+        'model-papers': 'ආදර්ශ ප්‍රශ්න පත්‍ර',
+        'notes': 'කෙටි සටහන්',
+        'marking-schemes': 'ලකුණු දීමේ පටිපාටි',
+        'revision-materials': 'පුනරීක්ෂණ ද්‍රව්‍ය'
+      };
+
+      const subjectLabels = {
+        'all': 'All Subjects',
+        'science': 'Science',
+        'mathematics': 'Mathematics'
+      };
+
+      const subjectLabelsSi = {
+        'all': 'සියලු විෂයයන්',
+        'science': 'විද්‍යාව',
+        'mathematics': 'ගණිතය'
+      };
+
+      // Card HTML Generator
+      function generateCardHTML(item) {
+        const isSi = (window.MansalaLang && window.MansalaLang.getLanguage() === 'si');
+        const badgeClass = item.subjectKey === 'science' ? 'badge--science' : 'badge--maths';
+        const subDisplay = isSi ? (subjectLabelsSi[item.subjectKey] || item.subject) : item.subject;
+        const typeDisplay = isSi ? (typeLabelsSi[item.typeKey] || item.type) : item.type;
+        const downloadText = isSi ? 'PDF බාගත කරන්න' : 'Download PDF';
+        const itemTitle = (isSi && item.titleSi) ? item.titleSi : ((isSi && window.MansalaLang) ? window.MansalaLang.t(item.title) : item.title);
+        const itemDesc = (isSi && item.descSi) ? item.descSi : ((isSi && window.MansalaLang) ? window.MansalaLang.t(item.desc) : item.desc);
+        const itemGrade = (isSi && item.grade) 
+          ? item.grade.replace(/Grade 10 & 11/g, '10 සහ 11 ශ්‍රේණි').replace(/Grade 11/g, '11 ශ්‍රේණිය').replace(/Grade 10/g, '10 ශ්‍රේණිය').replace(/Physics/g, 'භෞතික විද්‍යාව').replace(/Chemistry/g, 'රසායන විද්‍යාව').replace(/Biology/g, 'ජීව විද්‍යාව') 
+          : item.grade;
+
+        return `
+          <article class="resource-card" data-id="${item.id}">
+            <div class="resource-card__header">
+              <div class="resource-badges-left">
+                <span class="badge ${badgeClass}">${subDisplay}</span>
+                <span class="badge badge--neutral">${typeDisplay}</span>
+              </div>
+              <span class="badge badge--neutral" style="font-family: var(--ff-mono); font-size: 0.72rem;">${item.year}</span>
+            </div>
+            
+            <h3 class="resource-card__title">${itemTitle}</h3>
+            <p class="resource-card__desc">${itemDesc}</p>
+            
+            <div class="resource-card__meta">
+              <span class="meta-item">
+                <svg class="lucide lucide-calendar icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+                ${item.year}
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-file-text icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                ${item.size}
+              </span>
+              <span class="meta-item">
+                <svg class="lucide lucide-book-open icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                ${itemGrade}
+              </span>
+            </div>
+            
+            <div class="resource-card__footer">
+              <a href="#" data-id="${item.id}" data-url="${item.downloadUrl || item.fileData || ''}" class="btn-download-pdf" data-title="${item.title}" aria-label="Download ${item.title} as PDF">
+                <svg class="lucide lucide-download icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                ${downloadText}
+              </a>
+            </div>
+          </article>
+        `;
+      }
+
+      // Toast Notification System for Download feedback
+      function showToast(message) {
+        const existing = document.querySelector('.download-toast');
+        if (existing) existing.remove();
+        
+        const toast = document.createElement('div');
+        toast.className = 'download-toast';
+        toast.setAttribute('role', 'status');
+        toast.innerHTML = `
+          <svg class="lucide lucide-check-circle-2 icon-sm text-accent" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m16 9-5.5 5.5L8 12"></path></svg>
+          <span>${message}</span>
+        `;
+        document.body.appendChild(toast);
+        
+        setTimeout(() => {
+          toast.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateY(12px)';
+          setTimeout(() => toast.remove(), 320);
+        }, 3200);
+      }
+
+      // Real Study Material PDF Download Engine
+      function generateOfficialStudyPdf(res) {
+        const titleClean = (res.title || 'Study Material').replace(/[^\x20-\x7E]/g, ' ');
+        const subjectClean = (res.subject || 'General').replace(/[^\x20-\x7E]/g, ' ');
+        const typeClean = (res.type || 'Material').replace(/[^\x20-\x7E]/g, ' ');
+        const yearClean = (res.year || '2026').toString();
+        const descClean = (res.desc || 'Comprehensive O/L revision guide and model paper.').replace(/[^\x20-\x7E]/g, ' ').substring(0, 100);
+
+        const pdfContent = `%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /Resources << /Font << /F1 4 0 R >> >> /MediaBox [0 0 612 792] /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> endobj
+5 0 obj << /Length 420 >> stream
+BT
+/F1 18 Tf
+50 720 Td
+(University of Ruhuna - Faculty of Science) Tj
+/F1 14 Tf
+0 -30 Td
+(Mansala Free Study Hub - Study Material) Tj
+/F1 12 Tf
+0 -40 Td
+(Title: ${titleClean}) Tj
+0 -24 Td
+(Subject: ${subjectClean}   Type: ${typeClean}   Year: ${yearClean}) Tj
+0 -30 Td
+(Description & Syllabus Focus:) Tj
+/F1 11 Tf
+0 -20 Td
+(${descClean}) Tj
+/F1 10 Tf
+0 -50 Td
+(Certified by Faculty of Science Students' Union | Mansala) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000060 00000 n 
+0000000117 00000 n 
+0000000234 00000 n 
+0000000310 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+790
+%%EOF`;
+        return new Blob([pdfContent], { type: 'application/pdf' });
+      }
+
+      async function triggerActualDownload(resource) {
+        let rawFileName = resource.fileName || `${resource.title.replace(/[^a-zA-Z0-9_\-\u0D80-\u0DFF]/g, '_')}.pdf`;
+        let fileName = rawFileName.endsWith('.pdf') || rawFileName.endsWith('.docx') ? rawFileName : `${rawFileName}.pdf`;
+        
+        // 1. If resource already has an in-memory Base64 data URL
+        let fileUrl = resource.fileData || (resource.downloadUrl && resource.downloadUrl.startsWith('data:') ? resource.downloadUrl : '');
+
+        // 2. If not found in memory, retrieve attached file from client database (IndexedDB)
+        if (!fileUrl && resource.id) {
+          try {
+            let stored = null;
+            if (window.MansalaDB && typeof window.MansalaDB.getResourceFile === 'function') {
+              stored = await window.MansalaDB.getResourceFile(resource.id);
+            } else if (window.MansalaFiles && typeof window.MansalaFiles.getFile === 'function') {
+              stored = await window.MansalaFiles.getFile(resource.id);
+            }
+            if (stored && stored.fileData) {
+              fileUrl = stored.fileData;
+              if (stored.fileName) {
+                fileName = stored.fileName;
+              }
+            }
+          } catch (err) {
+            console.warn('Error loading file from client DB:', err);
+          }
+        }
+
+        if (fileUrl) {
+          const a = document.createElement('a');
+          a.href = fileUrl;
+          a.download = fileName;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          showToast(`Downloaded: ${fileName}`);
+          return;
+        }
+
+        // 3. If it is an external http link, open or download it
+        if (resource.downloadUrl && resource.downloadUrl.startsWith('http')) {
+          window.open(resource.downloadUrl, '_blank');
+          showToast(`Opening: ${fileName}`);
+          return;
+        }
+
+        // 4. If it's a seed item without an uploaded file, dynamically generate a valid PDF blob
+        const blob = generateOfficialStudyPdf(resource);
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+        showToast(`Downloaded: ${fileName}`);
+      }
+
+      // Attach Download Action Handlers
+      function attachDownloadHandlers() {
+        const downloadBtns = resourcesGrid.querySelectorAll('.btn-download-pdf');
+        downloadBtns.forEach(btn => {
+          btn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            const id = btn.getAttribute('data-id');
+            const title = btn.getAttribute('data-title');
+            const resource = RESOURCES.find(r => r.id === id) || { id: id, title: title, subject: 'Science', type: 'Notes', year: '2024', desc: title };
+            await triggerActualDownload(resource);
+          });
+        });
+      }
+
+      // Render Active Filter Chips
+      function renderActiveChips() {
+        activeChipsContainer.innerHTML = '';
+        let chipsCount = 0;
+
+        if (state.search.trim()) {
+          chipsCount++;
+          const chip = document.createElement('span');
+          chip.className = 'active-filter-chip';
+          chip.innerHTML = `Search: "${escapeHtml(state.search)}" <button type="button" class="active-filter-chip-remove" data-action="clear-search" aria-label="Remove search filter">&times;</button>`;
+          activeChipsContainer.appendChild(chip);
+        }
+
+        if (state.subject !== 'all') {
+          chipsCount++;
+          const chip = document.createElement('span');
+          chip.className = 'active-filter-chip';
+          chip.innerHTML = `Subject: ${subjectLabels[state.subject] || state.subject} <button type="button" class="active-filter-chip-remove" data-action="clear-subject" aria-label="Remove subject filter">&times;</button>`;
+          activeChipsContainer.appendChild(chip);
+        }
+
+        if (state.type !== 'all') {
+          chipsCount++;
+          const chip = document.createElement('span');
+          chip.className = 'active-filter-chip';
+          chip.innerHTML = `Type: ${typeLabels[state.type] || state.type} <button type="button" class="active-filter-chip-remove" data-action="clear-type" aria-label="Remove material type filter">&times;</button>`;
+          activeChipsContainer.appendChild(chip);
+        }
+
+        if (state.year !== 'all') {
+          chipsCount++;
+          const chip = document.createElement('span');
+          chip.className = 'active-filter-chip';
+          chip.innerHTML = `Year: ${state.year} <button type="button" class="active-filter-chip-remove" data-action="clear-year" aria-label="Remove year filter">&times;</button>`;
+          activeChipsContainer.appendChild(chip);
+        }
+
+        if (chipsCount > 0) {
+          activeFiltersBar.style.display = 'flex';
+          filterActiveCount.style.display = 'inline-flex';
+          filterActiveCount.textContent = chipsCount;
+          toggleFiltersBtn.classList.add('is-active');
+        } else {
+          activeFiltersBar.style.display = 'none';
+          filterActiveCount.style.display = 'none';
+          if (!filterPanel.classList.contains('is-open')) {
+            toggleFiltersBtn.classList.remove('is-active');
+          }
+        }
+      }
+
+      function escapeHtml(str) {
+        return str.replace(/[&<>"']/g, function(m) {
+          switch (m) {
+            case '&': return '&amp;';
+            case '<': return '&lt;';
+            case '>': return '&gt;';
+            case '"': return '&quot;';
+            case "'": return '&#39;';
+            default: return m;
+          }
+        });
+      }
+
+      // Calculate pages list with ellipses if totalPages > 7 (SkillBridge Style)
+      function getPaginationPages(current, total) {
+        if (total <= 7) {
+          const pages = [];
+          for (let i = 1; i <= total; i++) pages.push(i);
+          return pages;
+        }
+
+        if (current <= 4) {
+          return [1, 2, 3, 4, 5, '...', total];
+        } else if (current >= total - 3) {
+          return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
+        } else {
+          return [1, '...', current - 1, current, current + 1, '...', total];
+        }
+      }
+
+      // Render Numbered Pagination Controls
+      function renderPagination(totalPages) {
+        if (totalPages <= 1) {
+          paginationContainer.style.display = 'none';
+          paginationContainer.innerHTML = '';
+          return;
+        }
+
+        paginationContainer.style.display = 'flex';
+        const pages = getPaginationPages(state.currentPage, totalPages);
+        let html = '';
+
+        // Previous button
+        const isPrevDisabled = state.currentPage <= 1;
+        html += `
+          <button 
+            type="button" 
+            class="pagination-btn pagination-btn--prev ${isPrevDisabled ? 'is-disabled' : ''}" 
+            ${isPrevDisabled ? 'disabled' : ''} 
+            data-page="${state.currentPage - 1}" 
+            aria-label="Previous page"
+          >
+            <svg class="lucide lucide-chevron-left" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+          </button>
+        `;
+
+        // Page buttons and ellipses
+        pages.forEach(p => {
+          if (p === '...') {
+            html += `<span class="pagination-ellipsis" aria-hidden="true">&hellip;</span>`;
+          } else {
+            const isActive = p === state.currentPage;
+            html += `
+              <button 
+                type="button" 
+                class="pagination-page-btn ${isActive ? 'is-active' : ''}" 
+                data-page="${p}" 
+                aria-label="Page ${p}" 
+                ${isActive ? 'aria-current="page"' : ''}
+              >${p}</button>
+            `;
+          }
+        });
+
+        // Next button
+        const isNextDisabled = state.currentPage >= totalPages;
+        html += `
+          <button 
+            type="button" 
+            class="pagination-btn pagination-btn--next ${isNextDisabled ? 'is-disabled' : ''}" 
+            ${isNextDisabled ? 'disabled' : ''} 
+            data-page="${state.currentPage + 1}" 
+            aria-label="Next page"
+          >
+            <svg class="lucide lucide-chevron-right" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+          </button>
+        `;
+
+        paginationContainer.innerHTML = html;
+      }
+
+      // Filter, Sort & Render Pipeline
+      function applyFiltersAndRender(resetPage = false) {
+        // Re-read from MansalaDB to reflect admin dashboard changes
+        if (typeof MansalaDB !== 'undefined' && typeof MansalaDB.getResources === 'function') {
+          RESOURCES = MansalaDB.getResources(null, { public: true });
+        }
+        if (resetPage) {
+          state.currentPage = 1;
+        }
+
+        const query = state.search.trim().toLowerCase();
+
+        // 1. Filtering
+        const filtered = RESOURCES.filter(item => {
+          // Subject Filter
+          if (state.subject !== 'all' && item.subjectKey !== state.subject) {
+            return false;
+          }
+
+          // Type Filter
+          if (state.type !== 'all' && item.typeKey !== state.type) {
+            return false;
+          }
+
+          // Year Filter
+          if (state.year !== 'all' && item.year !== state.year) {
+            return false;
+          }
+
+          // Search query matching across title, subject, topics/keywords, description
+          if (query) {
+            const searchableContent = [
+              item.title,
+              item.subject,
+              item.type,
+              item.desc,
+              item.topics,
+              item.grade,
+              item.year
+            ].join(' ').toLowerCase();
+
+            // Match all keywords if multiple terms entered
+            const keywords = query.split(/\s+/).filter(Boolean);
+            const matchesAll = keywords.every(kw => searchableContent.includes(kw));
+            if (!matchesAll) return false;
+          }
+
+          return true;
+        });
+
+        // 2. Sorting
+        filtered.sort((a, b) => {
+          if (state.sort === 'newest') {
+            const yearDiff = parseInt(b.year, 10) - parseInt(a.year, 10);
+            return yearDiff !== 0 ? yearDiff : a.title.localeCompare(b.title);
+          } else if (state.sort === 'oldest') {
+            const yearDiff = parseInt(a.year, 10) - parseInt(b.year, 10);
+            return yearDiff !== 0 ? yearDiff : a.title.localeCompare(b.title);
+          } else if (state.sort === 'title-asc') {
+            return a.title.localeCompare(b.title);
+          } else if (state.sort === 'title-desc') {
+            return b.title.localeCompare(a.title);
+          }
+          return 0;
+        });
+
+        const totalItems = filtered.length;
+        const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
+
+        // Adjust currentPage if out of bounds
+        if (state.currentPage > totalPages && totalPages > 0) {
+          state.currentPage = 1;
+        }
+        if (state.currentPage < 1) {
+          state.currentPage = 1;
+        }
+
+        // 3. Update Result Count Text ("Showing 1–9 of 25 resources")
+        const isSi = (window.MansalaLang && window.MansalaLang.getLanguage() === 'si');
+        if (totalItems === 0) {
+          resultsCount.textContent = isSi ? 'සම්පත් 0 ක් පෙන්වයි' : 'Showing 0 resources';
+        } else if (totalItems === 1) {
+          resultsCount.textContent = isSi ? 'සම්පත් 1 න් 1 ක් පෙන්වයි' : 'Showing 1 of 1 resource';
+        } else {
+          const startNum = (state.currentPage - 1) * ITEMS_PER_PAGE + 1;
+          const endNum = Math.min(startNum + ITEMS_PER_PAGE - 1, totalItems);
+          resultsCount.textContent = isSi
+            ? `සම්පත් ${totalItems} න් ${startNum}–${endNum} පෙන්වයි`
+            : `Showing ${startNum}–${endNum} of ${totalItems} resources`;
+        }
+
+        // 4. Update Active Chips & Badge
+        renderActiveChips();
+
+        // 5. Update Grid, Pagination & Empty State
+        if (totalItems === 0) {
+          resourcesGrid.style.display = 'none';
+          paginationContainer.style.display = 'none';
+          emptyState.style.display = 'block';
+        } else {
+          emptyState.style.display = 'none';
+          resourcesGrid.style.display = 'grid';
+
+          // Slice exactly 9 items for current page
+          const startIndex = (state.currentPage - 1) * ITEMS_PER_PAGE;
+          const pageItems = filtered.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+          resourcesGrid.innerHTML = pageItems.map(generateCardHTML).join('');
+          attachDownloadHandlers();
+
+          // Render numbered pagination
+          renderPagination(totalPages);
+      if (window.MansalaLang && window.MansalaLang.translate) {
+        window.MansalaLang.translate(document.body);
+      }
+        }
+      }
+
+      // Clear all filters action
+      function clearAllFilters() {
+        state.search = '';
+        state.subject = 'all';
+        state.type = 'all';
+        state.year = 'all';
+        state.currentPage = 1;
+        
+        searchInput.value = '';
+        searchClearBtn.style.display = 'none';
+
+        // Reset pill UI
+        document.querySelectorAll('.filter-pills-wrap').forEach(group => {
+          group.querySelectorAll('.filter-choice-pill').forEach(pill => {
+            if (pill.getAttribute('data-value') === 'all') {
+              pill.classList.add('is-active');
+            } else {
+              pill.classList.remove('is-active');
+            }
+          });
+        });
+
+        applyFiltersAndRender(true);
+      }
+
+      // Event Listeners
+
+      // Real-time Search Input -> Return to page 1
+      searchInput.addEventListener('input', () => {
+        state.search = searchInput.value;
+        searchClearBtn.style.display = state.search.length > 0 ? 'flex' : 'none';
+        applyFiltersAndRender(true);
+      });
+
+      // Clear Search Button -> Return to page 1
+      searchClearBtn.addEventListener('click', () => {
+        state.search = '';
+        searchInput.value = '';
+        searchClearBtn.style.display = 'none';
+        searchInput.focus();
+        applyFiltersAndRender(true);
+      });
+
+      // Toggle Filter Panel
+      toggleFiltersBtn.addEventListener('click', () => {
+        const isOpen = filterPanel.classList.toggle('is-open');
+        toggleFiltersBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        if (isOpen) {
+          toggleFiltersBtn.classList.add('is-active');
+        } else {
+          const activeFiltersExist = state.search || state.subject !== 'all' || state.type !== 'all' || state.year !== 'all';
+          if (!activeFiltersExist) {
+            toggleFiltersBtn.classList.remove('is-active');
+          }
+        }
+      });
+
+      // Close Filter Panel button
+      btnPanelClose.addEventListener('click', () => {
+        filterPanel.classList.remove('is-open');
+        toggleFiltersBtn.setAttribute('aria-expanded', 'false');
+        const activeFiltersExist = state.search || state.subject !== 'all' || state.type !== 'all' || state.year !== 'all';
+        if (!activeFiltersExist) {
+          toggleFiltersBtn.classList.remove('is-active');
+        }
+      });
+
+      // Reset Button in Filter Panel
+      btnPanelReset.addEventListener('click', clearAllFilters);
+
+      // Clear All Button in Active Chips Bar
+      btnClearAllChips.addEventListener('click', clearAllFilters);
+
+      // Clear Filters Button in Empty State
+      btnEmptyClear.addEventListener('click', clearAllFilters);
+
+      // Filter Pill Clicks -> Return to page 1
+      document.querySelectorAll('.filter-pills-wrap').forEach(group => {
+        const category = group.getAttribute('data-filter-group');
+        group.addEventListener('click', (e) => {
+          const pill = e.target.closest('.filter-choice-pill');
+          if (!pill) return;
+
+          const val = pill.getAttribute('data-value');
+          state[category] = val;
+
+          // Update active pill state in this group
+          group.querySelectorAll('.filter-choice-pill').forEach(btn => btn.classList.remove('is-active'));
+          pill.classList.add('is-active');
+
+          applyFiltersAndRender(true);
+        });
+      });
+
+      // Remove single chip click -> Return to page 1
+      activeChipsContainer.addEventListener('click', (e) => {
+        const btn = e.target.closest('.active-filter-chip-remove');
+        if (!btn) return;
+
+        const action = btn.getAttribute('data-action');
+        if (action === 'clear-search') {
+          state.search = '';
+          searchInput.value = '';
+          searchClearBtn.style.display = 'none';
+        } else if (action === 'clear-subject') {
+          state.subject = 'all';
+          document.querySelector('[data-filter-group="subject"] .filter-choice-pill[data-value="all"]').click();
+          return;
+        } else if (action === 'clear-type') {
+          state.type = 'all';
+          document.querySelector('[data-filter-group="type"] .filter-choice-pill[data-value="all"]').click();
+          return;
+        } else if (action === 'clear-year') {
+          state.year = 'all';
+          document.querySelector('[data-filter-group="year"] .filter-choice-pill[data-value="all"]').click();
+          return;
+        }
+
+        applyFiltersAndRender(true);
+      });
+
+      // Sorting Dropdown Change -> Return to page 1
+      sortDropdown.addEventListener('change', () => {
+        state.sort = sortDropdown.value;
+        applyFiltersAndRender(true);
+      });
+
+      // Numbered Pagination Clicks (Delegated)
+      paginationContainer.addEventListener('click', (e) => {
+        const btn = e.target.closest('button[data-page]');
+        if (!btn || btn.disabled || btn.classList.contains('is-active')) return;
+
+        const targetPage = parseInt(btn.getAttribute('data-page'), 10);
+        if (!isNaN(targetPage) && targetPage >= 1) {
+          state.currentPage = targetPage;
+          applyFiltersAndRender(false); // Do not reset to page 1
+
+          // Smooth scroll to top of resource grid (Item 2)
+          const resultsSection = document.querySelector('.resources-results-section') || document.getElementById('available-resources');
+          if (resultsSection) {
+            resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+
+      // Initial Render
+      applyFiltersAndRender(false);
+
+      // Instantly re-render on language toggle
+      window.addEventListener('mansala:langchange', () => {
+        applyFiltersAndRender(false);
+      });
+
+    })();
+  </script>
+
+  <!-- Official Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>if(typeof lucide==='undefined'){document.write('<script src="js/lucide.js"><\/script>');}</script>
+  <script>document.addEventListener('DOMContentLoaded',function(){if(typeof lucide!=='undefined'&&lucide.createIcons){lucide.createIcons();}});</script>
+  <script src="js/lang.js"></script>
+</body>
+</html>

@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Quizzes — මංසල Mansala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4.5">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>if (typeof lucide === 'undefined') { document.write('<script src="js/lucide.js"><\/script>'); }</script>
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+  <div class="container">
+    <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+      <img src="assets/images/logo-light.png" alt="මංසල Logo" class="site-logo-img">
+      <span class="logo-title logo-nav">මංසල</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="index.html" class="" data-en="Home" data-si="මුල් පිටුව">Home</a>
+      <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+      
+      <!-- Study Hub Grouped Dropdown -->
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-trigger active" aria-expanded="false" aria-haspopup="true">
+          <span data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</span>
+          <svg class="lucide lucide-chevron-down" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="resources.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-book-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+              <span class="nav-dropdown-desc" data-en="Past Papers, Notes &amp; Marking Schemes" data-si="පසුගිය ප්‍රශ්න පත්‍ර, සටහන් සහ ලකුණු දීමේ පටිපාටි">Past Papers, Notes &amp; Marking Schemes</span>
+            </div>
+          </a>
+          <a href="quizzes.html" class="nav-dropdown-item active" role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-help-circle" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+              <span class="nav-dropdown-desc" data-en="Self-Paced Topic Assessments" data-si="ස්වයං අධ්‍යයන මාතෘකා ඇගයීම්">Self-Paced Topic Assessments</span>
+            </div>
+          </a>
+          <a href="mentorship.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-users" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+              <span class="nav-dropdown-desc" data-en="Undergraduate Cohort Guidance" data-si="විශ්වවිද්‍යාල ශිෂ්‍ය මගපෙන්වීම">Undergraduate Cohort Guidance</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="" data-en="About" data-si="අප ගැන">About</a>
+      <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+    </nav>
+    
+    <!-- Header Right Actions: Support a Cause CTA & Language Switcher -->
+    <div class="header-actions">
+      <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--sm nav-donate-btn" title="Support a Cause" aria-label="Support a Cause">
+        <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+        <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+      </a>
+
+      <!-- Bilingual Language Toggle Button -->
+      <button class="lang-toggle-btn" id="langToggleBtn" type="button" aria-label="Switch Language (English / Sinhala)" title="Switch Language">
+        <span class="lang-opt active" data-lang-code="en">EN</span>
+        <span class="lang-divider">|</span>
+        <span class="lang-opt" data-lang-code="si">සිං</span>
+      </button>
+
+      <!-- Mobile Navigation Hamburger Drawer -->
+      <details class="nav-mobile">
+        <summary aria-label="Open menu"><svg class="lucide lucide-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></summary>
+        <div class="nav-mobile-panel">
+          <!-- Main Section -->
+          <a href="index.html" class="" data-en="Home" data-si="මුල් පිටුව">Home</a>
+          <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+          <a href="about.html" class="" data-en="About" data-si="අප ගැන">About</a>
+          <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+
+          <!-- Study Hub Mobile Sub-section -->
+          <div class="nav-mobile-divider"></div>
+          <div class="nav-mobile-section-title" data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</div>
+          <a href="resources.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-book-open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+          </a>
+          <a href="quizzes.html" class="nav-mobile-item-sub active">
+            <svg class="lucide lucide-help-circle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            <span data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+          </a>
+          <a href="mentorship.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-users" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+          </a>
+
+          <!-- Mobile Action Button -->
+          <div class="nav-mobile-actions">
+            <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--full nav-mobile-donate-btn">
+              <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+              <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+            </a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <!-- Dark Hero Banner -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <span>Quizzes</span>
+        </nav>
+        <h1 data-en="Practice Quizzes" data-si="පුහුණු ප්‍රශ්නාවලි">Practice Quizzes</h1>
+        <p class="section__subtitle" data-en="Test your knowledge in Science and Mathematics with interactive practice quizzes." data-si="අන්තර්ක්‍රියාකාරී පුහුණු ප්‍රශ්නාවලි මඟින් විද්‍යාව හා ගණිතය දැනුම පරීක්ෂා කරගන්න.">Test your knowledge in Science and Mathematics with interactive practice quizzes.</p>
+      </div>
+    </section>
+
+    <!-- Main Dynamic Quiz Experience Container -->
+    <div class="quiz-stage-container">
+
+      <!-- ═════════════════════════════════════════════════════
+           STAGE ONE: EXPLORE QUIZZES (DEFAULT DISCOVERY VIEW)
+           ═════════════════════════════════════════════════════ -->
+      <section id="stage-explore" class="quiz-stage is-visible">
+        <div class="container">
+          
+          <!-- Category Tabs & Discovery Bar -->
+          <div class="quiz-discovery-bar mt-4">
+            <div class="quiz-category-pills" role="tablist" aria-label="Quiz category selection">
+              <button type="button" class="quiz-cat-pill is-active" data-subject="all" role="tab" aria-selected="true">All Quizzes</button>
+              <button type="button" class="quiz-cat-pill" data-subject="science" role="tab" aria-selected="false">Science</button>
+              <button type="button" class="quiz-cat-pill" data-subject="mathematics" role="tab" aria-selected="false">Mathematics</button>
+            </div>
+            <div class="quiz-discovery-count">
+              <span id="quiz-count-text">Showing <strong>1–6 of 12</strong> curated practice quizzes</span>
+            </div>
+          </div>
+
+          <!-- Available Quizzes Grid (3-column desktop, 2-column tablet, 1-column mobile) -->
+          <div class="quizzes-grid" id="quizzes-grid">
+        <div class="quiz-card" data-subject="science">
+          <div class="quiz-card__header-badges">
+            <div class="quiz-card__badges-group">
+              <span class="badge badge--science">Science</span>
+              <span class="badge badge--neutral">Physics</span>
+            </div>
+            <span class="badge badge--medium">Medium</span>
+          </div>
+          <h3 class="quiz-card__title">Forces & Motion</h3>
+          <p class="quiz-card__desc">Explore Newton's laws of motion, speed, velocity, uniform acceleration and resultant forces in straight-line mechanics.</p>
+          <div class="quiz-card__info">
+            <span class="meta-item"><svg class="lucide lucide-help-circle icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg> 5 Questions</span>
+            <span class="meta-item"><svg class="lucide lucide-clock icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ~12 min</span>
+            <span class="meta-item"><svg class="lucide lucide-gauge icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg> Self-paced</span>
+          </div>
+          <div class="quiz-card__footer">
+            <button type="button" class="btn btn--primary btn-start-quiz" data-quiz-id="quiz-forces-motion">
+              Start Quiz &rarr;
+            </button>
+          </div>
+        </div>
+        <div class="quiz-card" data-subject="science">
+          <div class="quiz-card__header-badges">
+            <div class="quiz-card__badges-group">
+              <span class="badge badge--science">Science</span>
+              <span class="badge badge--neutral">Chemistry</span>
+            </div>
+            <span class="badge badge--challenging">Challenging</span>
+          </div>
+          <h3 class="quiz-card__title">Chemical Reactions & Acids</h3>
+          <p class="quiz-card__desc">Test your grasp of chemical reaction types, balancing complex equations, the pH scale, and metal displacement.</p>
+          <div class="quiz-card__info">
+            <span class="meta-item"><svg class="lucide lucide-help-circle icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg> 5 Questions</span>
+            <span class="meta-item"><svg class="lucide lucide-clock icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ~15 min</span>
+            <span class="meta-item"><svg class="lucide lucide-gauge icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg> Self-paced</span>
+          </div>
+          <div class="quiz-card__footer">
+            <button type="button" class="btn btn--primary btn-start-quiz" data-quiz-id="quiz-chemical-reactions">
+              Start Quiz &rarr;
+            </button>
+          </div>
+        </div>
+        <div class="quiz-card" data-subject="science">
+          <div class="quiz-card__header-badges">
+            <div class="quiz-card__badges-group">
+              <span class="badge badge--science">Science</span>
+              <span class="badge badge--neutral">Biology</span>
+            </div>
+            <span class="badge badge--medium">Medium</span>
+          </div>
+          <h3 class="quiz-card__title">Cell Biology & Human Body</h3>
+          <p class="quiz-card__desc">Check your understanding of organelle functions, circulatory pathways, digestive enzymes, and plant osmosis.</p>
+          <div class="quiz-card__info">
+            <span class="meta-item"><svg class="lucide lucide-help-circle icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg> 5 Questions</span>
+            <span class="meta-item"><svg class="lucide lucide-clock icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ~12 min</span>
+            <span class="meta-item"><svg class="lucide lucide-gauge icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg> Self-paced</span>
+          </div>
+          <div class="quiz-card__footer">
+            <button type="button" class="btn btn--primary btn-start-quiz" data-quiz-id="quiz-cellular-biology">
+              Start Quiz &rarr;
+            </button>
+          </div>
+        </div>
+        <div class="quiz-card" data-subject="science">
+          <div class="quiz-card__header-badges">
+            <div class="quiz-card__badges-group">
+              <span class="badge badge--science">Science</span>
+              <span class="badge badge--neutral">Physics</span>
+            </div>
+            <span class="badge badge--medium">Medium</span>
+          </div>
+          <h3 class="quiz-card__title">Work, Energy & Power</h3>
+          <p class="quiz-card__desc">Calculate mechanical work, kinetic energy, gravitational potential energy, and understand power output.</p>
+          <div class="quiz-card__info">
+            <span class="meta-item"><svg class="lucide lucide-help-circle icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg> 5 Questions</span>
+            <span class="meta-item"><svg class="lucide lucide-clock icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ~12 min</span>
+            <span class="meta-item"><svg class="lucide lucide-gauge icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg> Self-paced</span>
+          </div>
+          <div class="quiz-card__footer">
+            <button type="button" class="btn btn--primary btn-start-quiz" data-quiz-id="quiz-work-energy-power">
+              Start Quiz &rarr;
+            </button>
+          </div>
+        </div>
+        <div class="quiz-card" data-subject="science">
+          <div class="quiz-card__header-badges">
+            <div class="quiz-card__badges-group">
+              <span class="badge badge--science">Science</span>
+              <span class="badge badge--neutral">Chemistry</span>
+            </div>
+            <span class="badge badge--easy">Easy</span>
+          </div>
+          <h3 class="quiz-card__title">Periodic Table & Bonding</h3>
+          <p class="quiz-card__desc">Review electronic configurations of elements 1-20, octet rules, ionic bonding, and covalent molecules.</p>
+          <div class="quiz-card__info">
+            <span class="meta-item"><svg class="lucide lucide-help-circle icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg> 5 Questions</span>
+            <span class="meta-item"><svg class="lucide lucide-clock icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ~10 min</span>
+            <span class="meta-item"><svg class="lucide lucide-gauge icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg> Self-paced</span>
+          </div>
+          <div class="quiz-card__footer">
+            <button type="button" class="btn btn--primary btn-start-quiz" data-quiz-id="quiz-periodic-table-bonding">
+              Start Quiz &rarr;
+            </button>
+          </div>
+        </div>
+        <div class="quiz-card" data-subject="science">
+          <div class="quiz-card__header-badges">
+            <div class="quiz-card__badges-group">
+              <span class="badge badge--science">Science</span>
+              <span class="badge badge--neutral">Biology</span>
+            </div>
+            <span class="badge badge--challenging">Challenging</span>
+          </div>
+          <h3 class="quiz-card__title">Nervous System & Senses</h3>
+          <p class="quiz-card__desc">Test your knowledge of neuron anatomy, reflex action pathways, eye optics, and brain coordination functions.</p>
+          <div class="quiz-card__info">
+            <span class="meta-item"><svg class="lucide lucide-help-circle icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg> 5 Questions</span>
+            <span class="meta-item"><svg class="lucide lucide-clock icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ~14 min</span>
+            <span class="meta-item"><svg class="lucide lucide-gauge icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg> Self-paced</span>
+          </div>
+          <div class="quiz-card__footer">
+            <button type="button" class="btn btn--primary btn-start-quiz" data-quiz-id="quiz-nervous-system-senses">
+              Start Quiz &rarr;
+            </button>
+          </div>
+        </div>
+          </div>
+
+          <!-- Numbered Pagination Component (SkillBridge Style) -->
+          <nav id="quizzes-pagination" class="pagination-container" aria-label="Practice quizzes pagination">
+            <button type="button" class="pagination-btn pagination-btn--prev" disabled aria-label="Previous page">
+              <svg class="lucide lucide-chevron-left" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button type="button" class="pagination-page-btn is-active" aria-current="page" data-page="1">1</button>
+            <button type="button" class="pagination-page-btn" data-page="2">2</button>
+            <button type="button" class="pagination-btn pagination-btn--next" aria-label="Next page" data-page="2">
+              <svg class="lucide lucide-chevron-right" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </nav>
+
+          <!-- Practice Tips & Encouragement Banner -->
+          <div class="intro-card mb-8 mt-10">
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--clr-primary); margin-bottom: 8px;">Self-Paced Diagnostic Practice</h3>
+            <p class="intro-card__text" style="font-size: 0.95rem; margin-bottom: 0;">
+              Every quiz is untimed and provides detailed worked solutions for every question. Test your knowledge, identify concepts requiring review, and practice until you achieve mastery.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═════════════════════════════════════════════════════
+           STAGE TWO: ACTIVE QUIZ INTERFACE (ONE QUESTION AT A TIME)
+           ═════════════════════════════════════════════════════ -->
+      <section id="stage-active" class="quiz-stage">
+        <div id="sample-quiz"></div>
+        <div class="container">
+          <div class="quiz-active-wrapper mt-6 mb-8">
+            <div class="quiz-active-card">
+              
+              <!-- Compact Quiz Header -->
+              <div class="quiz-active-header">
+                <div class="quiz-active-header-top">
+                  <div class="quiz-active-title-group">
+                    <button type="button" id="btn-quiz-exit" class="btn-quiz-exit" aria-label="Exit quiz">
+                      <svg class="lucide lucide-x icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                      Exit Quiz
+                    </button>
+                    <h2 class="quiz-active-quiz-name" id="active-quiz-title">Forces &amp; Motion</h2>
+                    <span class="badge" id="active-quiz-badge">Science</span>
+                  </div>
+                  <span class="quiz-active-counter" id="active-progress-counter">Question 1 of 5</span>
+                </div>
+                <!-- Horizontal Progress Bar -->
+                <div class="quiz-active-progress-track" aria-hidden="true">
+                  <div class="quiz-active-progress-fill" id="active-progress-fill" style="width: 20%;"></div>
+                </div>
+              </div>
+
+              <!-- Question Display Body -->
+              <div class="quiz-active-body">
+                <div class="quiz-question-meta-strip">
+                  <span class="badge badge--neutral" id="active-question-syllabus">[Syllabus Reference]</span>
+                </div>
+                <h3 class="quiz-question-heading" id="active-question-text">Question text goes here...</h3>
+                
+                <!-- Selectable Answer Cards -->
+                <div class="quiz-options-list" id="active-options-list" role="radiogroup" aria-label="Answer choices">
+                  <!-- Generated dynamically -->
+                </div>
+              </div>
+
+              <!-- Navigation Footer -->
+              <div class="quiz-active-footer">
+                <button type="button" id="btn-active-prev" class="btn btn--secondary btn-quiz-nav" disabled>
+                  &larr; Previous
+                </button>
+                <button type="button" id="btn-active-next" class="btn btn--secondary btn-quiz-nav">
+                  Next &rarr;
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═════════════════════════════════════════════════════
+           STAGE THREE: QUIZ RESULTS & DETAILED ANSWER REVIEW
+           ═════════════════════════════════════════════════════ -->
+      <section id="stage-results" class="quiz-stage">
+        <div class="container">
+          
+          <!-- State A: Results Dashboard -->
+          <div id="results-dashboard-view" class="quiz-results-wrapper mt-6 mb-8">
+            <div class="quiz-results-card">
+              
+              <!-- Circular Score Ring Presentation -->
+              <div class="score-circle-container">
+                <svg class="score-circle-svg" viewBox="0 0 140 140" aria-hidden="true">
+                  <circle class="score-circle-bg" cx="70" cy="70" r="54"></circle>
+                  <circle class="score-circle-meter" id="results-score-meter" cx="70" cy="70" r="54" stroke-dasharray="339.29" stroke-dashoffset="67.85"></circle>
+                </svg>
+                <div class="score-circle-content">
+                  <span class="score-circle-value" id="results-score-value">4/5</span>
+                  <span class="score-circle-pct" id="results-score-pct">80%</span>
+                </div>
+              </div>
+
+              <h2 class="results-status-title" id="results-feedback-title">Great Effort!</h2>
+              <p class="results-status-subtitle" id="results-quiz-info">Forces &amp; Motion &bull; Science</p>
+              
+              <div class="results-feedback-message" id="results-feedback-desc">
+                You have demonstrated a strong understanding of key principles. Review your tricky questions to consolidate your knowledge.
+              </div>
+
+              <!-- 4-Metric Breakdown Grid -->
+              <div class="results-metrics-grid">
+                <div class="metric-card metric-card--correct">
+                  <span class="metric-card__value" id="results-metric-correct">4</span>
+                  <span class="metric-card__label">Correct</span>
+                </div>
+                <div class="metric-card metric-card--incorrect">
+                  <span class="metric-card__value" id="results-metric-incorrect">1</span>
+                  <span class="metric-card__label">Incorrect</span>
+                </div>
+                <div class="metric-card metric-card--unanswered">
+                  <span class="metric-card__value" id="results-metric-unanswered">0</span>
+                  <span class="metric-card__label">Unanswered</span>
+                </div>
+                <div class="metric-card metric-card--accuracy">
+                  <span class="metric-card__value" id="results-metric-pct">80%</span>
+                  <span class="metric-card__label">Accuracy</span>
+                </div>
+              </div>
+
+              <!-- Main Results Actions -->
+              <div class="results-actions-group">
+                <button type="button" id="btn-results-review" class="btn btn--secondary btn--lg">
+                  <svg class="lucide lucide-eye icon-sm" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  Review Answers
+                </button>
+                <button type="button" id="btn-results-retry" class="btn btn--primary btn--lg">
+                  <svg class="lucide lucide-rotate-ccw icon-sm" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+                  Try Again
+                </button>
+                <button type="button" id="btn-results-explore" class="btn btn--secondary btn--lg">
+                  Explore More Quizzes &rarr;
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- State B: Separate Review Answers Sub-View -->
+          <div id="results-review-view" class="review-subview-wrapper mt-6 mb-8" style="display: none;">
+            
+            <div class="review-header-bar">
+              <button type="button" id="btn-review-back-top" class="btn btn--secondary btn--sm">
+                &larr; Back to Results
+              </button>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span id="review-status-badge" class="review-question-status-badge review-question-status-badge--correct"><svg class="lucide lucide-check icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>Correct</span>
+                <span class="quiz-active-counter" id="review-counter">Question 1 of 5</span>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="quiz-question-meta-strip">
+                <span class="badge badge--neutral" id="review-question-syllabus">[Syllabus Focus]</span>
+              </div>
+              <h3 class="quiz-question-heading" id="review-question-text">Original Question text...</h3>
+
+              <!-- Options with Visual Correct/Incorrect Annotations -->
+              <div class="review-options-list" id="review-options-list">
+                <!-- Dynamically populated -->
+              </div>
+
+              <!-- Worked Solution Card -->
+              <div class="review-solution-box">
+                <div class="review-solution-header">
+                  <svg class="lucide lucide-lightbulb icon-sm" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                  <span>Step-by-Step Worked Solution:</span>
+                </div>
+                <div class="review-solution-text" id="review-solution-text">
+                  Solution text...
+                </div>
+              </div>
+
+              <!-- Review Navigation Controls -->
+              <div class="review-navigation-footer">
+                <button type="button" id="btn-review-prev" class="btn btn--secondary btn-quiz-nav" disabled>
+                  &larr; Previous Question
+                </button>
+                <button type="button" id="btn-review-back-bottom" class="btn btn--secondary btn-quiz-nav">
+                  Back to Results
+                </button>
+                <button type="button" id="btn-review-next" class="btn btn--secondary btn-quiz-nav">
+                  Next Question &rarr;
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Confirmation Modal Dialogs (Accessible Backdrop) -->
+    <div id="quiz-modal" class="quiz-modal-backdrop" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="quiz-modal-dialog">
+        <div class="quiz-modal-icon" id="modal-icon">
+          <svg class="lucide lucide-alert-circle icon-lg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        </div>
+        <h3 class="quiz-modal-title" id="modal-title">Ready to Submit?</h3>
+        <p class="quiz-modal-desc" id="modal-desc">You have answered 5 of 5 questions.</p>
+        <div class="quiz-modal-actions">
+          <button type="button" id="btn-modal-cancel" class="btn btn--secondary">Cancel</button>
+          <button type="button" id="btn-modal-confirm" class="btn btn--primary">Yes, Submit</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+    <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+            <img src="assets/images/logo-transparent.png" alt="මංසල Logo" class="site-logo-img">
+            <span class="logo-title">මංසල</span>
+          </a>
+          <p data-en="An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics." data-si="සා/පෙළ සිසුන්ට විද්‍යාව සහ ගණිතය විෂයයන් සඳහා සහයෝගය දක්වමින් රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය විසින් සංවිධානය කරනු ලබන අධ්‍යාපනික වැඩසටහනකි.">An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Navigation" data-si="සංචලනය">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-en="Home" data-si="මුල් පිටුව">Home</a></li>
+            <li><a href="about.html" data-en="About" data-si="අප ගැන">About</a></li>
+            <li><a href="projects.html" data-en="Projects" data-si="ප්‍රජා ව්‍යාපෘති">Projects</a></li>
+            <li><a href="resources.html" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</a></li>
+            <li><a href="quizzes.html" data-en="Quizzes" data-si="ප්‍රශ්නාවලි">Quizzes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Programme" data-si="වැඩසටහන">Programme</h4>
+          <ul>
+            <li><a href="mentorship.html" data-en="Mentorship" data-si="උපදේශනය">Mentorship</a></li>
+            <li><a href="contact.html" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a></li>
+            <li><a href="about.html#documents" data-en="Documents" data-si="ලේඛන">Documents</a></li>
+            <li><a href="login.html" data-en="Staff &amp; Coordinator Portal" data-si="කාර්ය මණ්ඩල සහ සම්බන්ධීකාරක පිවිසුම">Staff &amp; Coordinator Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Contact" data-si="සම්බන්ධ වන්න">Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@manasala.ruh.ac.lk">contact@manasala.ruh.ac.lk</a></li>
+            <li><a href="tel:+94412222681">+94 41 2222681</a></li>
+            <li data-en="University of Ruhuna, Wellamadama, Matara" data-si="රුහුණ විශ්වවිද්‍යාලය, වැල්ලමඩම, මාතර">University of Ruhuna, Wellamadama, Matara</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-en="&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna." data-si="&copy; මංසල – Mansala. විද්‍යා පීඨ ශිෂ්‍ය සංගමය, රුහුණ විශ්වවිද්‍යාලය.">&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna.</span>
+        <span data-en="Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna." data-si="රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය මඟින් මෙහෙයවනු ලබන නිල අධ්‍යාපනික සත්කාරයකි.">Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Three-Stage Quiz Engine Script with Numbered Pagination -->
+  <script src="js/dashboard-db.js"></script>
+  <script>
+    (function() {
+      // Pagination Configuration: Exactly 6 quizzes per page (2 rows x 3 columns on desktop)
+      const QUIZZES_PER_PAGE = 6;
+
+      // Complete Curated Quiz Dataset (12 quizzes)
+      let DEFAULT_QUIZZES = [
+      {
+            "id": "quiz-forces-motion",
+            "title": "Forces & Motion",
+        "titleSi": "බල සහ චලිතය",
+        "topicSi": "භෞතික විද්‍යාව",
+        "descSi": "නිව්ටන්ගේ චලිත නියම, වේගය, ප්‍රවේගය, ඒකාකාර ත්වරණය සහ සරල රේඛීය යාන්ත්‍ර විද්‍යාවේ සම්ප්‍රයුක්ත බල ගවේෂණය කරන්න.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "topic": "Physics",
+            "difficulty": "Medium",
+            "difficultyBadge": "badge--medium",
+            "desc": "Explore Newton's laws of motion, speed, velocity, uniform acceleration and resultant forces in straight-line mechanics.",
+            "questionsCount": 5,
+            "duration": "~12 min",
+            "questions": [
+                  {
+                        "text": "An object of mass 4 kg initially at rest on a smooth horizontal surface is acted upon by a constant horizontal resultant force of 12 N. What is the velocity of the object after 5 seconds?",
+                        "textSi": "සුමට තිරස් පෘෂ්ඨයක් මත මුලින් නිශ්චලතාවයේ තිබූ 4 kg ස්කන්ධයක් සහිත වස්තුවක් මත 12 N නියත තිරස් සම්ප්‍රයුක්ත බලයක් ක්‍රියා කරයි. තත්පර 5 කට පසු වස්තුවේ ප්‍රවේගය කුමක්ද?",
+        "syllabus": "Grade 11 Science \u2022 Unit 03: Motion in a Straight Line",
+        "syllabusSi": "11 ශ්‍රේණිය විද්‍යාව • 03 ඒකකය: සරල රේඛීය චලිතය",
+        "optionsSi": [
+          "3 m s\u207b\u00b9",
+          "15 m s\u207b\u00b9",
+          "20 m s\u207b\u00b9",
+          "23 m s\u207b\u00b9"
+        ],
+                        "options": [
+                              "3 m s\u207b\u00b9",
+                              "15 m s\u207b\u00b9",
+                              "20 m s\u207b\u00b9",
+                              "23 m s\u207b\u00b9"
+                        ],
+                        "correct": 1,
+                        "explanation": "Resultant acceleration is determined by Newton's Second Law: a = F / m = 12 N / 4 kg = 3 m s\u207b\u00b2. Under constant acceleration starting from rest (u = 0): v = u + at = 0 + (3 m s\u207b\u00b2 \u00d7 5 s) = 15 m s\u207b\u00b9.",
+        "explanationSi": "නිව්ටන්ගේ දෙවන චලිත නියමයට අනුව සම්ප්‍රයුක්ත ත්වරණය: a = F / m = 12 N / 4 kg = 3 m s⁻². වස්තුව නිශ්චලතාවයෙන් ආරම්භ වන බැවින් (u = 0): v = u + at = 0 + (3 m s⁻² × 5 s) = 15 m s⁻¹."
+                  },
+                  {
+                        "text": "When a moving passenger bus applies brakes suddenly, standing passengers tend to stumble forward. Which property of matter explains this phenomenon?",
+                        "textSi": "ධාවනය වන මගී බස් රථයක් හදිසියේ තිරිංග යෙදූ විට, හිටගෙන සිටින මගීන් ඉදිරියට නැඹුරු වන්නේ පදාර්ථයේ කුමන ගුණය නිසාද?",
+        "syllabus": "Grade 11 Science \u2022 Newton's First Law & Inertia",
+        "syllabusSi": "11 ශ්‍රේණිය විද්‍යාව • නිව්ටන්ගේ පළමු නියමය සහ අවස්ථිතිය",
+        "optionsSi": [
+          "පෘථිවියේ ගුරුත්වාකර්ෂණ බලය",
+          "චලිත අවස්ථිතිය",
+          "පාවහන් සහ බස් රථයේ බිම අතර ඝර්ෂණය",
+          "ක්‍රියා-ප්‍රතික්‍රියා බල යුගලය"
+        ],
+                        "options": [
+                              "Gravitational pull of the earth",
+                              "Inertia of motion",
+                              "Friction between shoes and the bus floor",
+                              "Action-reaction pair forces"
+                        ],
+                        "correct": 1,
+                        "explanation": "According to Newton's First Law, an object continues in its state of uniform motion unless acted upon by an external resultant force. When the bus stops, the passengers' bodies retain inertia of motion and tend to continue moving forward.",
+        "explanationSi": "නිව්ටන්ගේ පළමු චලිත නියමයට අනුව, බාහිර අසමතුලිත බලයක් ක්‍රියා නොකරන තාක් වස්තුවක් ඒකාකාර ප්‍රවේගයෙන් චලනය වේ. බස් රථය නතර වන විට මගීන්ගේ ශරීර චලිත අවස්ථිතිය නිසා දිගටම ඉදිරියට ගමන් කිරීමට උත්සාහ කරයි."
+                  },
+                  {
+                        "text": "A motor vehicle accelerates uniformly in a straight line from 10 m s\u207b\u00b9 to 30 m s\u207b\u00b9 in a duration of 4 seconds. What is the acceleration of the vehicle?",
+                        "syllabus": "Grade 11 Science \u2022 Linear Kinematics",
+                        "options": [
+                              "2.5 m s\u207b\u00b2",
+                              "4.0 m s\u207b\u00b2",
+                              "5.0 m s\u207b\u00b2",
+                              "10.0 m s\u207b\u00b2"
+                        ],
+                        "correct": 2,
+                        "explanation": "Acceleration is rate of change of velocity: a = (v - u) / t = (30 m s\u207b\u00b9 - 10 m s\u207b\u00b9) / 4 s = 20 / 4 = 5.0 m s\u207b\u00b2."
+                  },
+                  {
+                        "text": "An aircraft cruises horizontally in a straight line at a constant speed of 850 km h\u207b\u00b9. What is the net resultant force acting on the aircraft?",
+                        "syllabus": "Grade 11 Science \u2022 Balanced & Unbalanced Forces",
+                        "options": [
+                              "0 N",
+                              "Equal to the engine thrust force",
+                              "Equal to the total aircraft weight",
+                              "850 N"
+                        ],
+                        "correct": 0,
+                        "explanation": "When an object moves with constant velocity (constant speed in an unchanging direction), acceleration is zero. By Newton's First Law (F_net = m \u00b7 a), the net resultant force acting on the aircraft must be 0 N."
+                  },
+                  {
+                        "text": "An astronaut has a mass of 60 kg on Earth. If the gravitational field strength on the surface of the Moon is 1.6 N kg\u207b\u00b9, what is the weight of the astronaut on the Moon?",
+                        "syllabus": "Grade 10 Science \u2022 Mass and Weight",
+                        "options": [
+                              "60 N",
+                              "96 N",
+                              "375 N",
+                              "600 N"
+                        ],
+                        "correct": 1,
+                        "explanation": "Mass is an intrinsic property that remains constant (m = 60 kg). Weight is gravitational force: W = m \u00b7 g = 60 kg \u00d7 1.6 N kg\u207b\u00b9 = 96 N."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-chemical-reactions",
+            "title": "Chemical Reactions & Acids",
+        "titleSi": "රසායනික ප්‍රතික්‍රියා සහ අම්ල",
+        "topicSi": "රසායන විද්‍යාව",
+        "descSi": "රසායනික ප්‍රතික්‍රියා වර්ගීකරණය, සමීකරණ තුලනය, pH පරිමාණය සහ අම්ල-භස්ම උදාසීනීකරණය පරීක්ෂා කරන්න.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "topic": "Chemistry",
+            "difficulty": "Challenging",
+            "difficultyBadge": "badge--challenging",
+            "desc": "Test your grasp of chemical reaction types, balancing complex equations, the pH scale, and metal displacement.",
+            "questionsCount": 5,
+            "duration": "~15 min",
+            "questions": [
+                  {
+                        "text": "When magnesium ribbon is heated in air, it burns with a dazzling white flame to produce magnesium oxide: 2Mg + O\u2082 \u2192 2MgO. Which type of chemical reaction is this?",
+                        "syllabus": "Grade 11 Science \u2022 Chemical Reaction Classifications",
+                        "options": [
+                              "Decomposition reaction",
+                              "Combination (Synthesis) reaction",
+                              "Displacement reaction",
+                              "Neutralisation reaction"
+                        ],
+                        "correct": 1,
+                        "explanation": "Two pure elemental substances (Mg and O\u2082) react to form a single chemical compound (MgO). This fits the pattern A + B \u2192 AB, which is a combination (synthesis) reaction."
+                  },
+                  {
+                        "text": "When balancing the chemical reaction Fe + Cl\u2082 \u2192 FeCl\u2083, which set of coefficients balances the equation in order?",
+                        "syllabus": "Grade 11 Science \u2022 Balancing Chemical Equations",
+                        "options": [
+                              "1, 1, 1",
+                              "2, 3, 2",
+                              "3, 2, 3",
+                              "2, 2, 2"
+                        ],
+                        "correct": 1,
+                        "explanation": "To balance chlorine atoms, take LCM of 2 and 3, which is 6: 3Cl\u2082 gives 6 Cl atoms, and 2FeCl\u2083 gives 6 Cl atoms. Balance iron with 2Fe on the left: 2Fe + 3Cl\u2082 \u2192 2FeCl\u2083."
+                  },
+                  {
+                        "text": "What is the pH value of a neutral aqueous solution at a standard temperature of 25 \u00b0C?",
+                        "syllabus": "Grade 11 Science \u2022 Acids, Bases & the pH Scale",
+                        "options": [
+                              "pH = 0",
+                              "pH = 1",
+                              "pH = 7",
+                              "pH = 14"
+                        ],
+                        "correct": 2,
+                        "explanation": "In pure neutral water at 25 \u00b0C, [H\u207a] = [OH\u207b] = 1.0 \u00d7 10\u207b\u2077 mol dm\u207b\u00b3. The negative logarithm pH = -log\u2081\u2080(10\u207b\u2077) = 7.0."
+                  },
+                  {
+                        "text": "When dilute hydrochloric acid is poured over calcium carbonate chips, gas bubbles form vigorously. The released gas turns lime water milky. Identify this gas:",
+                        "syllabus": "Grade 11 Science \u2022 Gas Identification & Salt Properties",
+                        "options": [
+                              "Hydrogen (H\u2082)",
+                              "Oxygen (O\u2082)",
+                              "Carbon dioxide (CO\u2082)",
+                              "Chlorine (Cl\u2082)"
+                        ],
+                        "correct": 2,
+                        "explanation": "Carbonate + Acid \u2192 Salt + Water + Carbon Dioxide. CaCO\u2083 + 2HCl \u2192 CaCl\u2082 + H\u2082O + CO\u2082. Carbon dioxide reacts with aqueous calcium hydroxide Ca(OH)\u2082 to precipitate insoluble white CaCO\u2083, turning the solution milky."
+                  },
+                  {
+                        "text": "According to the electrochemical activity series of metals, which metal will displace copper from an aqueous solution of copper(II) sulfate (CuSO\u2084)?",
+                        "syllabus": "Grade 11 Science \u2022 Reactivity Series of Metals",
+                        "options": [
+                              "Silver (Ag)",
+                              "Gold (Au)",
+                              "Zinc (Zn)",
+                              "Platinum (Pt)"
+                        ],
+                        "correct": 2,
+                        "explanation": "Zinc (Zn) is positioned significantly higher than copper (Cu) in the reactivity series. Therefore, zinc oxidises and displaces copper: Zn(s) + CuSO\u2084(aq) \u2192 ZnSO\u2084(aq) + Cu(s). Silver, gold, and platinum are less reactive than copper."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-cellular-biology",
+            "title": "Cell Biology & Human Body",
+        "titleSi": "සෛල ජීව විද්‍යාව සහ මානව දේහය",
+        "topicSi": "ජීව විද්‍යාව",
+        "descSi": "සෛල ව්‍යුහය, සෛල විභාජනය (අනූනනය/ඌනනය), සංසරණ සහ ශ්වසන පද්ධති ආශ්‍රිත සංකල්ප ඇගයීම.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "topic": "Biology",
+            "difficulty": "Medium",
+            "difficultyBadge": "badge--medium",
+            "desc": "Check your understanding of organelle functions, circulatory pathways, digestive enzymes, and plant osmosis.",
+            "questionsCount": 5,
+            "duration": "~12 min",
+            "questions": [
+                  {
+                        "text": "Which organelle is considered the powerhouse of eukaryotic cells, responsible for generating ATP through cellular respiration?",
+                        "syllabus": "Grade 10 Science \u2022 Cell Structure & Organelles",
+                        "options": [
+                              "Ribosome",
+                              "Endoplasmic reticulum",
+                              "Mitochondrion",
+                              "Golgi body"
+                        ],
+                        "correct": 2,
+                        "explanation": "Mitochondria perform aerobic cellular respiration, oxidising glucose and fatty acids to produce adenosine triphosphate (ATP), the primary energy carrier of living cells."
+                  },
+                  {
+                        "text": "Which blood vessel transports freshly oxygenated blood from the lungs directly into the left atrium of the human heart?",
+                        "syllabus": "Grade 10 Science \u2022 Human Circulatory System",
+                        "options": [
+                              "Pulmonary artery",
+                              "Pulmonary vein",
+                              "Aorta",
+                              "Superior vena cava"
+                        ],
+                        "correct": 1,
+                        "explanation": "The pulmonary veins are unique among veins in carrying oxygen-rich blood from the pulmonary capillary beds in the lungs into the left atrium of the heart."
+                  },
+                  {
+                        "text": "Which digestive enzyme present in human saliva begins the chemical digestion of cooked starch into maltose?",
+                        "syllabus": "Grade 10 Science \u2022 Human Digestive System",
+                        "options": [
+                              "Pepsin",
+                              "Salivary amylase (ptyalin)",
+                              "Trypsin",
+                              "Lipase"
+                        ],
+                        "correct": 1,
+                        "explanation": "Salivary amylase (ptyalin), secreted by salivary glands in the mouth cavity, hydrolyses \u03b1-1,4-glycosidic bonds in cooked starch to produce maltose disaccharides."
+                  },
+                  {
+                        "text": "What happens to a healthy plant cell when it is placed into a hypertonic (concentrated salt) solution?",
+                        "syllabus": "Grade 10 Science \u2022 Osmosis in Plant Tissues",
+                        "options": [
+                              "The cell bursts due to osmotic lysis",
+                              "The cell becomes fully turgid",
+                              "Plasmolysis occurs as water leaves the central vacuole",
+                              "No movement of water takes place"
+                        ],
+                        "correct": 2,
+                        "explanation": "Water flows out of the cell down its water potential gradient via osmosis. As the central vacuole empties, the cytoplasm shrinks away from the cell wall, causing plasmolysis."
+                  },
+                  {
+                        "text": "In terrestrial plant leaves, which specialized epidermal cells regulate the opening and closing of stomata for gas exchange?",
+                        "syllabus": "Grade 11 Science \u2022 Transpiration & Gas Exchange",
+                        "options": [
+                              "Sieve tube cells",
+                              "Guard cells",
+                              "Xylem tracheids",
+                              "Palisade mesophyll cells"
+                        ],
+                        "correct": 1,
+                        "explanation": "Each stomatal pore is flanked by a pair of chloroplast-containing guard cells. Changes in internal turgor pressure cause guard cells to bow outward, opening or closing the pore."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-work-energy-power",
+            "title": "Work, Energy & Power",
+        "titleSi": "කාර්යය, ශක්තිය සහ ක්ෂමතාව",
+        "topicSi": "භෞතික විද්‍යාව",
+        "descSi": "කාර්යය ගණනය, විභව සහ චාලක ශක්තිය, ශක්ති සංස්ථිති නියමය සහ යාන්ත්‍රික ක්ෂමතාව පරීක්ෂා කරන්න.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "topic": "Physics",
+            "difficulty": "Medium",
+            "difficultyBadge": "badge--medium",
+            "desc": "Calculate mechanical work, kinetic energy, gravitational potential energy, and understand power output.",
+            "questionsCount": 5,
+            "duration": "~12 min",
+            "questions": [
+                  {
+                        "text": "A horizontal force of 25 N moves an object by 4 metres in the direction of the force. What is the total work done?",
+                        "syllabus": "Grade 11 Science \u2022 Mechanical Work",
+                        "options": [
+                              "6.25 J",
+                              "29 J",
+                              "100 J",
+                              "1000 J"
+                        ],
+                        "correct": 2,
+                        "explanation": "Work Done W = F \u00b7 s = 25 N \u00d7 4 m = 100 Joules (J)."
+                  },
+                  {
+                        "text": "What is the kinetic energy of an object of mass 2 kg moving with a uniform velocity of 4 m s\u207b\u00b9?",
+                        "syllabus": "Grade 11 Science \u2022 Kinetic Energy",
+                        "options": [
+                              "8 J",
+                              "16 J",
+                              "32 J",
+                              "64 J"
+                        ],
+                        "correct": 1,
+                        "explanation": "Kinetic Energy KE = 0.5 \u00b7 m \u00b7 v\u00b2 = 0.5 \u00d7 2 kg \u00d7 (4 m s\u207b\u00b9)\u00b2 = 1 \u00d7 16 = 16 Joules (J)."
+                  },
+                  {
+                        "text": "An object of mass 5 kg is raised vertically through a height of 3 metres in a gravitational field of g = 10 N kg\u207b\u00b9. What is its gained gravitational potential energy?",
+                        "syllabus": "Grade 11 Science \u2022 Potential Energy",
+                        "options": [
+                              "15 J",
+                              "50 J",
+                              "150 J",
+                              "300 J"
+                        ],
+                        "correct": 2,
+                        "explanation": "Potential Energy PE = m \u00b7 g \u00b7 h = 5 kg \u00d7 10 N kg\u207b\u00b9 \u00d7 3 m = 150 Joules (J)."
+                  },
+                  {
+                        "text": "An electric crane lifts a concrete beam performing 6000 J of work in a time interval of 12 seconds. What is the power output of the crane?",
+                        "syllabus": "Grade 11 Science \u2022 Power & Efficiency",
+                        "options": [
+                              "50 W",
+                              "500 W",
+                              "720 W",
+                              "72000 W"
+                        ],
+                        "correct": 1,
+                        "explanation": "Power P = Work Done / Time = 6000 J / 12 s = 500 Watts (W)."
+                  },
+                  {
+                        "text": "According to the Law of Conservation of Energy, which statement is true for an ideal falling pendulum without air resistance?",
+                        "syllabus": "Grade 11 Science \u2022 Conservation of Energy",
+                        "options": [
+                              "Total mechanical energy increases steadily",
+                              "Total mechanical energy remains constant",
+                              "Potential energy and kinetic energy both increase",
+                              "Kinetic energy is destroyed at the bottom"
+                        ],
+                        "correct": 1,
+                        "explanation": "Energy can neither be created nor destroyed; it merely transforms. In an ideal system, the sum of kinetic energy and potential energy remains constant at every point in motion."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-periodic-table-bonding",
+            "title": "Periodic Table & Bonding",
+        "titleSi": "ආවර්තිතා වගුව සහ රසායනික බන්ධන",
+        "topicSi": "රසායන විද්‍යාව",
+        "descSi": "ඉලෙක්ට්‍රොනික වින්‍යාසය, ආවර්තිතා ප්‍රවණතා, විද්‍යුත් සෘණතාව, සහ සහසංයුජ/අයනික බන්ධන පිළිබඳ ප්‍රශ්න.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "topic": "Chemistry",
+            "difficulty": "Easy",
+            "difficultyBadge": "badge--easy",
+            "desc": "Review electronic configurations of elements 1-20, octet rules, ionic bonding, and covalent molecules.",
+            "questionsCount": 5,
+            "duration": "~10 min",
+            "questions": [
+                  {
+                        "text": "What is the ground-state electron configuration of a Sodium atom (Na) having an atomic number of 11?",
+                        "syllabus": "Grade 10 Science \u2022 Atomic Structure & Configurations",
+                        "options": [
+                              "2, 8, 1",
+                              "2, 9",
+                              "2, 8, 2",
+                              "1, 8, 2"
+                        ],
+                        "correct": 0,
+                        "explanation": "Sodium has 11 electrons. The maximum capacity of shells is 2 in the first shell, 8 in the second shell, and the remaining 1 in the third shell: (2, 8, 1)."
+                  },
+                  {
+                        "text": "Which group in the modern Periodic Table contains noble (inert) gases with complete outer electron shells?",
+                        "syllabus": "Grade 10 Science \u2022 Periodic Table Groups",
+                        "options": [
+                              "Group I",
+                              "Group II",
+                              "Group VII",
+                              "Group VIII (Group 18)"
+                        ],
+                        "correct": 3,
+                        "explanation": "Group VIII (Group 18) elements (Helium, Neon, Argon) have stable outer octet configurations (or duplet for He), making them chemically inert."
+                  },
+                  {
+                        "text": "When sodium (a metal) reacts with chlorine (a non-metal), which type of chemical bond is formed by electron transfer?",
+                        "syllabus": "Grade 10 Science \u2022 Chemical Bonding",
+                        "options": [
+                              "Covalent bond",
+                              "Ionic (electrovalent) bond",
+                              "Metallic bond",
+                              "Hydrogen bond"
+                        ],
+                        "correct": 1,
+                        "explanation": "Sodium loses 1 electron to form Na\u207a, and Chlorine gains 1 electron to form Cl\u207b. The strong electrostatic attraction between opposite ions forms an ionic bond."
+                  },
+                  {
+                        "text": "In a molecule of water (H\u2082O), the chemical bonds between the oxygen atom and hydrogen atoms are formed by:",
+                        "syllabus": "Grade 10 Science \u2022 Covalent Bonding",
+                        "options": [
+                              "Complete transfer of electrons",
+                              "Sharing of electron pairs",
+                              "Magnetic attraction",
+                              "Proton exchange"
+                        ],
+                        "correct": 1,
+                        "explanation": "Non-metal atoms share pairs of valence electrons to achieve stable noble-gas configurations, forming covalent bonds."
+                  },
+                  {
+                        "text": "How many valence electrons does an Oxygen atom (atomic number 8, electron configuration 2, 6) possess?",
+                        "syllabus": "Grade 10 Science \u2022 Valence Electrons",
+                        "options": [
+                              "2",
+                              "4",
+                              "6",
+                              "8"
+                        ],
+                        "correct": 2,
+                        "explanation": "Valence electrons are electrons located in the outermost electron shell. Oxygen has 6 electrons in its outermost shell."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-nervous-system-senses",
+            "title": "Nervous System & Senses",
+        "titleSi": "ස්නායු පද්ධතිය සහ සංවේදක ඉන්ද්‍රියයන්",
+        "topicSi": "ජීව විද්‍යාව",
+        "descSi": "ස්නායු ආවේග, ප්‍රත්‍යාවර්ත චාප, මිනිස් ඇස සහ කණෙහි ව්‍යුහය හා කාර්යයන් පිළිබඳ ඇගයීම.",
+            "subject": "Science",
+            "subjectKey": "science",
+            "topic": "Biology",
+            "difficulty": "Challenging",
+            "difficultyBadge": "badge--challenging",
+            "desc": "Test your knowledge of neuron anatomy, reflex action pathways, eye optics, and brain coordination functions.",
+            "questionsCount": 5,
+            "duration": "~14 min",
+            "questions": [
+                  {
+                        "text": "What is the primary structural and functional cellular unit of the human nervous system?",
+                        "syllabus": "Grade 11 Science \u2022 Human Nervous System",
+                        "options": [
+                              "Nephron",
+                              "Neuron (Nerve cell)",
+                              "Myocyte",
+                              "Osteocyte"
+                        ],
+                        "correct": 1,
+                        "explanation": "The neuron (nerve cell) is the fundamental functional unit of nervous tissue, specialized for transmitting electrical nerve impulses."
+                  },
+                  {
+                        "text": "What is the correct sequential pathway of nerve impulses in a spinal reflex arc?",
+                        "syllabus": "Grade 11 Science \u2022 Reflex Action Pathways",
+                        "options": [
+                              "Receptor \u2192 Sensory neuron \u2192 Interneuron \u2192 Motor neuron \u2192 Effector",
+                              "Effector \u2192 Motor neuron \u2192 Sensory neuron \u2192 Receptor",
+                              "Receptor \u2192 Motor neuron \u2192 Interneuron \u2192 Sensory neuron \u2192 Effector",
+                              "Brain \u2192 Sensory neuron \u2192 Effector \u2192 Motor neuron"
+                        ],
+                        "correct": 0,
+                        "explanation": "In a reflex arc: Stimulus detected by Receptor \u2192 transmitted along Sensory neuron to spinal cord \u2192 passed via Interneuron (relay neuron) \u2192 transmitted via Motor neuron to Effector (muscle or gland) to produce instant response."
+                  },
+                  {
+                        "text": "Which structure of the human eye focuses refracted light rays onto the photosensitive retina?",
+                        "syllabus": "Grade 11 Science \u2022 Sensory Organs (Eye)",
+                        "options": [
+                              "Iris",
+                              "Crystalline lens",
+                              "Sclera",
+                              "Pupil"
+                        ],
+                        "correct": 1,
+                        "explanation": "The flexible biconvex crystalline lens, whose curvature is adjusted by ciliary muscles, provides fine focusing of light rays onto the retina."
+                  },
+                  {
+                        "text": "Which major part of the human brain is primarily responsible for motor coordination, balance, and posture?",
+                        "syllabus": "Grade 11 Science \u2022 Brain Functions",
+                        "options": [
+                              "Cerebrum",
+                              "Cerebellum",
+                              "Medulla oblongata",
+                              "Hypothalamus"
+                        ],
+                        "correct": 1,
+                        "explanation": "The cerebellum coordinates voluntary muscle movements, maintenance of balance, equilibrium, and precise posture."
+                  },
+                  {
+                        "text": "Which endocrine gland is located at the base of the brain and often termed the master gland because its hormones regulate other endocrine glands?",
+                        "syllabus": "Grade 11 Science \u2022 Endocrine System",
+                        "options": [
+                              "Thyroid gland",
+                              "Adrenal gland",
+                              "Pituitary gland",
+                              "Pancreas"
+                        ],
+                        "correct": 2,
+                        "explanation": "The pituitary gland secretes tropic hormones (such as TSH, ACTH, and growth hormone) that regulate the activity of other endocrine glands throughout the body."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-algebra-fundamentals",
+            "title": "Algebra Fundamentals",
+        "titleSi": "වීජ ගණිතයේ මූලිකාංග",
+        "topicSi": "වීජ ගණිතය",
+        "descSi": "වීජීය ප්‍රකාශන සරල කිරීම, රේඛීය සමීකරණ විසඳීම සහ වර්ගජ ප්‍රකාශන සාධක වෙන් කිරීම ප්‍රගුණ කරන්න.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "topic": "Algebra",
+            "difficulty": "Easy",
+            "difficultyBadge": "badge--easy",
+            "desc": "Master simplifying algebraic expressions, solving linear equations, and factorising quadratic expressions.",
+            "questionsCount": 5,
+            "duration": "~10 min",
+            "questions": [
+                  {
+                        "text": "What is the value of x that satisfies the linear equation: 3x + 5 = 20?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Linear Equations",
+                        "options": [
+                              "x = 3",
+                              "x = 5",
+                              "x = 7",
+                              "x = 15"
+                        ],
+                        "correct": 1,
+                        "explanation": "Subtract 5 from both sides: 3x = 20 - 5 \u2192 3x = 15. Divide both sides by 3: x = 15 / 3 = 5."
+                  },
+                  {
+                        "text": "Simplify the algebraic expression: 4(2a - 3b) - 2(a - 5b)",
+                        "syllabus": "Grade 10 Mathematics \u2022 Algebraic Expressions",
+                        "options": [
+                              "6a - 2b",
+                              "6a - 22b",
+                              "8a + 2b",
+                              "10a - 2b"
+                        ],
+                        "correct": 0,
+                        "explanation": "Expand brackets carefully: 8a - 12b - 2a + 10b. Group like terms: (8a - 2a) + (-12b + 10b) = 6a - 2b."
+                  },
+                  {
+                        "text": "What is the largest integer value of x that satisfies the linear inequality: 2x - 7 < 5?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Linear Inequalities",
+                        "options": [
+                              "4",
+                              "5",
+                              "6",
+                              "7"
+                        ],
+                        "correct": 1,
+                        "explanation": "Add 7 to both sides: 2x < 12. Divide both sides by 2: x < 6. Since x must be strictly less than 6, the largest integer value is 5."
+                  },
+                  {
+                        "text": "Factorise completely: 6x\u00b2 - 9xy",
+                        "syllabus": "Grade 10 Mathematics \u2022 Factorisation",
+                        "options": [
+                              "3(2x\u00b2 - 3xy)",
+                              "x(6x - 9y)",
+                              "3x(2x - 3y)",
+                              "3xy(2x - 3)"
+                        ],
+                        "correct": 2,
+                        "explanation": "Find the highest common factor (HCF) of 6x\u00b2 and 9xy, which is 3x. Dividing each term by 3x yields 3x(2x - 3y)."
+                  },
+                  {
+                        "text": "Simplify the algebraic fraction: (x\u00b2 - 9) / (x + 3), where x \u2260 -3",
+                        "syllabus": "Grade 11 Mathematics \u2022 Algebraic Fractions",
+                        "options": [
+                              "x + 3",
+                              "x - 3",
+                              "x - 9",
+                              "1 / (x + 3)"
+                        ],
+                        "correct": 1,
+                        "explanation": "Recognise the difference of two squares: x\u00b2 - 9 = (x - 3)(x + 3). Cancel the common factor (x + 3): (x - 3)(x + 3) / (x + 3) = x - 3."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-geometry-measurement",
+            "title": "Geometry & Measurement",
+        "titleSi": "ජ්‍යාමිතිය සහ මිනුම්",
+        "topicSi": "ජ්‍යාමිතිය",
+        "descSi": "බහුඅස්‍රවල අභ්‍යන්තර කෝණ, පයිතගරස් ප්‍රමේයය, වෘත්ත ප්‍රමේය සහ ඝන වස්තු මිනුම් ආශ්‍රිත ගැටලු විසඳන්න.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "topic": "Geometry",
+            "difficulty": "Medium",
+            "difficultyBadge": "badge--medium",
+            "desc": "Solve problems involving interior angles of polygons, Pythagorean theorem, circle theorems, and solid mensuration.",
+            "questionsCount": 5,
+            "duration": "~12 min",
+            "questions": [
+                  {
+                        "text": "What is the sum of the interior angles of a regular convex hexagon (6-sided polygon)?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Polygon Angles",
+                        "options": [
+                              "360\u00b0",
+                              "540\u00b0",
+                              "720\u00b0",
+                              "1080\u00b0"
+                        ],
+                        "correct": 2,
+                        "explanation": "The formula for the sum of interior angles of an n-sided polygon is (n - 2) \u00d7 180\u00b0. For a hexagon (n = 6): (6 - 2) \u00d7 180\u00b0 = 4 \u00d7 180\u00b0 = 720\u00b0."
+                  },
+                  {
+                        "text": "In a right-angled triangle ABC, the perpendicular legs measure 6 cm and 8 cm. What is the length of the hypotenuse side?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Pythagoras' Theorem",
+                        "options": [
+                              "10 cm",
+                              "12 cm",
+                              "14 cm",
+                              "100 cm"
+                        ],
+                        "correct": 0,
+                        "explanation": "By Pythagoras' Theorem: c\u00b2 = a\u00b2 + b\u00b2 = 6\u00b2 + 8\u00b2 = 36 + 64 = 100. Thus c = \u221a100 = 10 cm."
+                  },
+                  {
+                        "text": "In a circle with centre O, an arc subtends an angle of 110\u00b0 at the centre. What is the angle subtended by the same arc at any point on the remaining circumference?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Circle Theorems",
+                        "options": [
+                              "45\u00b0",
+                              "55\u00b0",
+                              "110\u00b0",
+                              "220\u00b0"
+                        ],
+                        "correct": 1,
+                        "explanation": "Circle Theorem: The angle subtended by an arc at the centre of a circle is double the angle subtended by the same arc at any point on the circumference. Angle = 110\u00b0 / 2 = 55\u00b0."
+                  },
+                  {
+                        "text": "In a cyclic quadrilateral ABCD, angle A measures 75\u00b0. What is the measure of the opposite interior angle C?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Cyclic Quadrilaterals",
+                        "options": [
+                              "75\u00b0",
+                              "90\u00b0",
+                              "105\u00b0",
+                              "115\u00b0"
+                        ],
+                        "correct": 2,
+                        "explanation": "Cyclic Quadrilateral Theorem: The opposite angles of a cyclic quadrilateral are supplementary (their sum is 180\u00b0). Angle C = 180\u00b0 - 75\u00b0 = 105\u00b0."
+                  },
+                  {
+                        "text": "What is the volume of a right circular cylinder having a base radius of 7 cm and a height of 10 cm? (Take \u03c0 = 22/7)",
+                        "syllabus": "Grade 11 Mathematics \u2022 Mensuration of Solids",
+                        "options": [
+                              "440 cm\u00b3",
+                              "770 cm\u00b3",
+                              "1540 cm\u00b3",
+                              "2200 cm\u00b3"
+                        ],
+                        "correct": 2,
+                        "explanation": "Volume of cylinder V = \u03c0 \u00b7 r\u00b2 \u00b7 h = (22/7) \u00d7 (7 cm)\u00b2 \u00d7 10 cm = (22/7) \u00d7 49 \u00d7 10 = 22 \u00d7 7 \u00d7 10 = 1540 cm\u00b3."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-probability-statistics",
+            "title": "Probability & Statistics",
+        "titleSi": "සම්භාවිතාව සහ සංඛ්‍යානය",
+        "topicSi": "සංඛ්‍යානය",
+        "descSi": "වෙන් රූප සටහන්, රුක් සටහන්, නියැදි අවකාශ සහ සංඛ්‍යානමය මධ්‍යන්‍ය, මාතය හා මධ්‍යස්ථය ගණනය කරන්න.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "topic": "Statistics",
+            "difficulty": "Easy",
+            "difficultyBadge": "badge--easy",
+            "desc": "Practice calculating event probabilities, central tendency measures (mean, median), and reading ogive curves.",
+            "questionsCount": 5,
+            "duration": "~10 min",
+            "questions": [
+                  {
+                        "text": "A fair standard six-sided die numbered 1 to 6 is rolled once. What is the theoretical probability of obtaining a prime number?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Basic Probability",
+                        "options": [
+                              "1/6",
+                              "1/3",
+                              "1/2",
+                              "2/3"
+                        ],
+                        "correct": 2,
+                        "explanation": "The prime numbers on a die are 2, 3, and 5 (1 is neither prime nor composite). There are 3 favorable outcomes out of 6 possibilities: P(prime) = 3/6 = 1/2."
+                  },
+                  {
+                        "text": "The arithmetic mean of five numbers 4, 8, x, 12, and 16 is 10. What is the value of x?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Measures of Central Tendency",
+                        "options": [
+                              "8",
+                              "10",
+                              "12",
+                              "14"
+                        ],
+                        "correct": 1,
+                        "explanation": "Mean = (4 + 8 + x + 12 + 16) / 5 = 10 \u2192 (40 + x) / 5 = 10 \u2192 40 + x = 50 \u2192 x = 10."
+                  },
+                  {
+                        "text": "What is the median of the following ordered numerical dataset: 3, 7, 8, 9, 12, 14, 17?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Median of Discrete Data",
+                        "options": [
+                              "8",
+                              "9",
+                              "10",
+                              "12"
+                        ],
+                        "correct": 1,
+                        "explanation": "There are n = 7 values. The median of an odd dataset is the ((7 + 1) / 2) = 4th value in the sorted list, which is 9."
+                  },
+                  {
+                        "text": "Two fair coins are tossed simultaneously. What is the probability of obtaining at least one Head outcome?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Sample Space & Combined Events",
+                        "options": [
+                              "1/4",
+                              "1/2",
+                              "3/4",
+                              "1"
+                        ],
+                        "correct": 2,
+                        "explanation": "The complete sample space is S = {HH, HT, TH, TT} (4 equally likely outcomes). Outcomes containing at least one Head are {HH, HT, TH} (3 outcomes). P = 3/4."
+                  },
+                  {
+                        "text": "On a cumulative frequency curve (ogive), the median value of the distribution is read from the horizontal axis corresponding to what percentage of the total cumulative frequency?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Cumulative Frequency Curves",
+                        "options": [
+                              "25%",
+                              "50%",
+                              "75%",
+                              "100%"
+                        ],
+                        "correct": 1,
+                        "explanation": "The median divides ordered data into two halves. On an ogive curve, it corresponds to the 50th percentile (N / 2 of total frequency). The 25th percentile gives Q1, and 75th gives Q3."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-simultaneous-equations",
+            "title": "Simultaneous Equations",
+        "titleSi": "සමගාමී සමීකරණ",
+        "topicSi": "වීජ ගණිතය",
+        "descSi": "විචල්‍යයන් දෙකක් සහිත සමගාමී සමීකරණ ආදේශ සහ ඉවත් කිරීමේ ක්‍රම මගින් විසඳීම.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "topic": "Algebra",
+            "difficulty": "Medium",
+            "difficultyBadge": "badge--medium",
+            "desc": "Solve paired linear equations using elimination and substitution methods and interpret intersection graphs.",
+            "questionsCount": 5,
+            "duration": "~12 min",
+            "questions": [
+                  {
+                        "text": "Solve the pair of simultaneous linear equations: x + y = 10 and x - y = 4. What is the value of x?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Simultaneous Equations",
+                        "options": [
+                              "x = 5",
+                              "x = 7",
+                              "x = 8",
+                              "x = 14"
+                        ],
+                        "correct": 1,
+                        "explanation": "Add the two equations together: (x + y) + (x - y) = 10 + 4 \u2192 2x = 14 \u2192 x = 7. Then y = 10 - 7 = 3."
+                  },
+                  {
+                        "text": "If 2x + 3y = 13 and x = 2, what is the value of y?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Substitution Method",
+                        "options": [
+                              "y = 2",
+                              "y = 3",
+                              "y = 4",
+                              "y = 5"
+                        ],
+                        "correct": 1,
+                        "explanation": "Substitute x = 2: 2(2) + 3y = 13 \u2192 4 + 3y = 13 \u2192 3y = 9 \u2192 y = 3."
+                  },
+                  {
+                        "text": "For the straight-line equation y = 3x - 6, what are the coordinates of the y-intercept?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Linear Graphs (y = mx + c)",
+                        "options": [
+                              "(0, 3)",
+                              "(3, 0)",
+                              "(0, -6)",
+                              "(-6, 0)"
+                        ],
+                        "correct": 2,
+                        "explanation": "In standard form y = mx + c, the y-intercept occurs where x = 0, giving y = c = -6. The coordinates are (0, -6)."
+                  },
+                  {
+                        "text": "What is the gradient of the straight line passing through the points (1, 2) and (4, 8)?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Gradient of a Line",
+                        "options": [
+                              "m = 1",
+                              "m = 2",
+                              "m = 3",
+                              "m = 6"
+                        ],
+                        "correct": 1,
+                        "explanation": "Gradient m = (y\u2082 - y\u2081) / (x\u2082 - x\u2081) = (8 - 2) / (4 - 1) = 6 / 3 = 2."
+                  },
+                  {
+                        "text": "What is the equation of the axis of symmetry for the parabola given by y = (x - 3)\u00b2 + 2?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Quadratic Graphs",
+                        "options": [
+                              "x = -3",
+                              "x = 2",
+                              "x = 3",
+                              "y = 2"
+                        ],
+                        "correct": 2,
+                        "explanation": "For a quadratic vertex form y = a(x - h)\u00b2 + k, the vertex is at (h, k) and the vertical axis of symmetry is the line x = h. Here h = 3, so x = 3."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-circle-theorems",
+            "title": "Circle Theorems & Tangents",
+        "titleSi": "වෘත්ත ප්‍රමේයයන් සහ ස්පර්ශක",
+        "topicSi": "ජ්‍යාමිතිය",
+        "descSi": "වෘත්ත ජ්‍යාමිතික ප්‍රමේය, ස්පර්ශක-අරය සම්බන්ධතා, ඒකාන්තර ඛණ්ඩ ප්‍රමේය සහ ජ්‍යාමිතික සාධන.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "topic": "Geometry",
+            "difficulty": "Challenging",
+            "difficultyBadge": "badge--challenging",
+            "desc": "Master circle geometry theorems, tangent-radius relationships, alternate segment theorem, and geometric riders.",
+            "questionsCount": 5,
+            "duration": "~15 min",
+            "questions": [
+                  {
+                        "text": "What is the angle subtended by a diameter in a semicircle?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Angle in a Semicircle",
+                        "options": [
+                              "45\u00b0",
+                              "60\u00b0",
+                              "90\u00b0 (Right angle)",
+                              "180\u00b0"
+                        ],
+                        "correct": 2,
+                        "explanation": "Theorem: The angle in a semicircle is a right angle (90\u00b0). An arc of 180\u00b0 subtends half its central angle at the circumference: 180\u00b0 / 2 = 90\u00b0."
+                  },
+                  {
+                        "text": "What is the angle between a tangent to a circle and the radius drawn to the point of contact?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Tangents to a Circle",
+                        "options": [
+                              "45\u00b0",
+                              "60\u00b0",
+                              "90\u00b0",
+                              "Depends on radius"
+                        ],
+                        "correct": 2,
+                        "explanation": "Theorem: A tangent to a circle is perpendicular to the radius drawn through the point of contact, forming an exact 90\u00b0 angle."
+                  },
+                  {
+                        "text": "From an external point P, two tangents PA and PB are drawn to a circle touching at points A and B. What is the relationship between lengths PA and PB?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Tangents from External Point",
+                        "options": [
+                              "PA > PB",
+                              "PA < PB",
+                              "PA = PB",
+                              "PA + PB = diameter"
+                        ],
+                        "correct": 2,
+                        "explanation": "Theorem: The lengths of the two tangents drawn from an external point to a circle are equal (PA = PB)."
+                  },
+                  {
+                        "text": "According to the Alternate Segment Theorem, the angle between a tangent and a chord through the point of contact equals:",
+                        "syllabus": "Grade 11 Mathematics \u2022 Alternate Segment Theorem",
+                        "options": [
+                              "The angle in the alternate segment",
+                              "Twice the angle in the alternate segment",
+                              "Half the angle at the centre",
+                              "The angle of the sector"
+                        ],
+                        "correct": 0,
+                        "explanation": "The Alternate Segment Theorem states that the angle between a tangent and a chord drawn through the point of contact is equal to the angle subtended by the chord in the alternate segment."
+                  },
+                  {
+                        "text": "Angles subtended by the same arc at the circumference in the same segment of a circle are:",
+                        "syllabus": "Grade 11 Mathematics \u2022 Angles in Same Segment",
+                        "options": [
+                              "Supplementary",
+                              "Complementary",
+                              "Equal",
+                              "Bisected"
+                        ],
+                        "correct": 2,
+                        "explanation": "Theorem: Angles subtended by the same arc at the circumference in the same segment of a circle are equal to each other."
+                  }
+            ]
+      },
+      {
+            "id": "quiz-commercial-arithmetic",
+            "title": "Commercial Arithmetic",
+        "titleSi": "වාණිජ ගණිතය",
+        "topicSi": "අංක ගණිතය",
+        "descSi": "ප්‍රතිශත, බදු, වැල් පොලිය, හීනවන ශේෂ ක්ෂයවීම් සහ කොටස් වෙළඳපල ලාභාංශ ගණනය කිරීම.",
+            "subject": "Mathematics",
+            "subjectKey": "mathematics",
+            "topic": "Arithmetic",
+            "difficulty": "Easy",
+            "difficultyBadge": "badge--easy",
+            "desc": "Calculate simple interest, percentage profit/loss, customs duty, municipal rates, and compound growth.",
+            "questionsCount": 5,
+            "duration": "~10 min",
+            "questions": [
+                  {
+                        "text": "A student deposits Rs. 10,000 in a savings account offering a simple interest rate of 8% per annum. What is the total interest earned after 3 years?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Simple Interest",
+                        "options": [
+                              "Rs. 800",
+                              "Rs. 1,600",
+                              "Rs. 2,400",
+                              "Rs. 3,200"
+                        ],
+                        "correct": 2,
+                        "explanation": "Simple Interest I = (P \u00b7 R \u00b7 T) / 100 = (10,000 \u00d7 8 \u00d7 3) / 100 = Rs. 2,400."
+                  },
+                  {
+                        "text": "A book purchased for Rs. 500 is sold for Rs. 600. What is the percentage profit on the cost price?",
+                        "syllabus": "Grade 10 Mathematics \u2022 Profit & Loss Percentages",
+                        "options": [
+                              "10%",
+                              "15%",
+                              "20%",
+                              "25%"
+                        ],
+                        "correct": 2,
+                        "explanation": "Profit = Selling Price - Cost Price = 600 - 500 = Rs. 100. Percentage profit = (100 / 500) \u00d7 100% = 20%."
+                  },
+                  {
+                        "text": "A sales receipt shows a purchase value of Rs. 2,000. If Value Added Tax (VAT) of 15% is levied, what is the total amount payable?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Taxes & VAT",
+                        "options": [
+                              "Rs. 2,150",
+                              "Rs. 2,300",
+                              "Rs. 2,450",
+                              "Rs. 3,000"
+                        ],
+                        "correct": 1,
+                        "explanation": "VAT amount = 15% of Rs. 2,000 = (15 / 100) \u00d7 2,000 = Rs. 300. Total payable = Rs. 2,000 + Rs. 300 = Rs. 2,300."
+                  },
+                  {
+                        "text": "Customs duty of 20% is charged on an imported electronic device valued at Rs. 15,000. How much customs duty must be paid?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Customs Duty",
+                        "options": [
+                              "Rs. 1,500",
+                              "Rs. 2,000",
+                              "Rs. 3,000",
+                              "Rs. 4,500"
+                        ],
+                        "correct": 2,
+                        "explanation": "Customs Duty = (20 / 100) \u00d7 15,000 = Rs. 3,000."
+                  },
+                  {
+                        "text": "A local municipal council charges an annual property rate of 12% on an assessed house value of Rs. 100,000. What is the annual rates payment?",
+                        "syllabus": "Grade 11 Mathematics \u2022 Municipal Rates",
+                        "options": [
+                              "Rs. 1,200",
+                              "Rs. 6,000",
+                              "Rs. 12,000",
+                              "Rs. 24,000"
+                        ],
+                        "correct": 2,
+                        "explanation": "Annual Rates = (12 / 100) \u00d7 100,000 = Rs. 12,000."
+                  }
+            ]
+      }
+];
+
+      const defaultFallback = DEFAULT_QUIZZES;
+      let QUIZZES = (window.MansalaDB && MansalaDB.getQuizzes) 
+        ? MansalaDB.getQuizzes(null, { public: true }) 
+        : [...defaultFallback];
+      window.QUIZZES = QUIZZES;
+
+      // Application State
+      const state = {
+        stage: 'explore', // 'explore' | 'active' | 'results' | 'review'
+        selectedSubject: 'all',
+        currentPage: 1,
+        activeQuiz: null,
+        currentQuestionIndex: 0,
+        userAnswers: {}, // { [qIdx]: selectedOptionIdx }
+        reviewQuestionIndex: 0,
+        modalAction: null // 'submit' | 'exit'
+      };
+
+      // Option Markers (A, B, C, D)
+      const OPTION_MARKERS = ['A', 'B', 'C', 'D'];
+
+      // Stage DOM Elements
+      const stageExplore = document.getElementById('stage-explore');
+      const stageActive = document.getElementById('stage-active');
+      const stageResults = document.getElementById('stage-results');
+      const resultsDashboardView = document.getElementById('results-dashboard-view');
+      const resultsReviewView = document.getElementById('results-review-view');
+      const quizModal = document.getElementById('quiz-modal');
+      const quizzesGrid = document.getElementById('quizzes-grid');
+      const quizzesPagination = document.getElementById('quizzes-pagination');
+      const quizCountText = document.getElementById('quiz-count-text');
+
+      // Active Quiz Elements
+      const activeQuizTitle = document.getElementById('active-quiz-title');
+      const activeQuizBadge = document.getElementById('active-quiz-badge');
+      const activeProgressCounter = document.getElementById('active-progress-counter');
+      const activeProgressFill = document.getElementById('active-progress-fill');
+      const activeQuestionSyllabus = document.getElementById('active-question-syllabus');
+      const activeQuestionText = document.getElementById('active-question-text');
+      const activeOptionsList = document.getElementById('active-options-list');
+      const btnActivePrev = document.getElementById('btn-active-prev');
+      const btnActiveNext = document.getElementById('btn-active-next');
+      const btnQuizExit = document.getElementById('btn-quiz-exit');
+
+      // Results Elements
+      const resultsScoreValue = document.getElementById('results-score-value');
+      const resultsScorePct = document.getElementById('results-score-pct');
+      const resultsScoreMeter = document.getElementById('results-score-meter');
+      const resultsFeedbackTitle = document.getElementById('results-feedback-title');
+      const resultsQuizInfo = document.getElementById('results-quiz-info');
+      const resultsFeedbackDesc = document.getElementById('results-feedback-desc');
+      const resultsMetricCorrect = document.getElementById('results-metric-correct');
+      const resultsMetricIncorrect = document.getElementById('results-metric-incorrect');
+      const resultsMetricUnanswered = document.getElementById('results-metric-unanswered');
+      const resultsMetricPct = document.getElementById('results-metric-pct');
+      const btnResultsReview = document.getElementById('btn-results-review');
+      const btnResultsRetry = document.getElementById('btn-results-retry');
+      const btnResultsExplore = document.getElementById('btn-results-explore');
+
+      // Review Sub-View Elements
+      const btnReviewBackTop = document.getElementById('btn-review-back-top');
+      const btnReviewBackBottom = document.getElementById('btn-review-back-bottom');
+      const reviewStatusBadge = document.getElementById('review-status-badge');
+      const reviewCounter = document.getElementById('review-counter');
+      const reviewQuestionSyllabus = document.getElementById('review-question-syllabus');
+      const reviewQuestionText = document.getElementById('review-question-text');
+      const reviewOptionsList = document.getElementById('review-options-list');
+      const reviewSolutionText = document.getElementById('review-solution-text');
+      const btnReviewPrev = document.getElementById('btn-review-prev');
+      const btnReviewNext = document.getElementById('btn-review-next');
+
+      // Modal Elements
+      const modalTitle = document.getElementById('modal-title');
+      const modalDesc = document.getElementById('modal-desc');
+      const btnModalCancel = document.getElementById('btn-modal-cancel');
+      const btnModalConfirm = document.getElementById('btn-modal-confirm');
+
+      // ─────────────────────────────────────────────────────────────
+      // STAGE TRANSITIONS
+      // ─────────────────────────────────────────────────────────────
+      function switchStage(targetStage) {
+        state.stage = targetStage;
+
+        // Hide all stages
+        stageExplore.classList.remove('is-visible');
+        stageActive.classList.remove('is-visible');
+        stageResults.classList.remove('is-visible');
+
+        if (targetStage === 'explore') {
+          stageExplore.classList.add('is-visible');
+          renderExploreQuizzes();
+        } else if (targetStage === 'active') {
+          stageActive.classList.add('is-visible');
+          renderActiveQuestion();
+        } else if (targetStage === 'results') {
+          stageResults.classList.add('is-visible');
+          resultsDashboardView.style.display = 'block';
+          resultsReviewView.style.display = 'none';
+          renderResultsDashboard();
+        } else if (targetStage === 'review') {
+          stageResults.classList.add('is-visible');
+          resultsDashboardView.style.display = 'none';
+          resultsReviewView.style.display = 'block';
+          renderReviewQuestion();
+        }
+
+        // Scroll to top smoothly
+        const pageHeader = document.querySelector('.page-header');
+        if (pageHeader) {
+          window.scrollTo({ top: pageHeader.offsetTop, behavior: 'smooth' });
+        }
+      }
+
+      // ─────────────────────────────────────────────────────────────
+      // STAGE 1: EXPLORE QUIZZES CONTROLLER WITH PAGINATION
+      // ─────────────────────────────────────────────────────────────
+      function getFilteredQuizzes() {
+        if (state.selectedSubject === 'all') {
+          return QUIZZES;
+        }
+        return QUIZZES.filter(q => q.subjectKey === state.selectedSubject);
+      }
+
+      function createQuizCardHTML(quiz) {
+        const subBadge = quiz.subjectKey === 'science' ? 'badge--science' : 'badge--maths';
+        const isSi = (window.MansalaLang && window.MansalaLang.getLanguage() === 'si');
+        const qCountText = isSi ? `ප්‍රශ්න ${quiz.questionsCount}` : `${quiz.questionsCount} Questions`;
+        const startQuizBtnText = isSi ? 'ප්‍රශ්නාවලිය අරඹන්න &rarr;' : 'Start Quiz &rarr;';
+        const selfPacedText = isSi ? 'ස්වයං අධ්‍යයනය' : 'Self-paced';
+        const subDisplay = isSi ? (quiz.subjectKey === 'science' ? 'විද්‍යාව' : 'ගණිතය') : quiz.subject;
+        const diffDisplay = isSi ? (quiz.difficulty === 'Easy' ? 'පහසු' : quiz.difficulty === 'Medium' ? 'මධ්‍යස්ථ' : 'අභියෝගාත්මක') : quiz.difficulty;
+        const durationText = isSi ? quiz.duration.replace(/min/g, 'මිනි.').replace(/~/g, 'දළ වශයෙන් මිනි. ') : quiz.duration;
+        const quizTitle = (isSi && quiz.titleSi) ? quiz.titleSi : ((isSi && window.MansalaLang) ? window.MansalaLang.t(quiz.title) : quiz.title);
+        const quizDesc = (isSi && quiz.descSi) ? quiz.descSi : ((isSi && window.MansalaLang) ? window.MansalaLang.t(quiz.desc) : quiz.desc);
+        const topicDisplay = (isSi && quiz.topicSi) ? quiz.topicSi : ((isSi && window.MansalaLang) ? window.MansalaLang.t(quiz.topic) : quiz.topic);
+
+        return `
+          <div class="quiz-card" data-subject="${quiz.subjectKey}">
+            <div class="quiz-card__header-badges">
+              <div class="quiz-card__badges-group">
+                <span class="badge ${subBadge}">${subDisplay}</span>
+                <span class="badge badge--neutral">${topicDisplay}</span>
+              </div>
+              <span class="badge ${quiz.difficultyBadge}">${diffDisplay}</span>
+            </div>
+            <h3 class="quiz-card__title">${quizTitle}</h3>
+            <p class="quiz-card__desc">${quizDesc}</p>
+            <div class="quiz-card__info">
+              <span class="meta-item"><svg class="lucide lucide-help-circle icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg> ${qCountText}</span>
+              <span class="meta-item"><svg class="lucide lucide-clock icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ${durationText}</span>
+              <span class="meta-item"><svg class="lucide lucide-gauge icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg> ${selfPacedText}</span>
+            </div>
+            <div class="quiz-card__footer">
+              <button type="button" class="btn btn--primary btn-start-quiz" data-quiz-id="${quiz.id}">
+                ${startQuizBtnText}
+              </button>
+            </div>
+          </div>
+        `;
+      }
+
+      function getPaginationPages(current, total) {
+        if (total <= 7) {
+          const pages = [];
+          for (let i = 1; i <= total; i++) pages.push(i);
+          return pages;
+        }
+        if (current <= 4) {
+          return [1, 2, 3, 4, 5, '...', total];
+        } else if (current >= total - 3) {
+          return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
+        } else {
+          return [1, '...', current - 1, current, current + 1, '...', total];
+        }
+      }
+
+      function renderQuizzesPagination(totalPages) {
+        if (totalPages <= 1) {
+          quizzesPagination.style.display = 'none';
+          quizzesPagination.innerHTML = '';
+          return;
+        }
+
+        quizzesPagination.style.display = 'flex';
+        const pages = getPaginationPages(state.currentPage, totalPages);
+        let html = '';
+
+        // Previous button
+        const isPrevDisabled = state.currentPage <= 1;
+        html += `
+          <button 
+            type="button" 
+            class="pagination-btn pagination-btn--prev ${isPrevDisabled ? 'is-disabled' : ''}" 
+            ${isPrevDisabled ? 'disabled' : ''} 
+            data-page="${state.currentPage - 1}" 
+            aria-label="Previous page"
+          >
+            <svg class="lucide lucide-chevron-left" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+        `;
+
+        // Page number buttons
+        pages.forEach(p => {
+          if (p === '...') {
+            html += `<span class="pagination-ellipsis" aria-hidden="true">&hellip;</span>`;
+          } else {
+            const isActive = p === state.currentPage;
+            html += `
+              <button 
+                type="button" 
+                class="pagination-page-btn ${isActive ? 'is-active' : ''}" 
+                data-page="${p}" 
+                aria-label="Page ${p}" 
+                ${isActive ? 'aria-current="page"' : ''}
+              >${p}</button>
+            `;
+          }
+        });
+
+        // Next button
+        const isNextDisabled = state.currentPage >= totalPages;
+        html += `
+          <button 
+            type="button" 
+            class="pagination-btn pagination-btn--next ${isNextDisabled ? 'is-disabled' : ''}" 
+            ${isNextDisabled ? 'disabled' : ''} 
+            data-page="${state.currentPage + 1}" 
+            aria-label="Next page"
+          >
+            <svg class="lucide lucide-chevron-right" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        `;
+
+        quizzesPagination.innerHTML = html;
+      }
+
+      function renderExploreQuizzes() {
+        // Re-read from MansalaDB to reflect admin dashboard changes
+        if (typeof MansalaDB !== 'undefined' && typeof MansalaDB.getQuizzes === 'function') {
+          QUIZZES = MansalaDB.getQuizzes(null, { public: true });
+        }
+        const filtered = getFilteredQuizzes();
+        const total = filtered.length;
+        const totalPages = Math.ceil(total / QUIZZES_PER_PAGE);
+
+        // Adjust currentPage if out of bounds
+        if (state.currentPage > totalPages && totalPages > 0) {
+          state.currentPage = 1;
+        }
+        if (state.currentPage < 1) {
+          state.currentPage = 1;
+        }
+
+        // Update Range Counter
+        const isSi = (window.MansalaLang && window.MansalaLang.getLanguage() === 'si');
+        if (total === 0) {
+          quizCountText.innerHTML = isSi ? 'ප්‍රශ්නාවලි <strong>0</strong> ක් පෙන්වයි' : 'Showing <strong>0</strong> quizzes';
+        } else if (total === 1) {
+          quizCountText.innerHTML = isSi ? 'ප්‍රශ්නාවලි <strong>1 න් 1</strong> ක් පෙන්වයි' : 'Showing <strong>1 of 1</strong> practice quiz';
+        } else {
+          const startNum = (state.currentPage - 1) * QUIZZES_PER_PAGE + 1;
+          const endNum = Math.min(startNum + QUIZZES_PER_PAGE - 1, total);
+          quizCountText.innerHTML = isSi
+            ? `සම්පාදිත ප්‍රශ්නාවලි ${total} න් <strong>${startNum}–${endNum}</strong> පෙන්වයි`
+            : `Showing <strong>${startNum}–${endNum} of ${total}</strong> curated practice quizzes`;
+        }
+
+        // Slice exactly 6 quizzes for current page
+        const startIndex = (state.currentPage - 1) * QUIZZES_PER_PAGE;
+        const pageQuizzes = filtered.slice(startIndex, startIndex + QUIZZES_PER_PAGE);
+
+        quizzesGrid.innerHTML = pageQuizzes.map(createQuizCardHTML).join('');
+
+        // Translate dynamic cards if Sinhala is active
+        if (window.MansalaLang && typeof window.MansalaLang.translate === 'function') {
+          window.MansalaLang.translate(quizzesGrid);
+        }
+
+        // Render Pagination Controls
+        renderQuizzesPagination(totalPages);
+      }
+
+      function filterCategory(subject) {
+        state.selectedSubject = subject;
+        state.currentPage = 1; // Reset to page 1 on category switch!
+
+        const pills = document.querySelectorAll('.quiz-cat-pill');
+        pills.forEach(pill => {
+          const pillSub = pill.getAttribute('data-subject');
+          const isMatch = pillSub === subject;
+          pill.classList.toggle('is-active', isMatch);
+          pill.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+        });
+
+        renderExploreQuizzes();
+      }
+
+      // ─────────────────────────────────────────────────────────────
+      // STAGE 2: ACTIVE QUIZ CONTROLLER
+      // ─────────────────────────────────────────────────────────────
+      function startQuiz(quizId) {
+        const quiz = QUIZZES.find(q => q.id === quizId);
+        if (!quiz) return;
+
+        state.activeQuiz = quiz;
+        state.currentQuestionIndex = 0;
+        state.userAnswers = {};
+
+        // Update Quiz Header Info
+        const isSi = (window.MansalaLang && window.MansalaLang.getLanguage() === 'si');
+        activeQuizTitle.textContent = (isSi && quiz.titleSi) ? quiz.titleSi : quiz.title;
+        const subjText = isSi ? (quiz.subjectKey === 'science' ? 'විද්‍යාව' : 'ගණිතය') : quiz.subject;
+        activeQuizBadge.textContent = subjText;
+        activeQuizBadge.className = 'badge ' + (quiz.subjectKey === 'science' ? 'badge--science' : 'badge--maths');
+
+        switchStage('active');
+      }
+
+      function renderActiveQuestion() {
+        const quiz = state.activeQuiz;
+        if (!quiz) return;
+
+        const isSi = (window.MansalaLang && window.MansalaLang.getLanguage() === 'si');
+        const qIdx = state.currentQuestionIndex;
+        const total = quiz.questions.length;
+        const question = quiz.questions[qIdx];
+
+        // Update active header dynamically
+        activeQuizTitle.textContent = (isSi && quiz.titleSi) ? quiz.titleSi : quiz.title;
+        activeQuizBadge.textContent = isSi ? (quiz.subjectKey === 'science' ? 'විද්‍යාව' : 'ගණිතය') : quiz.subject;
+
+        // Counter & Progress Bar
+        activeProgressCounter.textContent = isSi ? `ප්‍රශ්න ${qIdx + 1} / ${total}` : `Question ${qIdx + 1} of ${total}`;
+        const pct = Math.round(((qIdx + 1) / total) * 100);
+        activeProgressFill.style.width = `${pct}%`;
+
+        // Question Details
+        activeQuestionSyllabus.textContent = (isSi && question.syllabusSi) ? question.syllabusSi : (question.syllabus || ((isSi && quiz.titleSi) ? quiz.titleSi : `Unit Focus: ${quiz.title}`));
+        activeQuestionText.textContent = (isSi && question.textSi) ? question.textSi : question.text;
+
+        // Render Answer Option Cards
+        const currentSelected = state.userAnswers[qIdx];
+        activeOptionsList.innerHTML = question.options.map((optText, optIdx) => {
+          const isSelected = currentSelected === optIdx;
+          const marker = OPTION_MARKERS[optIdx] || (optIdx + 1);
+          const displayedOptText = (isSi && question.optionsSi && question.optionsSi[optIdx]) ? question.optionsSi[optIdx] : optText;
+          return `
+            <div class="quiz-option-card ${isSelected ? 'is-selected' : ''}" data-opt-idx="${optIdx}" role="radio" aria-checked="${isSelected}">
+              <span class="quiz-option-marker">${marker}</span>
+              <span class="quiz-option-text">${escapeHtml(displayedOptText)}</span>
+              <svg class="quiz-option-check-icon lucide lucide-check icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+          `;
+        }).join('');
+
+        // Navigation Buttons
+        btnActivePrev.disabled = qIdx === 0;
+        btnActivePrev.innerHTML = isSi ? '&larr; පෙර' : '&larr; Previous';
+
+        if (qIdx === total - 1) {
+          const submitText = isSi ? 'ප්‍රශ්නාවලිය ඉදිරිපත් කරන්න' : 'Submit Quiz';
+          btnActiveNext.innerHTML = `${submitText} <svg class="lucide lucide-check icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+          btnActiveNext.className = 'btn btn--primary btn-quiz-nav btn-quiz-submit';
+        } else {
+          btnActiveNext.innerHTML = isSi ? 'මීළඟ &rarr;' : 'Next &rarr;';
+          btnActiveNext.className = 'btn btn--secondary btn-quiz-nav';
+        }
+      }
+
+      // Handle Option Selection
+      activeOptionsList.addEventListener('click', (e) => {
+        const card = e.target.closest('.quiz-option-card');
+        if (!card) return;
+
+        const optIdx = parseInt(card.getAttribute('data-opt-idx'), 10);
+        state.userAnswers[state.currentQuestionIndex] = optIdx;
+
+        // Update visuals
+        const allCards = activeOptionsList.querySelectorAll('.quiz-option-card');
+        allCards.forEach(c => {
+          c.classList.remove('is-selected');
+          c.setAttribute('aria-checked', 'false');
+        });
+
+        card.classList.add('is-selected');
+        card.setAttribute('aria-checked', 'true');
+      });
+
+      // Navigation: Previous
+      btnActivePrev.addEventListener('click', () => {
+        if (state.currentQuestionIndex > 0) {
+          state.currentQuestionIndex--;
+          renderActiveQuestion();
+        }
+      });
+
+      // Navigation: Next or Submit
+      btnActiveNext.addEventListener('click', () => {
+        const quiz = state.activeQuiz;
+        if (!quiz) return;
+
+        if (state.currentQuestionIndex < quiz.questions.length - 1) {
+          state.currentQuestionIndex++;
+          renderActiveQuestion();
+        } else {
+          // Final Question -> Trigger Submit Confirmation Dialog
+          openSubmitModal();
+        }
+      });
+
+      // Exit Quiz Button
+      btnQuizExit.addEventListener('click', () => {
+        openExitModal();
+      });
+
+      // ─────────────────────────────────────────────────────────────
+      // MODAL CONFIRMATION DIALOGS
+      // ─────────────────────────────────────────────────────────────
+      function openSubmitModal() {
+        state.modalAction = 'submit';
+        const total = state.activeQuiz.questions.length;
+        const answered = Object.keys(state.userAnswers).length;
+        const unanswered = total - answered;
+
+        modalTitle.textContent = 'Submit Your Practice Quiz?';
+        if (unanswered > 0) {
+          modalDesc.innerHTML = `You have answered <strong>${answered} of ${total}</strong> questions. (${unanswered} unanswered). Are you ready to submit and view your results?`;
+        } else {
+          modalDesc.innerHTML = `You have answered all <strong>${total}</strong> questions. Submit now to review your score and step-by-step worked solutions?`;
+        }
+
+        btnModalCancel.textContent = 'Review Answers';
+        btnModalConfirm.textContent = 'Yes, Submit Quiz';
+        quizModal.style.display = 'flex';
+      }
+
+      function openExitModal() {
+        state.modalAction = 'exit';
+        modalTitle.textContent = 'Exit Quiz Session?';
+        modalDesc.innerHTML = 'Are you sure you want to leave this quiz? Your current attempt will be discarded and you will return to the quiz catalogue.';
+        btnModalCancel.textContent = 'Keep Practising';
+        btnModalConfirm.textContent = 'Exit Quiz';
+        quizModal.style.display = 'flex';
+      }
+
+      btnModalCancel.addEventListener('click', () => {
+        quizModal.style.display = 'none';
+        state.modalAction = null;
+      });
+
+      btnModalConfirm.addEventListener('click', () => {
+        quizModal.style.display = 'none';
+        if (state.modalAction === 'submit') {
+          state.modalAction = null;
+          switchStage('results');
+        } else if (state.modalAction === 'exit') {
+          state.modalAction = null;
+          state.activeQuiz = null;
+          switchStage('explore');
+        }
+      });
+
+      // Close modal on outside backdrop click
+      quizModal.addEventListener('click', (e) => {
+        if (e.target === quizModal) {
+          quizModal.style.display = 'none';
+          state.modalAction = null;
+        }
+      });
+
+      // ─────────────────────────────────────────────────────────────
+      // STAGE 3: RESULTS DASHBOARD
+      // ─────────────────────────────────────────────────────────────
+      function renderResultsDashboard() {
+        const quiz = state.activeQuiz;
+        if (!quiz) return;
+
+        const total = quiz.questions.length;
+        let correctCount = 0;
+        let unansweredCount = 0;
+
+        quiz.questions.forEach((q, idx) => {
+          const userChoice = state.userAnswers[idx];
+          if (userChoice === undefined) {
+            unansweredCount++;
+          } else if (userChoice === q.correct) {
+            correctCount++;
+          }
+        });
+
+        const incorrectCount = total - correctCount - unansweredCount;
+        const pct = Math.round((correctCount / total) * 100);
+
+        // Update Circular Score Meter
+        resultsScoreValue.textContent = `${correctCount}/${total}`;
+        resultsScorePct.textContent = `${pct}%`;
+
+        // Circumference: 2 * π * 54 ≈ 339.29
+        const circumference = 339.29;
+        const offset = circumference * (1 - (pct / 100));
+        resultsScoreMeter.style.strokeDashoffset = offset;
+
+        // Feedback Text based on score
+        const isSi = (window.MansalaLang && window.MansalaLang.getLanguage() === 'si');
+        const subjectName = isSi ? (quiz.subjectKey === 'science' ? 'විද්‍යාව' : 'ගණිතය') : quiz.subject;
+        resultsQuizInfo.textContent = `${quiz.title} • ${subjectName} (${quiz.topic})`;
+        if (pct >= 80) {
+          resultsFeedbackTitle.textContent = isSi ? 'විශිෂ්ට සාමාර්ථයක්!' : 'Outstanding Performance!';
+          resultsFeedbackDesc.textContent = isSi ? 'විශිෂ්ට ප්‍රතිඵලයක්! ඔබ මෙම මූලික විෂය නිර්දේශ සංකල්ප මැනවින් ප්‍රගුණ කර ඇත. ඉදිරි විභාගය සඳහාද මෙම උසස් ප්‍රමිතිය පවත්වා ගන්න.' : 'Exceptional result! You have demonstrated strong mastery of these core syllabus concepts. Keep up this high standard for the examination.';
+          resultsScoreMeter.style.stroke = '#10B981'; // Green
+        } else if (pct >= 50) {
+          resultsFeedbackTitle.textContent = isSi ? 'හොඳ උත්සාහයක් — තවදුරටත් දියුණු වන්න!' : 'Good Effort — Keep Improving!';
+          resultsFeedbackDesc.textContent = isSi ? 'මෙම විෂය කරුණු පිළිබඳව ඔබට හොඳ පදනමක් ඇත. වැරදුණු ප්‍රශ්න නැවත සමාලෝචනය කර නිවැරදි පිළිතුරු ලිවීමේ ශිල්පීය ක්‍රම ප්‍රගුණ කරන්න.' : 'You have a solid foundation in this topic. Take a few minutes to review your incorrect questions and master the underlying answering techniques.';
+          resultsScoreMeter.style.stroke = 'var(--clr-accent)'; // Orange
+        } else {
+          resultsFeedbackTitle.textContent = isSi ? 'ඉගෙනීමට හොඳ අවස්ථාවක්!' : 'Learning Opportunity!';
+          resultsFeedbackDesc.textContent = isSi ? 'අධෛර්යමත් නොවන්න! නිරන්තර පුහුණුව තුළින් විශිෂ්ට දැනුමක් ගොඩනගා ගත හැක. පියවරෙන් පියවර විසඳුම් කියවා මෙම ප්‍රශ්නාවලිය නැවත උත්සාහ කරන්න.' : 'Do not be discouraged! Regular practice is how true understanding is built. Read through the step-by-step worked solutions and retry this quiz.';
+          resultsScoreMeter.style.stroke = '#EF4444'; // Red
+        }
+
+        // Metrics Grid
+        resultsMetricCorrect.textContent = correctCount;
+        resultsMetricIncorrect.textContent = incorrectCount;
+        resultsMetricUnanswered.textContent = unansweredCount;
+        resultsMetricPct.textContent = `${pct}%`;
+      }
+
+      // Results Actions
+      btnResultsReview.addEventListener('click', () => {
+        state.reviewQuestionIndex = 0;
+        switchStage('review');
+      });
+
+      btnResultsRetry.addEventListener('click', () => {
+        state.currentQuestionIndex = 0;
+        state.userAnswers = {};
+        switchStage('active');
+      });
+
+      btnResultsExplore.addEventListener('click', () => {
+        state.activeQuiz = null;
+        switchStage('explore');
+      });
+
+      // ─────────────────────────────────────────────────────────────
+      // STAGE 3 (SUB-VIEW): DETAILED ANSWER REVIEW
+      // ─────────────────────────────────────────────────────────────
+      function renderReviewQuestion() {
+        const quiz = state.activeQuiz;
+        if (!quiz) return;
+
+        const qIdx = state.reviewQuestionIndex;
+        const total = quiz.questions.length;
+        const question = quiz.questions[qIdx];
+        const userChoice = state.userAnswers[qIdx];
+        const correctChoice = question.correct;
+        const isSi = (window.MansalaLang && window.MansalaLang.getLanguage() === 'si');
+
+        // Header Counter
+        reviewCounter.textContent = isSi ? `ප්‍රශ්න ${qIdx + 1} / ${total}` : `Question ${qIdx + 1} of ${total}`;
+        reviewQuestionSyllabus.textContent = (isSi && question.syllabusSi) ? question.syllabusSi : (question.syllabus || ((isSi && quiz.titleSi) ? quiz.titleSi : `Unit: ${quiz.title}`));
+        reviewQuestionText.textContent = (isSi && question.textSi) ? question.textSi : question.text;
+
+        // Question Status Pill
+        if (userChoice === undefined) {
+          reviewStatusBadge.className = 'review-question-status-badge review-question-status-badge--unanswered';
+          reviewStatusBadge.innerHTML = isSi ? '&#8212; පිළිතුරු සපයා නැත (ලකුණු 0)' : '&#8212; Unanswered (0 Marks)';
+        } else if (userChoice === correctChoice) {
+          reviewStatusBadge.className = 'review-question-status-badge review-question-status-badge--correct';
+          const corrLabel = isSi ? 'නිවැරදියි (+1 ලකුණ)' : 'Correct (+1 Mark)';
+          reviewStatusBadge.innerHTML = `<svg class="lucide lucide-check icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>${corrLabel}`;
+        } else {
+          reviewStatusBadge.className = 'review-question-status-badge review-question-status-badge--incorrect';
+          reviewStatusBadge.innerHTML = isSi ? '&#10007; වැරදියි (ලකුණු 0)' : '&#10007; Incorrect (0 Marks)';
+        }
+
+        // Render Answer Options with Annotations
+        reviewOptionsList.innerHTML = question.options.map((optText, optIdx) => {
+          const isCorrect = optIdx === correctChoice;
+          const isUserChoice = optIdx === userChoice;
+          const marker = OPTION_MARKERS[optIdx] || (optIdx + 1);
+          const displayedOptText = (isSi && question.optionsSi && question.optionsSi[optIdx]) ? question.optionsSi[optIdx] : optText;
+
+          let cardClass = 'review-option-card';
+          let tagHtml = '';
+
+          if (isCorrect && isUserChoice) {
+            cardClass += ' review-option-card--correct';
+            const tagLabel = isSi ? 'ඔබගේ පිළිතුර (නිවැරදියි)' : 'Your Answer (Correct)';
+            tagHtml = `<span class="review-option-status-tag review-option-status-tag--correct"><svg class="lucide lucide-check icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>${tagLabel}</span>`;
+          } else if (isCorrect) {
+            cardClass += ' review-option-card--correct';
+            const tagLabel = isSi ? 'නිවැරදි පිළිතුර' : 'Correct Answer';
+            tagHtml = `<span class="review-option-status-tag review-option-status-tag--correct"><svg class="lucide lucide-check icon-xs" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>${tagLabel}</span>`;
+          } else if (isUserChoice) {
+            cardClass += ' review-option-card--incorrect-choice';
+            const tagLabel = isSi ? 'ඔබගේ තේරීම' : 'Your Choice';
+            tagHtml = `<span class="review-option-status-tag review-option-status-tag--incorrect">&#10007; ${tagLabel}</span>`;
+          }
+
+          return `
+            <div class="${cardClass}">
+              <span class="quiz-option-marker">${marker}</span>
+              <span class="quiz-option-text">${escapeHtml(displayedOptText)}</span>
+              ${tagHtml}
+            </div>
+          `;
+        }).join('');
+
+        // Worked Solution Box
+        const displayedExp = (isSi && question.explanationSi) ? question.explanationSi : question.explanation;
+        reviewSolutionText.innerHTML = escapeHtml(displayedExp);
+
+        // Review Navigation Buttons
+        btnReviewPrev.disabled = qIdx === 0;
+        btnReviewNext.disabled = qIdx === total - 1;
+      }
+
+      // Review Navigation Controls
+      btnReviewPrev.addEventListener('click', () => {
+        if (state.reviewQuestionIndex > 0) {
+          state.reviewQuestionIndex--;
+          renderReviewQuestion();
+        }
+      });
+
+      btnReviewNext.addEventListener('click', () => {
+        const quiz = state.activeQuiz;
+        if (quiz && state.reviewQuestionIndex < quiz.questions.length - 1) {
+          state.reviewQuestionIndex++;
+          renderReviewQuestion();
+        }
+      });
+
+      btnReviewBackTop.addEventListener('click', () => {
+        switchStage('results');
+      });
+
+      btnReviewBackBottom.addEventListener('click', () => {
+        switchStage('results');
+      });
+
+      // ─────────────────────────────────────────────────────────────
+      // GLOBAL LISTENERS & DELEGATION
+      // ─────────────────────────────────────────────────────────────
+
+      // Category Pill Tabs
+      document.querySelector('.quiz-category-pills').addEventListener('click', (e) => {
+        const pill = e.target.closest('.quiz-cat-pill');
+        if (!pill) return;
+        const sub = pill.getAttribute('data-subject');
+        filterCategory(sub);
+      });
+
+      // "Start Quiz" Button Delegation
+      quizzesGrid.addEventListener('click', (e) => {
+        const btn = e.target.closest('.btn-start-quiz');
+        if (!btn) return;
+        const quizId = btn.getAttribute('data-quiz-id');
+        startQuiz(quizId);
+      });
+
+      // Numbered Pagination Clicks (Delegated)
+      quizzesPagination.addEventListener('click', (e) => {
+        const btn = e.target.closest('button[data-page]');
+        if (!btn || btn.disabled || btn.classList.contains('is-active')) return;
+
+        const targetPage = parseInt(btn.getAttribute('data-page'), 10);
+        if (!isNaN(targetPage) && targetPage >= 1) {
+          state.currentPage = targetPage;
+          renderExploreQuizzes();
+
+          // Smooth scroll to top of discovery bar
+          const discoveryBar = document.querySelector('.quiz-discovery-bar');
+          if (discoveryBar) {
+            const topPos = discoveryBar.getBoundingClientRect().top + window.pageYOffset - 80;
+            window.scrollTo({ top: topPos, behavior: 'smooth' });
+          }
+        }
+      });
+
+      function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>"']/g, function(m) {
+          switch (m) {
+            case '&': return '&amp;';
+            case '<': return '&lt;';
+            case '>': return '&gt;';
+            case '"': return '&quot;';
+            case "'": return '&#39;';
+            default: return m;
+          }
+        });
+      }
+
+      // Initial Filter & Render
+      filterCategory('all');
+
+      // Deep Link Check: If navigating from homepage with ?quiz=... or #sample-quiz, start target quiz
+      const urlParams = new URLSearchParams(window.location.search);
+      const targetQuizId = urlParams.get('quiz') || (window.location.hash ? window.location.hash.replace(/^#quiz-/, 'quiz-').replace(/^#/, '') : null);
+      if (targetQuizId && targetQuizId !== 'stage-explore') {
+        if (targetQuizId === 'sample-quiz') {
+          startQuiz('quiz-forces-motion');
+        } else {
+          const found = QUIZZES.find(q => q.id === targetQuizId);
+          if (found) {
+            startQuiz(found.id);
+          } else if (QUIZZES.length > 0) {
+            startQuiz(QUIZZES[0].id);
+          }
+        }
+      }
+
+      window.addEventListener('mansala:langchange', () => {
+        renderExploreQuizzes();
+      });
+
+    })();
+  </script>
+
+  
+  <script>
+    if (typeof lucide !== 'undefined' && lucide.createIcons) {
+      lucide.createIcons();
+    }
+  </script>
+  <script src="js/lang.js"></script>
+</body>
+</html>

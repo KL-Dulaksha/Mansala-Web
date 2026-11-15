@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coordinator Dashboard — මංසල Mansala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4.5">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <!-- ==================== Fixed Sidebar ==================== -->
+    <aside class="dashboard-sidebar" aria-label="Coordinator Sidebar">
+      <!-- Site Logo -->
+      <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+        <img src="assets/images/logo-transparent.png" alt="මංසල Logo" class="site-logo-img">
+        <div class="logo-text-group">
+          <span class="logo-title">මංසල</span>
+          <span class="logo-subtitle">Faculty Coordinator Portal</span>
+        </div>
+      </a>
+
+      <!-- Authenticated User Card -->
+      <div class="sidebar-user">
+        <div class="sidebar-user__avatar" id="sidebar-user-avatar">KP</div>
+        <div class="sidebar-user__info">
+          <span class="sidebar-user__name" id="sidebar-user-name">Coordinator</span>
+          <span class="sidebar-user__role-badge sidebar-user__role-badge--coord" id="sidebar-user-badge">Coordinator</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="sidebar-nav" aria-label="Dashboard navigation">
+        
+        <div class="sidebar-section">
+          <div class="sidebar-section__title">Dashboard</div>
+          <button type="button" class="nav-link-btn active" data-view="overview">
+            <svg class="lucide lucide-layout-dashboard nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg>
+            <span>Overview</span>
+          </button>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-section__title">Curriculum Management</div>
+          <button type="button" class="nav-link-btn" data-view="resources">
+            <svg class="lucide lucide-folders nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 5a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2.5a1.5 1.5 0 0 1 1.2.6l.6.8a1.5 1.5 0 0 0 1.2.6z"></path><path d="M3 8.268a2 2 0 0 0-1 1.738V19a2 2 0 0 0 2 2h11a2 2 0 0 0 1.732-1"></path></svg>
+            <span>My Learning Resources</span>
+          </button>
+          <button type="button" class="nav-link-btn" data-view="quizzes">
+            <svg class="lucide lucide-clipboard-list nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg>
+            <span>My Practice Quizzes</span>
+          </button>
+        </div>
+
+        <div class="sidebar-bottom">
+          <a href="index.html" class="nav-link-btn" title="View Public Portal">
+            <svg class="lucide lucide-globe nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            <span>Public Website</span>
+          </a>
+          <button type="button" class="nav-link-btn" onclick="MansalaAuth.logout()" title="Sign Out of Session">
+            <svg class="lucide lucide-log-out nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 17 5-5-5-5"></path><path d="M21 12H9"></path><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path></svg>
+            <span>Log Out</span>
+          </button>
+        </div>
+
+      </nav>
+    </aside>
+
+    <!-- ==================== Main Content Area ==================== -->
+    <main class="dashboard-main">
+
+      <!-- Header -->
+      <header class="dashboard-header">
+        <div>
+          <h1 id="page-heading">Coordinator Dashboard</h1>
+          <p class="text-sm text-light" id="page-subheading">Manage your assigned learning materials and interactive assessment quizzes</p>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary" onclick="openResourceModal()">
+            + Upload Resource
+          </button>
+          <button type="button" class="btn btn--secondary" onclick="openQuizModal()">
+            + Create Quiz
+          </button>
+        </div>
+      </header>
+
+      <!-- ==================== VIEW 1: OVERVIEW ==================== -->
+      <div id="view-overview" class="mgmt-view is-active">
+        
+        <!-- Summary Metric Cards -->
+        <div class="summary-cards" id="overview-metrics-grid">
+          <!-- Populated dynamically by renderOverview() -->
+        </div>
+
+        <!-- Quick Actions Bar -->
+        <div class="quick-actions-bar" id="overview-actions-bar">
+          <div class="quick-action-card" onclick="openResourceModal()">
+            <div class="quick-action-card__icon"><svg class="lucide lucide-upload" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="m17 8-5-5-5 5"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path></svg></div>
+            <div>
+              <div class="quick-action-card__title">Upload Learning Material</div>
+              <div class="quick-action-card__desc">Add past papers, model questions, or notes</div>
+            </div>
+          </div>
+
+          <div class="quick-action-card" onclick="openQuizModal()">
+            <div class="quick-action-card__icon"><svg class="lucide lucide-clipboard-list" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg></div>
+            <div>
+              <div class="quick-action-card__title">Create Practice Quiz</div>
+              <div class="quick-action-card__desc">Author interactive multiple-choice questions</div>
+            </div>
+          </div>
+
+          <div class="quick-action-card" onclick="switchView('resources')">
+            <div class="quick-action-card__icon"><svg class="lucide lucide-book-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg></div>
+            <div>
+              <div class="quick-action-card__title">Manage My Resources</div>
+              <div class="quick-action-card__desc">Edit details, download files, toggle publication</div>
+            </div>
+          </div>
+
+          <div class="quick-action-card" onclick="switchView('quizzes')">
+            <div class="quick-action-card__icon"><svg class="lucide lucide-check-square" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></div>
+            <div>
+              <div class="quick-action-card__title">Manage My Quizzes</div>
+              <div class="quick-action-card__desc">Review, edit questions, publish or test quizzes</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ==================== VIEW 2: LEARNING RESOURCES (OWNED ONLY) ==================== -->
+      <div id="view-resources" class="mgmt-view">
+        <div class="cms-table-toolbar-container" id="res-toolbar-container">
+          <!-- Default Toolbar (when 0 selected) -->
+          <div class="cms-default-toolbar" id="res-default-toolbar">
+            <div class="cms-toolbar-left">
+              <input type="text" id="res-filter-search" class="filter-input-search" placeholder="Search my materials..." oninput="filterResourcesTable()">
+              <div class="cms-filter-tabs" id="res-subject-tabs">
+                <button type="button" class="cms-tab-btn is-active" data-val="all" onclick="setResourceSubjectTab('all')">All</button>
+                <button type="button" class="cms-tab-btn" data-val="Science" onclick="setResourceSubjectTab('Science')">Science</button>
+                <button type="button" class="cms-tab-btn" data-val="Mathematics" onclick="setResourceSubjectTab('Mathematics')">Mathematics</button>
+              </div>
+              <select id="res-filter-type" class="filter-select" onchange="filterResourcesTable()">
+                <option value="all">All Types</option>
+                <option value="Past Paper">Past Papers</option>
+                <option value="Model Paper">Model Papers</option>
+                <option value="Notes">Notes</option>
+                <option value="Marking Scheme">Marking Schemes</option>
+                <option value="Revision Material">Revision Materials</option>
+              </select>
+              <select id="res-filter-status" class="filter-select" onchange="filterResourcesTable()">
+                <option value="all">All Statuses</option>
+                <option value="published">Published</option>
+                <option value="draft">Draft</option>
+              </select>
+              <button type="button" class="btn btn--ghost btn--sm" onclick="resetResourceFilters()" style="height: 38px; border: 1px solid var(--clr-border-mid); color: #64748b; padding: 0 12px; font-weight: 600;" title="Reset search & filters">
+                Reset
+              </button>
+            </div>
+            <div class="cms-toolbar-right">
+              <button type="button" class="btn btn--primary" onclick="openResourceModal()">
+                + Upload Learning Material
+              </button>
+            </div>
+          </div>
+
+          <!-- Contextual Action Bar (when 1+ selected) -->
+          <div class="cms-contextual-bar" id="res-contextual-bar" style="display: none;">
+            <div class="cms-contextual-left">
+              <span class="cms-contextual-count" id="res-contextual-count">1 selected</span>
+              <button type="button" class="cms-contextual-clear" onclick="clearResourceSelection()">✕ Clear</button>
+            </div>
+            <div class="cms-contextual-actions" id="res-contextual-actions"></div>
+          </div>
+        </div>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__header" id="res-table-heading">
+            <h3>My Learning Resources</h3>
+            <span class="badge badge--neutral" id="res-count-badge">Loading...</span>
+          </div>
+          <div class="dashboard-panel__body" style="padding: 0;">
+            <div class="table-wrapper">
+              <table class="data-table" id="resources-table">
+                <thead>
+                  <tr>
+                    <th style="width: 38px; text-align: center;"><input type="checkbox" class="cms-table-check" id="res-select-all" onchange="toggleSelectAllResources(this.checked)" title="Select all on this page"></th>
+                    <th>Title</th>
+                    <th>Subject</th>
+                    <th>Type</th>
+                    <th>Year</th>
+                    <th>Status</th>
+                    <th>Date Added</th>
+                  </tr>
+                </thead>
+                <tbody id="resources-table-body">
+                  <!-- Rendered via JS -->
+                </tbody>
+              </table>
+            </div>
+            <!-- Numbered Pagination Footer -->
+            <div class="table-pagination-footer" id="res-pagination-footer">
+              <div class="table-pagination-info" id="res-pagination-info"></div>
+              <div class="table-pagination-controls" id="res-pagination-controls"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== VIEW 3: QUIZZES (OWNED ONLY) ==================== -->
+      <div id="view-quizzes" class="mgmt-view">
+        <div class="cms-table-toolbar-container" id="quiz-toolbar-container">
+          <!-- Default Toolbar (when 0 selected) -->
+          <div class="cms-default-toolbar" id="quiz-default-toolbar">
+            <div class="cms-toolbar-left">
+              <input type="text" id="quiz-filter-search" class="filter-input-search" placeholder="Search my quizzes..." oninput="filterQuizzesTable()">
+              <div class="cms-filter-tabs" id="quiz-subject-tabs">
+                <button type="button" class="cms-tab-btn is-active" data-val="all" onclick="setQuizSubjectTab('all')">All</button>
+                <button type="button" class="cms-tab-btn" data-val="Science" onclick="setQuizSubjectTab('Science')">Science</button>
+                <button type="button" class="cms-tab-btn" data-val="Mathematics" onclick="setQuizSubjectTab('Mathematics')">Mathematics</button>
+              </div>
+              <select id="quiz-filter-status" class="filter-select" onchange="filterQuizzesTable()">
+                <option value="all">All Statuses</option>
+                <option value="published">Published</option>
+                <option value="draft">Draft</option>
+              </select>
+              <button type="button" class="btn btn--ghost btn--sm" onclick="resetQuizFilters()" style="height: 38px; border: 1px solid var(--clr-border-mid); color: #64748b; padding: 0 12px; font-weight: 600;" title="Reset search & filters">
+                Reset
+              </button>
+            </div>
+            <div class="cms-toolbar-right">
+              <button type="button" class="btn btn--primary" onclick="openQuizModal()">
+                + Create Assessment Quiz
+              </button>
+            </div>
+          </div>
+
+          <!-- Contextual Action Bar (when 1+ selected) -->
+          <div class="cms-contextual-bar" id="quiz-contextual-bar" style="display: none;">
+            <div class="cms-contextual-left">
+              <span class="cms-contextual-count" id="quiz-contextual-count">1 selected</span>
+              <button type="button" class="cms-contextual-clear" onclick="clearQuizSelection()">✕ Clear</button>
+            </div>
+            <div class="cms-contextual-actions" id="quiz-contextual-actions"></div>
+          </div>
+        </div>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__header" id="quiz-table-heading">
+            <h3>My Assessment Quizzes</h3>
+            <span class="badge badge--neutral" id="quiz-count-badge">Loading...</span>
+          </div>
+          <div class="dashboard-panel__body" style="padding: 0;">
+            <div class="table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th style="width: 38px; text-align: center;"><input type="checkbox" class="cms-table-check" id="quiz-select-all" onchange="toggleSelectAllQuizzes(this.checked)" title="Select all on this page"></th>
+                    <th>Quiz Title</th>
+                    <th>Subject</th>
+                    <th>Topic</th>
+                    <th>Difficulty</th>
+                    <th>Questions</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="quizzes-table-body">
+                  <!-- Rendered via JS -->
+                </tbody>
+              </table>
+            </div>
+            <!-- Numbered Pagination Footer -->
+            <div class="table-pagination-footer" id="quiz-pagination-footer">
+              <div class="table-pagination-info" id="quiz-pagination-info"></div>
+              <div class="table-pagination-controls" id="quiz-pagination-controls"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ==================== MODAL 1: UPLOAD RESOURCE ==================== -->
+  <div id="modal-resource" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-card modal-card--lg" style="max-width: 680px; max-height: 90vh; display: flex; flex-direction: column;">
+      <div class="modal-header">
+        <h3 id="modal-res-title">Upload Learning Material</h3>
+        <button type="button" class="modal-close-btn" onclick="closeModal('modal-resource')" aria-label="Close modal"><svg class="lucide lucide-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+      </div>
+      <form id="form-resource" onsubmit="handleResourceSubmit(event)" style="display: flex; flex-direction: column; overflow: hidden; height: 100%; flex: 1; min-height: 0;">
+        <input type="hidden" id="modal-res-id">
+        <div class="modal-body" style="overflow-y: auto; flex: 1; min-height: 0;">
+          <div class="form-row mb-4">
+            <div class="form-group">
+              <label for="m-res-title" class="form-label">Resource Title (English) <span class="text-danger">*</span></label>
+              <input type="text" id="m-res-title" class="form-input" placeholder="e.g. O/L Science — 2024 Past Paper" required>
+            </div>
+            <div class="form-group">
+              <label for="m-res-title-si" class="form-label">Resource Title (Sinhala - Optional)</label>
+              <input type="text" id="m-res-title-si" class="form-input" placeholder="e.g. සා/පෙළ විද්‍යාව — 2024 ආදර්ශ ප්‍රශ්න පත්‍රය">
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <div class="form-group">
+              <label for="m-res-subject" class="form-label">Subject</label>
+              <select id="m-res-subject" class="form-select" required>
+                <option value="">Select subject...</option>
+                <option value="Science">Science</option>
+                <option value="Mathematics">Mathematics</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="m-res-type" class="form-label">Material Type</label>
+              <select id="m-res-type" class="form-select" required>
+                <option value="Past Paper">Past Paper</option>
+                <option value="Model Paper">Model Paper</option>
+                <option value="Notes">Notes &amp; Dossier</option>
+                <option value="Marking Scheme">Marking Scheme</option>
+                <option value="Revision Material">Revision Material</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <div class="form-group">
+              <label for="m-res-year" class="form-label">Target Exam Year</label>
+              <input type="text" id="m-res-year" class="form-input" value="2024">
+            </div>
+            <div class="form-group">
+              <label for="m-res-status" class="form-label">Publication Status</label>
+              <select id="m-res-status" class="form-select">
+                <option value="published">Published (Live for students)</option>
+                <option value="draft">Draft (Private in dashboard)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <div class="form-group">
+              <label for="m-res-desc" class="form-label">Description &amp; Syllabus Topics (English)</label>
+              <textarea id="m-res-desc" class="form-textarea" rows="2" placeholder="Summary of topics covered, paper structure, or guidance for students..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="m-res-desc-si" class="form-label">Description (Sinhala - Optional)</label>
+              <textarea id="m-res-desc-si" class="form-textarea" rows="2" placeholder="ආවරණය වන විෂය කරුණු, ප්‍රශ්න පත්‍ර ව්‍යුහය හෝ සිසුන් සඳහා උපදෙස්..."></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="m-res-file" class="form-label" style="font-weight: 600;">Upload File (PDF / DOCX)</label>
+            <input type="file" id="m-res-file" class="form-input" accept=".pdf,.docx,.doc" onchange="handleResourceFileChange(event)">
+            <input type="hidden" id="m-res-file-data" value="">
+            <input type="hidden" id="m-res-file-name" value="">
+            <input type="hidden" id="m-res-file-size" value="">
+            <input type="hidden" id="m-res-file-action" value="none">
+            <div id="m-res-file-badge" style="display: none; margin-top: 8px; padding: 10px 12px; background: rgba(59, 130, 246, 0.08); border-radius: var(--radius-sm); border: 1px solid rgba(59, 130, 246, 0.25); align-items: center; justify-content: space-between;">
+              <div style="display: flex; align-items: center; gap: 8px; overflow: hidden;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                  <span id="m-res-attached-name" style="font-weight: 700; font-size: 0.84rem; color: #1e40af;"></span>
+                  <span id="m-res-attached-size" class="text-xs text-light" style="margin-left: 6px;"></span>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <button type="button" class="btn btn--sm btn--ghost" id="m-res-file-download-btn" onclick="downloadCurrentAttachedFile()" style="color: #2563eb; font-size: 11px; padding: 2px 8px; flex-shrink: 0;">Download</button>
+                <button type="button" class="btn btn--sm btn--ghost" onclick="clearResourceFile()" style="color: #ef4444; font-size: 11px; padding: 2px 8px; flex-shrink: 0;">Remove</button>
+              </div>
+            </div>
+            <span class="form-hint" id="m-res-file-hint">Upload a PDF or document. It will be stored and provided for direct student download on the public Study Hub.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn--ghost" onclick="closeModal('modal-resource')">Cancel</button>
+          <button type="submit" class="btn btn--primary">Save Learning Material</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL 2: CREATE / EDIT QUIZ WITH QUESTION BUILDER ==================== -->
+  <div id="modal-quiz" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-quiz-title">
+    <div class="modal-card modal-card--lg" style="max-width: 840px; max-height: 90vh; display: flex; flex-direction: column;">
+      <div class="modal-header">
+        <h3 id="modal-quiz-title">Create Assessment Quiz</h3>
+        <button type="button" class="modal-close-btn" onclick="closeModal('modal-quiz')" aria-label="Close modal"><svg class="lucide lucide-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+      </div>
+      <form id="form-quiz" onsubmit="handleQuizSubmit(event)" style="display: flex; flex-direction: column; overflow: hidden; height: 100%;">
+        <input type="hidden" id="modal-quiz-id">
+        <div class="modal-body" style="overflow-y: auto; flex: 1;">
+          <div class="form-row mb-4">
+            <div class="form-group">
+              <label for="m-quiz-title" class="form-label">Quiz Title (English) <span class="text-danger">*</span></label>
+              <input type="text" id="m-quiz-title" class="form-input" placeholder="e.g. Forces &amp; Newton's Laws of Motion" required>
+            </div>
+            <div class="form-group">
+              <label for="m-quiz-title-si" class="form-label">Quiz Title (Sinhala - Optional)</label>
+              <input type="text" id="m-quiz-title-si" class="form-input" placeholder="e.g. බල සහ නිව්ටන්ගේ චලිත නියම">
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <div class="form-group">
+              <label for="m-quiz-subject" class="form-label">Subject</label>
+              <select id="m-quiz-subject" class="form-select" required>
+                <option value="">Select subject...</option>
+                <option value="Science">Science (විද්‍යාව)</option>
+                <option value="Mathematics">Mathematics (ගණිතය)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="m-quiz-difficulty" class="form-label">Difficulty</label>
+              <select id="m-quiz-difficulty" class="form-select" required>
+                <option value="Easy">Easy (පහසු)</option>
+                <option value="Medium" selected>Medium (මධ්‍යස්ථ)</option>
+                <option value="Challenging">Challenging (අභියෝගාත්මක)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <div class="form-group">
+              <label for="m-quiz-topic" class="form-label">Curriculum Topic / Unit (English) <span class="text-danger">*</span></label>
+              <input type="text" id="m-quiz-topic" class="form-input" placeholder="e.g. Physics / Mechanics" required>
+            </div>
+            <div class="form-group">
+              <label for="m-quiz-topic-si" class="form-label">Topic / Unit (Sinhala - Optional)</label>
+              <input type="text" id="m-quiz-topic-si" class="form-input" placeholder="e.g. භෞතික විද්‍යාව / යාන්ත්‍ර විද්‍යාව">
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <div class="form-group">
+              <label for="m-quiz-time" class="form-label">Time Estimate</label>
+              <input type="text" id="m-quiz-time" class="form-input" value="15 mins">
+            </div>
+            <div class="form-group">
+              <label for="m-quiz-status" class="form-label">Publication Status</label>
+              <select id="m-quiz-status" class="form-select">
+                <option value="published">Published (Live for students)</option>
+                <option value="draft">Draft (Private in dashboard)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row mb-4">
+            <div class="form-group">
+              <label for="m-quiz-desc" class="form-label">Description &amp; Instructions (English)</label>
+              <textarea id="m-quiz-desc" class="form-textarea" rows="2" placeholder="Brief diagnostic test overview or instructions for students..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="m-quiz-desc-si" class="form-label">Description &amp; Instructions (Sinhala - Optional)</label>
+              <textarea id="m-quiz-desc-si" class="form-textarea" rows="2" placeholder="ප්‍රශ්නාවලිය පිළිබඳ කෙටි හැඳින්වීමක් හෝ සිසුන් සඳහා උපදෙස්..."></textarea>
+            </div>
+          </div>
+
+          <!-- Dynamic Question Builder -->
+          <div class="form-group mb-4" style="border-top: 1px solid var(--clr-border); padding-top: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <div>
+                <label class="form-label" style="margin-bottom: 2px; font-weight: 700;">Quiz Questions &amp; Worked Solutions</label>
+                <span class="text-xs text-light">Create diagnostic multiple-choice questions with answer choices, correct keys, and explanations.</span>
+              </div>
+              <button type="button" class="btn btn--sm btn--secondary" onclick="addQuestionItem()">+ Add Question</button>
+            </div>
+            <div id="quiz-questions-list" style="display: flex; flex-direction: column; gap: 14px;">
+              <!-- Dynamically populated via JS -->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn--ghost" onclick="closeModal('modal-quiz')">Cancel</button>
+          <button type="submit" class="btn btn--primary">Save Quiz Assessment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/dashboard-db.js"></script>
+  <!-- Official Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>if(typeof lucide==='undefined'){document.write('<script src="js/lucide.js"><\/script>');}</script>
+  <script>
+    // State management
+    let currentUser = null;
+    let currentView = 'overview';
+
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return '';
+      return String(str).replace(/[&<>"']/g, function(m) {
+        switch (m) {
+          case '&': return '&amp;';
+          case '<': return '&lt;';
+          case '>': return '&gt;';
+          case '"': return '&quot;';
+          case "'": return '&#39;';
+          default: return m;
+        }
+      });
+    }
+
+    // Initialize Coordinator Dashboard
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Enforce coordinator RBAC authentication
+      currentUser = MansalaAuth.requireAuth('coordinator');
+      if (!currentUser) return;
+
+      // 2. Setup user card
+      document.getElementById('sidebar-user-name').textContent = currentUser.name;
+      const initials = (currentUser.name || 'CO').split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+      document.getElementById('sidebar-user-avatar').textContent = initials;
+      
+      const badgeEl = document.getElementById('sidebar-user-badge');
+      if (badgeEl) {
+        badgeEl.textContent = currentUser.assignedSubject ? `Coordinator • ${currentUser.assignedSubject}` : 'Coordinator';
+      }
+
+      const subheadEl = document.getElementById('page-subheading');
+      if (subheadEl && currentUser.assignedSubject) {
+        subheadEl.textContent = `Faculty of Science • ${currentUser.assignedSubject} Curriculum Management & Diagnostic Quizzes`;
+      }
+
+      // 3. Bind view buttons
+      document.querySelectorAll('.nav-link-btn[data-view]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          switchView(btn.getAttribute('data-view'));
+        });
+      });
+
+      // 4. Initial Render
+      renderAllViews();
+
+      // Check URL hash for direct view navigation
+      if (window.location.hash) {
+        const hashView = window.location.hash.replace('#', '');
+        if (document.getElementById('view-' + hashView)) {
+          switchView(hashView);
+        }
+      }
+
+      if (typeof lucide !== 'undefined' && lucide.createIcons) {
+        lucide.createIcons();
+      }
+    });
+
+    // ==================== VIEW SWITCHING ====================
+    function switchView(viewName) {
+      const targetView = document.getElementById('view-' + viewName);
+      if (!targetView) return;
+
+      currentView = viewName;
+
+      // Update Nav active state
+      document.querySelectorAll('.nav-link-btn[data-view]').forEach(btn => {
+        if (btn.getAttribute('data-view') === viewName) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      // Update views
+      document.querySelectorAll('.mgmt-view').forEach(view => {
+        view.classList.remove('is-active');
+      });
+      targetView.classList.add('is-active');
+
+      // Update hash without scrolling
+      history.replaceState(null, null, '#' + viewName);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (typeof lucide !== 'undefined' && lucide.createIcons) {
+        lucide.createIcons();
+      }
+    }
+
+    // ==================== RENDER ALL VIEWS ====================
+    function renderAllViews() {
+      renderOverview();
+      renderResources();
+      renderQuizzes();
+    }
+
+    // ==========================================
+    // 1. OVERVIEW
+    // ==========================================
+    function renderOverview() {
+      const myResources = MansalaDB.getResources(currentUser);
+      const myQuizzes = MansalaDB.getQuizzes(currentUser);
+
+      const totalRes = myResources.length;
+      const publishedRes = myResources.filter(r => r.status === 'published').length;
+      const draftRes = myResources.filter(r => r.status === 'draft').length;
+
+      const totalQuizzes = myQuizzes.length;
+      const publishedQuizzes = myQuizzes.filter(q => q.status === 'published').length;
+      const totalQuestions = myQuizzes.reduce((acc, q) => acc + (q.questions ? q.questions.length : (Number(q.questionCount) || 10)), 0);
+
+      const metricsGrid = document.getElementById('overview-metrics-grid');
+
+      if (metricsGrid) {
+        metricsGrid.innerHTML = `
+          <div class="summary-card">
+            <div class="summary-card__label">My Published Resources</div>
+            <div class="summary-card__value">${publishedRes}</div>
+            <div class="summary-card__change">↑ ${totalRes} total in my library (${draftRes} draft)</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-card__label">My Active Quizzes</div>
+            <div class="summary-card__value">${publishedQuizzes}</div>
+            <div class="summary-card__change">↑ ${totalQuizzes} total created</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-card__label">Questions in Pool</div>
+            <div class="summary-card__value">${totalQuestions}</div>
+            <div class="summary-card__change">Across my active diagnostic quizzes</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-card__label">Assigned Subject Track</div>
+            <div class="summary-card__value" style="font-size: var(--fs-lg);">${escapeHtml(currentUser.assignedSubject || 'Faculty Desk')}</div>
+            <div class="summary-card__change">${escapeHtml(currentUser.department || 'Faculty of Science')}</div>
+          </div>
+        `;
+      }
+    }
+
+    // ==========================================
+    // REUSABLE NUMBERED PAGINATION COMPONENT
+    // ==========================================
+    function renderTablePagination(containerId, infoId, currentPage, totalPages, totalItems, pageSize, onPageChangeFnName, itemLabel = 'materials') {
+      const container = document.getElementById(containerId);
+      const infoEl = document.getElementById(infoId);
+      if (!container) return;
+
+      if (totalItems === 0) {
+        if (infoEl) infoEl.innerHTML = 'Showing <strong>0</strong> ' + itemLabel;
+        container.innerHTML = '';
+        return;
+      }
+
+      const startIdx = (currentPage - 1) * pageSize + 1;
+      const endIdx = Math.min(currentPage * pageSize, totalItems);
+      if (infoEl) {
+        infoEl.innerHTML = 'Showing <strong>' + startIdx + '–' + endIdx + '</strong> of <strong>' + totalItems + '</strong> ' + itemLabel;
+      }
+
+      if (totalPages <= 1) {
+        if (totalItems > 0) {
+          container.innerHTML = '<button type="button" class="tbl-page-btn tbl-page-nav" disabled>‹ Prev</button>' +
+            '<button type="button" class="tbl-page-btn is-active" disabled>1</button>' +
+            '<button type="button" class="tbl-page-btn tbl-page-nav" disabled>Next ›</button>';
+        } else {
+          container.innerHTML = '';
+        }
+        return;
+      }
+
+      let html = '';
+
+      // Previous Button
+      const prevDisabled = currentPage <= 1 ? 'disabled' : '';
+      html += '<button type="button" class="tbl-page-btn tbl-page-nav" ' + prevDisabled + ' onclick="' + onPageChangeFnName + '(' + (currentPage - 1) + ')" title="Previous Page">‹ Prev</button>';
+
+      // Calculate Page Numbers to Display
+      let pages = [];
+      if (totalPages <= 7) {
+        for (let i = 1; i <= totalPages; i++) pages.push(i);
+      } else {
+        if (currentPage <= 4) {
+          pages = [1, 2, 3, 4, 5, '...', totalPages];
+        } else if (currentPage >= totalPages - 3) {
+          pages = [1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+        } else {
+          pages = [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
+        }
+      }
+
+      pages.forEach(p => {
+        if (p === '...') {
+          html += '<span class="tbl-page-ellipsis">…</span>';
+        } else {
+          const isActive = p === currentPage ? 'is-active' : '';
+          html += '<button type="button" class="tbl-page-btn ' + isActive + '" onclick="' + onPageChangeFnName + '(' + p + ')" title="Page ' + p + '">' + p + '</button>';
+        }
+      });
+
+      // Next Button
+      const nextDisabled = currentPage >= totalPages ? 'disabled' : '';
+      html += '<button type="button" class="tbl-page-btn tbl-page-nav" ' + nextDisabled + ' onclick="' + onPageChangeFnName + '(' + (currentPage + 1) + ')" title="Next Page">Next ›</button>';
+
+      container.innerHTML = html;
+    }
+
+    // ==========================================
+    // 2. LEARNING RESOURCES (STATE, CONTEXTUAL BAR & PAGINATION)
+    // ==========================================
+    const resourcePageState = {
+      page: 1,
+      pageSize: 8,
+      search: '',
+      subject: 'all',
+      type: 'all',
+      status: 'all'
+    };
+
+    let selectedResourceIds = new Set();
+
+    function clearResourceSelection() {
+      selectedResourceIds.clear();
+      const selectAll = document.getElementById('res-select-all');
+      if (selectAll) selectAll.checked = false;
+      document.querySelectorAll('.res-row-check').forEach(cb => {
+        cb.checked = false;
+        const row = cb.closest('tr');
+        if (row) row.classList.remove('is-row-selected');
+      });
+      updateResourceContextualBar();
+    }
+
+    function toggleSelectAllResources(checked) {
+      const checkboxes = document.querySelectorAll('.res-row-check');
+      checkboxes.forEach(cb => {
+        cb.checked = checked;
+        const row = cb.closest('tr');
+        if (checked) {
+          selectedResourceIds.add(cb.value);
+          if (row) row.classList.add('is-row-selected');
+        } else {
+          selectedResourceIds.delete(cb.value);
+          if (row) row.classList.remove('is-row-selected');
+        }
+      });
+      updateResourceContextualBar();
+    }
+
+    function handleResourceRowSelect(id, checked) {
+      const row = document.querySelector(`.res-row-check[value="${id}"]`)?.closest('tr');
+      if (checked) {
+        selectedResourceIds.add(id);
+        if (row) row.classList.add('is-row-selected');
+      } else {
+        selectedResourceIds.delete(id);
+        if (row) row.classList.remove('is-row-selected');
+      }
+      const allChecks = document.querySelectorAll('.res-row-check');
+      const selectAll = document.getElementById('res-select-all');
+      if (selectAll && allChecks.length > 0) {
+        selectAll.checked = allChecks.length === document.querySelectorAll('.res-row-check:checked').length;
+      }
+      updateResourceContextualBar();
+    }
+
+    function updateResourceContextualBar() {
+      const defToolbar = document.getElementById('res-default-toolbar');
+      const ctxBar = document.getElementById('res-contextual-bar');
+      const countEl = document.getElementById('res-contextual-count');
+      const actionsEl = document.getElementById('res-contextual-actions');
+      const count = selectedResourceIds.size;
+
+      if (count === 0) {
+        if (defToolbar) defToolbar.style.display = 'flex';
+        if (ctxBar) ctxBar.style.display = 'none';
+        return;
+      }
+
+      if (defToolbar) defToolbar.style.display = 'none';
+      if (ctxBar) ctxBar.style.display = 'flex';
+      if (countEl) {
+        countEl.innerHTML = `<span class="cms-contextual-badge">${count}</span> ${count === 1 ? '1 item selected' : count + ' items selected'}`;
+      }
+
+      const ids = Array.from(selectedResourceIds);
+      if (count === 1) {
+        const singleId = ids[0];
+        const res = MansalaDB.getResources(currentUser).find(r => r.id === singleId);
+        const isPublished = res && res.status === 'published';
+        actionsEl.innerHTML = `
+          <button type="button" class="cms-bar-btn cms-bar-btn--secondary" onclick="editResource('${singleId}')" title="Edit resource details">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+            Edit
+          </button>
+          <button type="button" class="cms-bar-btn cms-bar-btn--primary" onclick="toggleResourcePublish('${singleId}')" title="${isPublished ? 'Unpublish' : 'Publish'}">
+            ${isPublished ? 'Unpublish' : 'Publish'}
+          </button>
+          <button type="button" class="cms-bar-btn cms-bar-btn--danger" onclick="deleteResourceItem('${singleId}')" title="Delete resource">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            Delete
+          </button>
+        `;
+      } else {
+        // Bulk actions
+        actionsEl.innerHTML = `
+          <button type="button" class="cms-bar-btn cms-bar-btn--primary" onclick="bulkPublishResources()" title="Publish selected items">
+            Publish Selected
+          </button>
+          <button type="button" class="cms-bar-btn cms-bar-btn--danger" onclick="bulkDeleteResources()" title="Delete selected items">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            Delete Selected
+          </button>
+        `;
+      }
+    }
+
+    function setResourceSubjectTab(val) {
+      resourcePageState.subject = val;
+      resourcePageState.page = 1;
+      document.querySelectorAll('#res-subject-tabs .cms-tab-btn').forEach(btn => {
+        btn.classList.toggle('is-active', btn.getAttribute('data-val') === val);
+      });
+      clearResourceSelection();
+      renderResources();
+    }
+
+    async function bulkPublishResources() {
+      const ids = Array.from(selectedResourceIds);
+      if (ids.length === 0) return;
+      let count = 0;
+      for (const id of ids) {
+        try {
+          const res = MansalaDB.getResources(currentUser).find(r => r.id === id);
+          if (res && res.status !== 'published') {
+            await MansalaDB.toggleResourceStatus(currentUser, id);
+            count++;
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      clearResourceSelection();
+      renderResources();
+      renderOverview();
+      alert(`Published ${count} learning resource(s).`);
+    }
+
+    async function bulkDeleteResources() {
+      const ids = Array.from(selectedResourceIds);
+      if (ids.length === 0) return;
+      if (!confirm(`Are you sure you want to permanently remove ${ids.length} selected learning material(s)?`)) return;
+      let count = 0;
+      for (const id of ids) {
+        try {
+          await MansalaDB.deleteResource(currentUser, id);
+          count++;
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      clearResourceSelection();
+      renderResources();
+      renderOverview();
+      alert(`Removed ${count} resource(s).`);
+    }
+
+    function filterResourcesTable() {
+      const searchInput = document.getElementById('res-filter-search');
+      const typeSelect = document.getElementById('res-filter-type');
+      const statusSelect = document.getElementById('res-filter-status');
+
+      resourcePageState.search = (searchInput ? searchInput.value : '').trim().toLowerCase();
+      resourcePageState.type = (typeSelect && typeSelect.value) ? typeSelect.value : 'all';
+      resourcePageState.status = (statusSelect && statusSelect.value) ? statusSelect.value : 'all';
+      resourcePageState.page = 1;
+      clearResourceSelection();
+      renderResources();
+    }
+
+    function resetResourceFilters() {
+      const searchInput = document.getElementById('res-filter-search');
+      const typeSelect = document.getElementById('res-filter-type');
+      const statusSelect = document.getElementById('res-filter-status');
+
+      if (searchInput) searchInput.value = '';
+      if (typeSelect) typeSelect.value = 'all';
+      if (statusSelect) statusSelect.value = 'all';
+
+      resourcePageState.search = '';
+      resourcePageState.subject = 'all';
+      resourcePageState.type = 'all';
+      resourcePageState.status = 'all';
+      resourcePageState.page = 1;
+
+      document.querySelectorAll('#res-subject-tabs .cms-tab-btn').forEach(btn => {
+        btn.classList.toggle('is-active', btn.getAttribute('data-val') === 'all');
+      });
+
+      clearResourceSelection();
+      renderResources();
+    }
+
+    function changeResourcePage(newPage) {
+      resourcePageState.page = newPage;
+      clearResourceSelection();
+      renderResources();
+      const heading = document.getElementById('res-table-heading');
+      if (heading) {
+        heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function renderResources() {
+      const allResources = MansalaDB.getResources(currentUser);
+
+      // In-Memory Real-Time Filter
+      const filtered = allResources.filter(r => {
+        const titleAndTopic = ((r.title || '') + ' ' + (r.topics || '') + ' ' + (r.year || '')).toLowerCase();
+        const matchSearch = !resourcePageState.search || titleAndTopic.includes(resourcePageState.search);
+        const matchSubject = resourcePageState.subject === 'all' || (r.subject && r.subject.toLowerCase() === resourcePageState.subject.toLowerCase());
+        const matchType = resourcePageState.type === 'all' || (r.type && r.type.toLowerCase() === resourcePageState.type.toLowerCase());
+        const matchStatus = resourcePageState.status === 'all' || (r.status && r.status.toLowerCase() === resourcePageState.status.toLowerCase());
+        return matchSearch && matchSubject && matchType && matchStatus;
+      });
+
+      const tbody = document.getElementById('resources-table-body');
+      const countBadge = document.getElementById('res-count-badge');
+      if (countBadge) {
+        countBadge.textContent = filtered.length + ' Materials';
+      }
+
+      const totalItems = filtered.length;
+      const totalPages = Math.ceil(totalItems / resourcePageState.pageSize) || 1;
+      if (resourcePageState.page > totalPages) resourcePageState.page = totalPages;
+      if (resourcePageState.page < 1) resourcePageState.page = 1;
+
+      const startIndex = (resourcePageState.page - 1) * resourcePageState.pageSize;
+      const pageItems = filtered.slice(startIndex, startIndex + resourcePageState.pageSize);
+
+      if (totalItems === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; padding: 48px 16px; color: #64748b;">' +
+          '<div style="font-size: 28px; margin-bottom: 8px;">🔍</div>' +
+          '<div style="font-weight: 600; font-size: 14px; color: #1e293b; margin-bottom: 4px;">No learning resources match your filters</div>' +
+          '<div style="font-size: 12.5px; color: #64748b; margin-bottom: 12px;">Try adjusting keywords or selecting "All Types"</div>' +
+          '<button type="button" class="tbl-btn" onclick="resetResourceFilters()" style="display: inline-flex; margin: 0 auto;">Clear All Filters</button>' +
+          '</td></tr>';
+      } else {
+        tbody.innerHTML = pageItems.map(r => {
+          const isPublished = r.status === 'published';
+          const subLower = (r.subject || '').toLowerCase();
+          const isScience = subLower === 'science';
+          const isChecked = selectedResourceIds.has(r.id);
+
+          return '<tr class="' + (isChecked ? 'is-row-selected' : '') + '">' +
+            '<td style="text-align: center; width: 38px;">' +
+              '<input type="checkbox" class="cms-table-check res-row-check" value="' + r.id + '" ' + (isChecked ? 'checked' : '') + ' onchange="handleResourceRowSelect(\'' + r.id + '\', this.checked)">' +
+            '</td>' +
+            '<td><strong style="color: #0f172a; font-size: 13.5px;">' + escapeHtml(r.title) + '</strong>' + (r.titleSi ? '<div style="font-size: 11.5px; color: #64748b; max-width: 320px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 1px;">' + escapeHtml(r.titleSi) + '</div>' : '') + '</td>' +
+            '<td><span style="font-weight: 700; color: ' + (isScience ? '#ea580c' : '#0f172a') + '; font-size: 12.5px;">' + escapeHtml(r.subject) + '</span></td>' +
+            '<td style="color: #475569; font-size: 13px;">' + escapeHtml(r.type) + '</td>' +
+            '<td class="tabular-nums" style="color: #64748b; font-size: 13px;">' + escapeHtml(String(r.year || '—')) + '</td>' +
+            '<td>' + (isPublished ? '<span class="cms-status-dot cms-status-dot--success">Published</span>' : '<span class="cms-status-dot cms-status-dot--warning">Draft</span>') + '</td>' +
+            '<td class="tabular-nums" style="font-size: 12.5px; color: #64748b;">' + escapeHtml(r.dateAdded || '2026-10-20') + '</td>' +
+          '</tr>';
+        }).join('');
+      }
+
+      // Sync select-all checkbox
+      const selectAll = document.getElementById('res-select-all');
+      if (selectAll) {
+        selectAll.checked = pageItems.length > 0 && pageItems.every(r => selectedResourceIds.has(r.id));
+      }
+
+      renderTablePagination('res-pagination-controls', 'res-pagination-info', resourcePageState.page, totalPages, totalItems, resourcePageState.pageSize, 'changeResourcePage', 'materials');
+    }
+
+    // ==========================================
+    // 3. QUIZZES (STATE, CONTEXTUAL BAR & PAGINATION)
+    // ==========================================
+    const quizPageState = {
+      page: 1,
+      pageSize: 8,
+      search: '',
+      subject: 'all',
+      status: 'all'
+    };
+
+    let selectedQuizIds = new Set();
+
+    function clearQuizSelection() {
+      selectedQuizIds.clear();
+      const selectAll = document.getElementById('quiz-select-all');
+      if (selectAll) selectAll.checked = false;
+      document.querySelectorAll('.quiz-row-check').forEach(cb => {
+        cb.checked = false;
+        const row = cb.closest('tr');
+        if (row) row.classList.remove('is-row-selected');
+      });
+      updateQuizContextualBar();
+    }
+
+    function toggleSelectAllQuizzes(checked) {
+      const checkboxes = document.querySelectorAll('.quiz-row-check');
+      checkboxes.forEach(cb => {
+        cb.checked = checked;
+        const row = cb.closest('tr');
+        if (checked) {
+          selectedQuizIds.add(cb.value);
+          if (row) row.classList.add('is-row-selected');
+        } else {
+          selectedQuizIds.delete(cb.value);
+          if (row) row.classList.remove('is-row-selected');
+        }
+      });
+      updateQuizContextualBar();
+    }
+
+    function handleQuizRowSelect(id, checked) {
+      const row = document.querySelector(`.quiz-row-check[value="${id}"]`)?.closest('tr');
+      if (checked) {
+        selectedQuizIds.add(id);
+        if (row) row.classList.add('is-row-selected');
+      } else {
+        selectedQuizIds.delete(id);
+        if (row) row.classList.remove('is-row-selected');
+      }
+      const allChecks = document.querySelectorAll('.quiz-row-check');
+      const selectAll = document.getElementById('quiz-select-all');
+      if (selectAll && allChecks.length > 0) {
+        selectAll.checked = allChecks.length === document.querySelectorAll('.quiz-row-check:checked').length;
+      }
+      updateQuizContextualBar();
+    }
+
+    function updateQuizContextualBar() {
+      const defToolbar = document.getElementById('quiz-default-toolbar');
+      const ctxBar = document.getElementById('quiz-contextual-bar');
+      const countEl = document.getElementById('quiz-contextual-count');
+      const actionsEl = document.getElementById('quiz-contextual-actions');
+      const count = selectedQuizIds.size;
+
+      if (count === 0) {
+        if (defToolbar) defToolbar.style.display = 'flex';
+        if (ctxBar) ctxBar.style.display = 'none';
+        return;
+      }
+
+      if (defToolbar) defToolbar.style.display = 'none';
+      if (ctxBar) ctxBar.style.display = 'flex';
+      if (countEl) {
+        countEl.innerHTML = `<span class="cms-contextual-badge">${count}</span> ${count === 1 ? '1 quiz selected' : count + ' quizzes selected'}`;
+      }
+
+      const ids = Array.from(selectedQuizIds);
+      if (count === 1) {
+        const singleId = ids[0];
+        const quiz = MansalaDB.getQuizzes(currentUser).find(q => q.id === singleId);
+        const isPublished = quiz && quiz.status === 'published';
+        actionsEl.innerHTML = `
+          <button type="button" class="cms-bar-btn cms-bar-btn--secondary" onclick="editQuiz('${singleId}')" title="Edit quiz & questions">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+            Edit
+          </button>
+          <button type="button" class="cms-bar-btn cms-bar-btn--primary" onclick="toggleQuizPublish('${singleId}')" title="${isPublished ? 'Unpublish' : 'Publish'}">
+            ${isPublished ? 'Unpublish' : 'Publish'}
+          </button>
+          <button type="button" class="cms-bar-btn cms-bar-btn--danger" onclick="deleteQuizItem('${singleId}')" title="Delete quiz">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            Delete
+          </button>
+        `;
+      } else {
+        // Bulk actions
+        actionsEl.innerHTML = `
+          <button type="button" class="cms-bar-btn cms-bar-btn--primary" onclick="bulkPublishQuizzes()" title="Publish selected quizzes">
+            Publish Selected
+          </button>
+          <button type="button" class="cms-bar-btn cms-bar-btn--danger" onclick="bulkDeleteQuizzes()" title="Delete selected quizzes">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            Delete Selected
+          </button>
+        `;
+      }
+    }
+
+    function setQuizSubjectTab(val) {
+      quizPageState.subject = val;
+      quizPageState.page = 1;
+      document.querySelectorAll('#quiz-subject-tabs .cms-tab-btn').forEach(btn => {
+        btn.classList.toggle('is-active', btn.getAttribute('data-val') === val);
+      });
+      clearQuizSelection();
+      renderQuizzes();
+    }
+
+    async function bulkPublishQuizzes() {
+      const ids = Array.from(selectedQuizIds);
+      if (ids.length === 0) return;
+      let count = 0;
+      for (const id of ids) {
+        try {
+          const quiz = MansalaDB.getQuizzes(currentUser).find(q => q.id === id);
+          if (quiz && quiz.status !== 'published') {
+            await MansalaDB.toggleQuizStatus(currentUser, id);
+            count++;
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      clearQuizSelection();
+      renderQuizzes();
+      renderOverview();
+      alert(`Published ${count} quiz(zes).`);
+    }
+
+    async function bulkDeleteQuizzes() {
+      const ids = Array.from(selectedQuizIds);
+      if (ids.length === 0) return;
+      if (!confirm(`Are you sure you want to delete ${ids.length} selected assessment quiz(zes)?`)) return;
+      let count = 0;
+      for (const id of ids) {
+        try {
+          await MansalaDB.deleteQuiz(currentUser, id);
+          count++;
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      clearQuizSelection();
+      renderQuizzes();
+      renderOverview();
+      alert(`Deleted ${count} quiz(zes).`);
+    }
+
+    function filterQuizzesTable() {
+      const searchInput = document.getElementById('quiz-filter-search');
+      const statusSelect = document.getElementById('quiz-filter-status');
+
+      quizPageState.search = (searchInput ? searchInput.value : '').trim().toLowerCase();
+      quizPageState.status = (statusSelect && statusSelect.value) ? statusSelect.value : 'all';
+      quizPageState.page = 1;
+      clearQuizSelection();
+      renderQuizzes();
+    }
+
+    function resetQuizFilters() {
+      const searchInput = document.getElementById('quiz-filter-search');
+      const statusSelect = document.getElementById('quiz-filter-status');
+
+      if (searchInput) searchInput.value = '';
+      if (statusSelect) statusSelect.value = 'all';
+
+      quizPageState.search = '';
+      quizPageState.subject = 'all';
+      quizPageState.status = 'all';
+      quizPageState.page = 1;
+
+      document.querySelectorAll('#quiz-subject-tabs .cms-tab-btn').forEach(btn => {
+        btn.classList.toggle('is-active', btn.getAttribute('data-val') === 'all');
+      });
+
+      clearQuizSelection();
+      renderQuizzes();
+    }
+
+    function changeQuizPage(newPage) {
+      quizPageState.page = newPage;
+      clearQuizSelection();
+      renderQuizzes();
+      const panel = document.getElementById('quiz-table-heading');
+      if (panel) {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function renderQuizzes() {
+      const allQuizzes = MansalaDB.getQuizzes(currentUser);
+
+      const filtered = allQuizzes.filter(q => {
+        const titleAndTopic = ((q.title || '') + ' ' + (q.topic || '')).toLowerCase();
+        const matchSearch = !quizPageState.search || titleAndTopic.includes(quizPageState.search);
+        const matchSubject = quizPageState.subject === 'all' || (q.subject && q.subject.toLowerCase() === quizPageState.subject.toLowerCase());
+        const matchStatus = quizPageState.status === 'all' || (q.status && q.status.toLowerCase() === quizPageState.status.toLowerCase());
+        return matchSearch && matchSubject && matchStatus;
+      });
+
+      const tbody = document.getElementById('quizzes-table-body');
+      const countBadge = document.getElementById('quiz-count-badge');
+      if (countBadge) {
+        countBadge.textContent = filtered.length + ' Quizzes';
+      }
+
+      const totalItems = filtered.length;
+      const totalPages = Math.ceil(totalItems / quizPageState.pageSize) || 1;
+      if (quizPageState.page > totalPages) quizPageState.page = totalPages;
+      if (quizPageState.page < 1) quizPageState.page = 1;
+
+      const startIndex = (quizPageState.page - 1) * quizPageState.pageSize;
+      const pageItems = filtered.slice(startIndex, startIndex + quizPageState.pageSize);
+
+      if (totalItems === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; padding: 48px 16px; color: #64748b;">' +
+          '<div style="font-size: 28px; margin-bottom: 8px;">🔍</div>' +
+          '<div style="font-weight: 600; font-size: 14px; color: #1e293b; margin-bottom: 4px;">No practice quizzes match your filters</div>' +
+          '<div style="font-size: 12.5px; color: #64748b; margin-bottom: 12px;">Try adjusting keywords or selecting "All Statuses"</div>' +
+          '<button type="button" class="tbl-btn" onclick="resetQuizFilters()" style="display: inline-flex; margin: 0 auto;">Clear All Filters</button>' +
+          '</td></tr>';
+      } else {
+        tbody.innerHTML = pageItems.map(q => {
+          const isPublished = q.status === 'published';
+          const subLower = (q.subject || '').toLowerCase();
+          const isScience = subLower === 'science';
+          const isChecked = selectedQuizIds.has(q.id);
+
+          // Color-coded difficulty text without pastel pills
+          const diffLower = (q.difficulty || '').toLowerCase();
+          let diffColor = '#64748b';
+          if (diffLower.includes('easy')) diffColor = '#059669';
+          else if (diffLower.includes('medium')) diffColor = '#d97706';
+          else if (diffLower.includes('challenging') || diffLower.includes('hard')) diffColor = '#dc2626';
+
+          const qCount = q.questionCount || (q.questions ? q.questions.length : 10);
+
+          return '<tr class="' + (isChecked ? 'is-row-selected' : '') + '">' +
+            '<td style="text-align: center; width: 38px;">' +
+              '<input type="checkbox" class="cms-table-check quiz-row-check" value="' + q.id + '" ' + (isChecked ? 'checked' : '') + ' onchange="handleQuizRowSelect(\'' + q.id + '\', this.checked)">' +
+            '</td>' +
+            '<td><strong style="color: #0f172a; font-size: 13.5px;">' + escapeHtml(q.title) + '</strong>' + (q.titleSi ? '<div style="font-size: 11.5px; color: #64748b; max-width: 320px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 1px;">' + escapeHtml(q.titleSi) + '</div>' : '') + '</td>' +
+            '<td><span style="font-weight: 700; color: ' + (isScience ? '#ea580c' : '#0f172a') + '; font-size: 12.5px;">' + escapeHtml(q.subject) + '</span></td>' +
+            '<td style="color: #475569; font-size: 13px;">' + escapeHtml(q.topic || 'General Syllabus') + '</td>' +
+            '<td><span style="font-weight: 600; color: ' + diffColor + '; font-size: 12.5px;">' + escapeHtml(q.difficulty || 'Medium') + '</span></td>' +
+            '<td class="tabular-nums" style="color: #334155; font-weight: 600; font-size: 13px;">' + qCount + ' Qs</td>' +
+            '<td>' + (isPublished ? '<span class="cms-status-dot cms-status-dot--success">Published</span>' : '<span class="cms-status-dot cms-status-dot--warning">Draft</span>') + '</td>' +
+          '</tr>';
+        }).join('');
+      }
+
+      // Sync select-all checkbox
+      const selectAll = document.getElementById('quiz-select-all');
+      if (selectAll) {
+        selectAll.checked = pageItems.length > 0 && pageItems.every(q => selectedQuizIds.has(q.id));
+      }
+
+      // Render Pagination Footer
+      renderTablePagination('quiz-pagination-controls', 'quiz-pagination-info', quizPageState.page, totalPages, totalItems, quizPageState.pageSize, 'changeQuizPage', 'quizzes');
+    }
+
+    // ==================== MODAL OPERATIONS ====================
+    function openModal(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.add('is-active', 'active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.remove('is-active', 'active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // =========================================================================
+    // RESOURCE ACTIONS & FILE UPLOAD ENGINE
+    // =========================================================================
+    function handleResourceFileChange(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+
+      const sizeFormatted = file.size > 1024 * 1024
+        ? (file.size / (1024 * 1024)).toFixed(1) + ' MB'
+        : (file.size / 1024).toFixed(0) + ' KB';
+
+      document.getElementById('m-res-file-name').value = file.name;
+      document.getElementById('m-res-file-size').value = sizeFormatted;
+      const actEl = document.getElementById('m-res-file-action');
+      if (actEl) actEl.value = 'new';
+      showAttachedFileBadge(file.name, sizeFormatted);
+
+      const reader = new FileReader();
+      reader.onload = function(evt) {
+        document.getElementById('m-res-file-data').value = evt.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function showAttachedFileBadge(name, size) {
+      const badge = document.getElementById('m-res-file-badge');
+      const nameEl = document.getElementById('m-res-attached-name');
+      const sizeEl = document.getElementById('m-res-attached-size');
+      if (!badge) return;
+
+      if (name) {
+        nameEl.textContent = name;
+        sizeEl.textContent = size ? `(${size})` : '';
+        badge.style.display = 'flex';
+      } else {
+        badge.style.display = 'none';
+      }
+    }
+
+    async function downloadCurrentAttachedFile() {
+      const dataUrl = document.getElementById('m-res-file-data').value;
+      const fileName = document.getElementById('m-res-file-name').value || 'document.pdf';
+      const id = document.getElementById('modal-res-id').value;
+
+      let fileToDownload = dataUrl;
+      if (!fileToDownload && id && window.MansalaDB && window.MansalaDB.getResourceFile) {
+        const stored = await window.MansalaDB.getResourceFile(id);
+        if (stored && stored.fileData) fileToDownload = stored.fileData;
+      }
+
+      if (fileToDownload) {
+        const a = document.createElement('a');
+        a.href = fileToDownload;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      } else {
+        alert('File data is not available for preview.');
+      }
+    }
+
+    function clearResourceFile() {
+      const fileInput = document.getElementById('m-res-file');
+      if (fileInput) fileInput.value = '';
+      document.getElementById('m-res-file-data').value = '';
+      document.getElementById('m-res-file-name').value = '';
+      document.getElementById('m-res-file-size').value = '';
+      const actEl = document.getElementById('m-res-file-action');
+      if (actEl) actEl.value = 'removed';
+      showAttachedFileBadge('', '');
+    }
+
+    function openResourceModal() {
+      document.getElementById('modal-res-title').textContent = 'Upload Learning Material';
+      document.getElementById('modal-res-id').value = '';
+      document.getElementById('form-resource').reset();
+      clearResourceFile();
+      const actEl = document.getElementById('m-res-file-action');
+      if (actEl) actEl.value = 'none';
+      openModal('modal-resource');
+    }
+
+    async function editResource(id) {
+      const resources = MansalaDB.getResources(currentUser);
+      const target = resources.find(r => r.id === id);
+      if (!target) return;
+
+      document.getElementById('modal-res-title').textContent = 'Edit Learning Material';
+      document.getElementById('modal-res-id').value = target.id;
+      document.getElementById('m-res-title').value = target.title;
+      if (document.getElementById('m-res-title-si')) document.getElementById('m-res-title-si').value = target.titleSi || '';
+      document.getElementById('m-res-subject').value = target.subject;
+      document.getElementById('m-res-type').value = target.type;
+      document.getElementById('m-res-year').value = target.year || '2024';
+      document.getElementById('m-res-status').value = target.status || 'published';
+      document.getElementById('m-res-desc').value = target.desc || '';
+      if (document.getElementById('m-res-desc-si')) document.getElementById('m-res-desc-si').value = target.descSi || '';
+
+      const fileInput = document.getElementById('m-res-file');
+      if (fileInput) fileInput.value = '';
+
+      let hasFile = target.hasFile || !(!target.fileName);
+      let fileName = target.fileName || '';
+      let fileSize = target.size || '';
+      let fileData = target.fileData || '';
+
+      // Check IndexedDB
+      if (window.MansalaDB && typeof window.MansalaDB.getResourceFile === 'function') {
+        try {
+          const stored = await window.MansalaDB.getResourceFile(target.id);
+          if (stored && (stored.fileData || stored.fileName)) {
+            hasFile = true;
+            if (stored.fileName) fileName = stored.fileName;
+            if (stored.fileData) fileData = stored.fileData;
+          }
+        } catch (e) {
+          console.warn('Error fetching resource file from DB:', e);
+        }
+      }
+
+      if (hasFile || fileName || fileData) {
+        if (!fileName) fileName = target.title + '.pdf';
+        document.getElementById('m-res-file-data').value = fileData;
+        document.getElementById('m-res-file-name').value = fileName;
+        document.getElementById('m-res-file-size').value = fileSize || '1.8 MB';
+        const actEl = document.getElementById('m-res-file-action');
+        if (actEl) actEl.value = 'keep';
+        showAttachedFileBadge(fileName, fileSize || 'Stored');
+      } else {
+        document.getElementById('m-res-file-data').value = '';
+        document.getElementById('m-res-file-name').value = '';
+        document.getElementById('m-res-file-size').value = '';
+        const actEl = document.getElementById('m-res-file-action');
+        if (actEl) actEl.value = 'none';
+        showAttachedFileBadge('', '');
+      }
+
+      openModal('modal-resource');
+    }
+
+    async function handleResourceSubmit(e) {
+      e.preventDefault();
+      const id = document.getElementById('modal-res-id').value;
+      const fileInput = document.getElementById('m-res-file');
+      const actEl = document.getElementById('m-res-file-action');
+      const action = actEl ? actEl.value : 'none';
+      
+      let fileData = document.getElementById('m-res-file-data').value;
+      let fileName = document.getElementById('m-res-file-name').value;
+      let fileSize = document.getElementById('m-res-file-size').value;
+
+      // If user selected a new file via input, read it directly
+      if (fileInput && fileInput.files && fileInput.files[0]) {
+        const file = fileInput.files[0];
+        fileName = file.name;
+        fileSize = file.size > 1024 * 1024
+          ? (file.size / (1024 * 1024)).toFixed(1) + ' MB'
+          : (file.size / 1024).toFixed(0) + ' KB';
+        
+        fileData = await new Promise((resolve) => {
+          const reader = new FileReader();
+          reader.onload = (evt) => resolve(evt.target.result);
+          reader.onerror = () => resolve('');
+          reader.readAsDataURL(file);
+        });
+      }
+
+      const saveBtn = e.target.querySelector('button[type="submit"]');
+      const origText = saveBtn ? saveBtn.textContent : '';
+      if (saveBtn) {
+        saveBtn.disabled = true;
+        saveBtn.textContent = 'Saving...';
+      }
+
+      try {
+        const data = {
+          title: document.getElementById('m-res-title').value.trim(),
+          titleSi: document.getElementById('m-res-title-si') ? document.getElementById('m-res-title-si').value.trim() : '',
+          subject: document.getElementById('m-res-subject').value,
+          subjectKey: document.getElementById('m-res-subject').value.toLowerCase(),
+          type: document.getElementById('m-res-type').value,
+          year: document.getElementById('m-res-year').value,
+          status: document.getElementById('m-res-status').value,
+          desc: document.getElementById('m-res-desc').value.trim(),
+          descSi: document.getElementById('m-res-desc-si') ? document.getElementById('m-res-desc-si').value.trim() : '',
+          grade: 'Grade 10 & 11',
+          size: fileSize || '1.8 MB',
+          fileName: fileName || (document.getElementById('m-res-title').value.trim() + '.pdf'),
+          fileData: fileData || '',
+          fileAction: action
+        };
+        if (id) data.id = id;
+
+        await MansalaDB.saveResource(currentUser, data);
+        closeModal('modal-resource');
+        renderResources();
+        renderOverview();
+        alert('Learning material successfully saved with attached file!');
+      } catch (err) {
+        console.error(err);
+        alert('Failed to save learning resource: ' + (err.message || err));
+      } finally {
+        if (saveBtn) {
+          saveBtn.disabled = false;
+          saveBtn.textContent = origText;
+        }
+      }
+    }
+
+    function toggleResourcePublish(id) {
+      try {
+        MansalaDB.toggleResourceStatus(currentUser, id);
+        updateResourceContextualBar();
+        renderResources();
+        renderOverview();
+      } catch (err) {
+        alert(err.message);
+      }
+    }
+
+    function deleteResourceItem(id) {
+      if (confirm('Are you sure you want to permanently remove this learning material from the repository?')) {
+        try {
+          MansalaDB.deleteResource(currentUser, id);
+          selectedResourceIds.delete(id);
+          updateResourceContextualBar();
+          renderResources();
+          renderOverview();
+        } catch (err) {
+          alert(err.message);
+        }
+      }
+    }
+
+    // =========================================================================
+    // QUIZ ACTIONS & DYNAMIC QUESTION BUILDER
+    // =========================================================================
+    function toggleQuizPublish(id) {
+      try {
+        MansalaDB.toggleQuizStatus(currentUser, id);
+        updateQuizContextualBar();
+        renderQuizzes();
+        renderOverview();
+      } catch (err) {
+        alert(err.message);
+      }
+    }
+
+    function deleteQuizItem(id) {
+      if (confirm('Are you sure you want to delete this practice quiz assessment?')) {
+        try {
+          MansalaDB.deleteQuiz(currentUser, id);
+          selectedQuizIds.delete(id);
+          updateQuizContextualBar();
+          renderQuizzes();
+          renderOverview();
+        } catch (err) {
+          alert(err.message);
+        }
+      }
+    }
+
+    let currentQuizQuestions = [];
+
+    function renderQuizQuestions() {
+      const container = document.getElementById('quiz-questions-list');
+      if (!container) return;
+
+      if (currentQuizQuestions.length === 0) {
+        container.innerHTML = `
+          <div style="padding: 24px; text-align: center; background: #f9fafb; border: 1px dashed #d1d5db; border-radius: 8px;">
+            <p class="text-sm text-light mb-3">No questions added yet. Click "+ Add Question" to build your quiz.</p>
+            <button type="button" class="btn btn--secondary btn--sm" onclick="addQuestionItem()">+ Add First Question</button>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = currentQuizQuestions.map((q, qIdx) => `
+        <div class="question-builder-item" data-qidx="${qIdx}">
+          <div class="question-builder-header">
+            <span class="question-builder-num">Question ${qIdx + 1}</span>
+            <button type="button" class="btn btn--ghost btn--xs text-danger" onclick="removeQuestionItem(${qIdx})" style="color: #ef4444;" title="Remove this question">
+              ✕ Remove Question
+            </button>
+          </div>
+
+          <div class="form-group mb-3">
+            <label class="form-label" style="font-size: 0.8rem;">Question Text (English) <span class="text-accent">*</span></label>
+            <textarea class="form-textarea q-text" rows="2" placeholder="e.g. An object of mass 4 kg is acted upon by a constant force of 12 N..." required style="font-size: 0.88rem;">${escapeHtml(q.text || '')}</textarea>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label" style="font-size: 0.8rem;">Question Text (Sinhala - Optional)</label>
+            <textarea class="form-textarea q-text-si" rows="2" placeholder="උදා: 4 kg ස්කන්ධයක් සහිත වස්තුවක් මත 12 N නියත බලයක් යෙදූ විට..." style="font-size: 0.88rem;">${escapeHtml(q.textSi || '')}</textarea>
+          </div>
+
+          <div class="form-row mb-3">
+            <div class="form-group">
+              <label class="form-label" style="font-size: 0.8rem;">Syllabus Reference / Unit Focus (English)</label>
+              <input type="text" class="form-input q-syllabus" placeholder="e.g. Grade 11 Science • Unit 03: Motion in a Straight Line" value="${escapeHtml(q.syllabus || '')}" style="font-size: 0.85rem;">
+            </div>
+            <div class="form-group">
+              <label class="form-label" style="font-size: 0.8rem;">Syllabus Reference (Sinhala - Optional)</label>
+              <input type="text" class="form-input q-syllabus-si" placeholder="e.g. 11 ශ්‍රේණිය විද්‍යාව • 03 ඒකකය: සරල රේඛීය චලිතය" value="${escapeHtml(q.syllabusSi || '')}" style="font-size: 0.85rem;">
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label class="form-label" style="font-size: 0.8rem;">4 Answer Options (Select correct option &amp; fill English + Optional Sinhala) <span class="text-accent">*</span></label>
+            <div class="option-input-grid">
+              ${[0, 1, 2, 3].map(optIdx => {
+                const letter = String.fromCharCode(65 + optIdx);
+                const isCorrect = q.correct === optIdx;
+                const optVal = (q.options && q.options[optIdx]) || '';
+                const optSiVal = (q.optionsSi && q.optionsSi[optIdx]) || '';
+                return `
+                  <div class="option-input-group ${isCorrect ? 'is-correct' : ''}" style="display: flex; align-items: flex-start; gap: 8px; padding: 8px 10px;">
+                    <div style="display: flex; align-items: center; gap: 6px; margin-top: 6px;">
+                      <input type="radio" name="correct-opt-${qIdx}" value="${optIdx}" ${isCorrect ? 'checked' : ''} onchange="setCorrectOption(${qIdx}, ${optIdx})" title="Mark Option ${letter} as correct" style="margin: 0; width: 17px; height: 17px; accent-color: var(--clr-accent); cursor: pointer;">
+                      <span class="option-badge" style="font-weight: 700; width: 18px;">${letter}.</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0;">
+                      <input type="text" class="form-input q-opt" data-opt="${optIdx}" placeholder="Option ${letter} (English) *" value="${escapeHtml(optVal)}" required style="border: 1px solid #cbd5e1; border-radius: 4px; padding: 5px 8px; font-size: 0.83rem; width: 100%; background: #ffffff;">
+                      <input type="text" class="form-input q-opt-si" data-opt="${optIdx}" placeholder="Option ${letter} (Sinhala - Optional)" value="${escapeHtml(optSiVal)}" style="border: 1px solid #cbd5e1; border-radius: 4px; padding: 5px 8px; font-size: 0.83rem; width: 100%; background: #ffffff;">
+                    </div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+
+          <div class="form-row mb-2">
+            <div class="form-group">
+              <label class="form-label" style="font-size: 0.8rem;">Worked Solution / Explanation (English) <span class="text-accent">*</span></label>
+              <textarea class="form-textarea q-explanation" rows="2" placeholder="Explain step-by-step why this option is correct and cite the relevant rule or formula..." required style="font-size: 0.85rem;">${escapeHtml(q.explanation || '')}</textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label" style="font-size: 0.8rem;">Worked Solution / Explanation (Sinhala - Optional)</label>
+              <textarea class="form-textarea q-explanation-si" rows="2" placeholder="මෙම පිළිතුර නිවැරදි වීමට හේතුව සහ අදාළ සූත්‍රය හෝ නියමය සිංහලෙන් පැහැදිලි කරන්න..." style="font-size: 0.85rem;">${escapeHtml(q.explanationSi || '')}</textarea>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function syncQuestionsFromDOM() {
+      const items = document.querySelectorAll('.question-builder-item');
+      items.forEach((item, qIdx) => {
+        if (currentQuizQuestions[qIdx]) {
+          const text = item.querySelector('.q-text').value.trim();
+          const textSi = item.querySelector('.q-text-si') ? item.querySelector('.q-text-si').value.trim() : '';
+          const syllabus = item.querySelector('.q-syllabus') ? item.querySelector('.q-syllabus').value.trim() : '';
+          const syllabusSi = item.querySelector('.q-syllabus-si') ? item.querySelector('.q-syllabus-si').value.trim() : '';
+          const explanation = item.querySelector('.q-explanation').value.trim();
+          const explanationSi = item.querySelector('.q-explanation-si') ? item.querySelector('.q-explanation-si').value.trim() : '';
+          
+          const optInputs = item.querySelectorAll('.q-opt');
+          const options = Array.from(optInputs).map(inp => inp.value.trim());
+
+          const optSiInputs = item.querySelectorAll('.q-opt-si');
+          const optionsSi = Array.from(optSiInputs).map(inp => inp.value.trim());
+
+          const checkedRadio = item.querySelector(`input[name="correct-opt-${qIdx}"]:checked`);
+          const correct = checkedRadio ? parseInt(checkedRadio.value, 10) : 0;
+
+          currentQuizQuestions[qIdx] = {
+            text,
+            textSi,
+            syllabus,
+            syllabusSi,
+            options,
+            optionsSi,
+            correct,
+            explanation,
+            explanationSi
+          };
+        }
+      });
+    }
+
+    function addQuestionItem() {
+      syncQuestionsFromDOM();
+      currentQuizQuestions.push({
+        text: '',
+        textSi: '',
+        syllabus: '',
+        syllabusSi: '',
+        options: ['', '', '', ''],
+        optionsSi: ['', '', '', ''],
+        correct: 0,
+        explanation: '',
+        explanationSi: ''
+      });
+      renderQuizQuestions();
+    }
+
+    function removeQuestionItem(idx) {
+      syncQuestionsFromDOM();
+      currentQuizQuestions.splice(idx, 1);
+      renderQuizQuestions();
+    }
+
+    function setCorrectOption(qIdx, optIdx) {
+      syncQuestionsFromDOM();
+      if (currentQuizQuestions[qIdx]) {
+        currentQuizQuestions[qIdx].correct = optIdx;
+      }
+      renderQuizQuestions();
+    }
+
+    function openQuizModal() {
+      document.getElementById('modal-quiz-title').textContent = 'Create Assessment Quiz';
+      document.getElementById('modal-quiz-id').value = '';
+      document.getElementById('form-quiz').reset();
+      currentQuizQuestions = [
+        {
+          text: '',
+          textSi: '',
+          syllabus: '',
+          syllabusSi: '',
+          options: ['', '', '', ''],
+          optionsSi: ['', '', '', ''],
+          correct: 0,
+          explanation: '',
+          explanationSi: ''
+        }
+      ];
+      renderQuizQuestions();
+      openModal('modal-quiz');
+    }
+
+    function editQuiz(id) {
+      const quizzes = MansalaDB.getQuizzes(currentUser);
+      const target = quizzes.find(q => q.id === id);
+      if (!target) return;
+
+      document.getElementById('modal-quiz-title').textContent = 'Edit Assessment Quiz';
+      document.getElementById('modal-quiz-id').value = target.id;
+      document.getElementById('m-quiz-title').value = target.title;
+      if (document.getElementById('m-quiz-title-si')) document.getElementById('m-quiz-title-si').value = target.titleSi || '';
+      document.getElementById('m-quiz-subject').value = target.subject;
+      document.getElementById('m-quiz-topic').value = target.topic || '';
+      if (document.getElementById('m-quiz-topic-si')) document.getElementById('m-quiz-topic-si').value = target.topicSi || '';
+      document.getElementById('m-quiz-difficulty').value = target.difficulty || 'Medium';
+      document.getElementById('m-quiz-status').value = target.status || 'published';
+      document.getElementById('m-quiz-desc').value = target.desc || '';
+      if (document.getElementById('m-quiz-desc-si')) document.getElementById('m-quiz-desc-si').value = target.descSi || '';
+
+      currentQuizQuestions = (target.questions && Array.isArray(target.questions) && target.questions.length > 0)
+        ? JSON.parse(JSON.stringify(target.questions))
+        : [{ text: '', textSi: '', syllabus: '', syllabusSi: '', options: ['', '', '', ''], optionsSi: ['', '', '', ''], correct: 0, explanation: '', explanationSi: '' }];
+
+      renderQuizQuestions();
+      openModal('modal-quiz');
+    }
+
+    function handleQuizSubmit(e) {
+      e.preventDefault();
+      syncQuestionsFromDOM();
+
+      if (currentQuizQuestions.length === 0) {
+        alert('Please add at least one question to the assessment.');
+        return;
+      }
+
+      // Validate each question
+      for (let i = 0; i < currentQuizQuestions.length; i++) {
+        const q = currentQuizQuestions[i];
+        if (!q.text) {
+          alert(`Question ${i + 1} is missing its question text.`);
+          return;
+        }
+        if (!q.options || q.options.some(opt => !opt.trim())) {
+          alert(`Question ${i + 1} must have all 4 options filled.`);
+          return;
+        }
+        if (!q.explanation) {
+          alert(`Question ${i + 1} must have a worked explanation/solution.`);
+          return;
+        }
+      }
+
+      const id = document.getElementById('modal-quiz-id').value;
+      const data = {
+        title: document.getElementById('m-quiz-title').value.trim(),
+        titleSi: document.getElementById('m-quiz-title-si') ? document.getElementById('m-quiz-title-si').value.trim() : '',
+        subject: document.getElementById('m-quiz-subject').value,
+        subjectKey: document.getElementById('m-quiz-subject').value.toLowerCase(),
+        topic: document.getElementById('m-quiz-topic').value.trim(),
+        topicSi: document.getElementById('m-quiz-topic-si') ? document.getElementById('m-quiz-topic-si').value.trim() : '',
+        difficulty: document.getElementById('m-quiz-difficulty').value,
+        status: document.getElementById('m-quiz-status').value,
+        desc: document.getElementById('m-quiz-desc').value.trim(),
+        descSi: document.getElementById('m-quiz-desc-si') ? document.getElementById('m-quiz-desc-si').value.trim() : '',
+        questions: currentQuizQuestions,
+        questionsCount: currentQuizQuestions.length,
+        duration: '~' + Math.max(5, Math.round(currentQuizQuestions.length * 2.5)) + ' min'
+      };
+      if (id) data.id = id;
+
+      try {
+        MansalaDB.saveQuiz(currentUser, data);
+        closeModal('modal-quiz');
+        renderQuizzes();
+        renderOverview();
+        alert('Practice quiz assessment saved with ' + currentQuizQuestions.length + ' questions!');
+      } catch (err) {
+        alert(err.message);
+      }
+    }
+  </script>
+</body>
+</html>

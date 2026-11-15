@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorship — මංසල Mansala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4.5">
+</head>
+<body>
+
+<!-- ===== Site Header & Navigation ===== -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+      <img src="assets/images/logo-light.png" alt="මංසල Logo" class="site-logo-img">
+      <span class="logo-title logo-nav">මංසල</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="index.html" class="" data-en="Home" data-si="මුල් පිටුව">Home</a>
+      <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+      
+      <!-- Study Hub Grouped Dropdown -->
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-trigger active" aria-expanded="false" aria-haspopup="true">
+          <span data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</span>
+          <svg class="lucide lucide-chevron-down" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="resources.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-book-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+              <span class="nav-dropdown-desc" data-en="Past Papers, Notes &amp; Marking Schemes" data-si="පසුගිය ප්‍රශ්න පත්‍ර, සටහන් සහ ලකුණු දීමේ පටිපාටි">Past Papers, Notes &amp; Marking Schemes</span>
+            </div>
+          </a>
+          <a href="quizzes.html" class="nav-dropdown-item " role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-help-circle" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+              <span class="nav-dropdown-desc" data-en="Self-Paced Topic Assessments" data-si="ස්වයං අධ්‍යයන මාතෘකා ඇගයීම්">Self-Paced Topic Assessments</span>
+            </div>
+          </a>
+          <a href="mentorship.html" class="nav-dropdown-item active" role="menuitem">
+            <div class="nav-dropdown-icon">
+              <svg class="lucide lucide-users" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="nav-dropdown-text">
+              <span class="nav-dropdown-title" data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+              <span class="nav-dropdown-desc" data-en="Undergraduate Cohort Guidance" data-si="විශ්වවිද්‍යාල ශිෂ්‍ය මගපෙන්වීම">Undergraduate Cohort Guidance</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="" data-en="About" data-si="අප ගැන">About</a>
+      <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+    </nav>
+    
+    <!-- Header Right Actions: Support a Cause CTA & Language Switcher -->
+    <div class="header-actions">
+      <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--sm nav-donate-btn" title="Support a Cause" aria-label="Support a Cause">
+        <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+        <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+      </a>
+
+      <!-- Bilingual Language Toggle Button -->
+      <button class="lang-toggle-btn" id="langToggleBtn" type="button" aria-label="Switch Language (English / Sinhala)" title="Switch Language">
+        <span class="lang-opt active" data-lang-code="en">EN</span>
+        <span class="lang-divider">|</span>
+        <span class="lang-opt" data-lang-code="si">සිං</span>
+      </button>
+
+      <!-- Mobile Navigation Hamburger Drawer -->
+      <details class="nav-mobile">
+        <summary aria-label="Open menu"><svg class="lucide lucide-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></summary>
+        <div class="nav-mobile-panel">
+          <!-- Main Section -->
+          <a href="index.html" class="" data-en="Home" data-si="මුල් පිටුව">Home</a>
+          <a href="projects.html" class="" data-en="Community Projects" data-si="ප්‍රජා ව්‍යාපෘති">Community Projects</a>
+          <a href="about.html" class="" data-en="About" data-si="අප ගැන">About</a>
+          <a href="contact.html" class="" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a>
+
+          <!-- Study Hub Mobile Sub-section -->
+          <div class="nav-mobile-divider"></div>
+          <div class="nav-mobile-section-title" data-en="Study Hub" data-si="අධ්‍යාපන පියස">Study Hub</div>
+          <a href="resources.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-book-open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</span>
+          </a>
+          <a href="quizzes.html" class="nav-mobile-item-sub ">
+            <svg class="lucide lucide-help-circle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            <span data-en="Practice Quizzes" data-si="ප්‍රශ්නාවලි පුහුණුව">Practice Quizzes</span>
+          </a>
+          <a href="mentorship.html" class="nav-mobile-item-sub active">
+            <svg class="lucide lucide-users" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-en="1:5 Mentorship" data-si="1:5 උපදේශනය">1:5 Mentorship</span>
+          </a>
+
+          <!-- Mobile Action Button -->
+          <div class="nav-mobile-actions">
+            <a href="projects.html#upcoming-seminars" class="btn btn--primary btn--full nav-mobile-donate-btn">
+              <svg class="lucide lucide-heart-handshake" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9"/><path d="m14 15 2 2"/><path d="m17 12 2 2"/></svg>
+              <span data-en="Support a Cause" data-si="ආධාර කරන්න">Support a Cause</span>
+            </a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ===== 1. Page Header ===== -->
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb__sep">›</span>
+      <span>Mentorship</span>
+    </nav>
+    <h1 data-en="Mentorship Programme" data-si="උපදේශන වැඩසටහන">Mentorship Programme</h1>
+    <p class="section__subtitle">Supporting O/L students through personalised 1:5 mentorship designed to build academic confidence and examination success in Science &amp; Mathematics.</p>
+  </div>
+</section>
+
+<!-- ===== 2. Introduction ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2 data-en="About the Mentorship Programme" data-si="උපදේශන වැඩසටහන පිළිබඳව">About the Mentorship Programme</h2>
+    </div>
+    <p class="mb-4">The මංසල Manasala mentorship programme connects enthusiastic university student volunteers from the University of Ruhuna with O/L students who are preparing for their Science and Mathematics examinations. By creating supportive small-group learning relationships, we aim to give every student access to guidance that goes beyond the traditional classroom environment. Mentors share not only academic knowledge but also study strategies, exam tips, and the motivation that comes from knowing someone is invested in your success.</p>
+    <p>Each mentor is a current undergraduate who has excelled in the very subjects they now help teach. They understand the challenges O/L students face because they have been through the same journey. Through regular interactions — whether reviewing difficult concepts, working through past papers, or simply offering encouragement — our mentors help bridge the gap between classroom learning and examination readiness, creating a lasting positive impact on students' educational outcomes.</p>
+  </div>
+</section>
+
+<!-- ===== 3. Mentorship Model Visual ===== -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <h2 data-en="The 1 : 5 Mentorship Model" data-si="1 : 5 උපදේශන ආකෘතිය">The 1 : 5 Mentorship Model</h2>
+      <p class="section__subtitle">Each university mentor is paired with a small group of five O/L students for focused, personalised guidance.</p>
+    </div>
+    <div class="mentor-tree-diagram" aria-label="1 to 5 Mentorship Structural Model">
+      <!-- Top Central Hub: 1 University Mentor -->
+      <div class="mentor-hub-card">
+        <span class="badge badge--success" style="margin-bottom: 6px;" data-en="Undergraduate Mentor" data-si="විශ්වවිද්‍යාල උපදේශක">Undergraduate Mentor</span>
+        <h3 style="color: #FFFFFF; font-size: 1.15rem; margin-bottom: 4px;">University Mentor (University of Ruhuna)</h3>
+        <p style="color: #D1D5DB; font-size: 0.88rem; max-width: 580px; margin: 0 auto; line-height: 1.5;">
+          Provides small-group academic guidance, clarifies complex Science and Mathematics questions, shares proven exam preparation methods, and tracks weekly candidate progress.
+        </p>
+      </div>
+
+      <!-- Connector line -->
+      <div class="mentor-tree-connector" aria-hidden="true">
+        <div class="mentor-tree-stem"></div>
+        <div class="mentor-tree-bar"></div>
+      </div>
+
+      <!-- 5 Mentees Grid -->
+      <div class="mentee-cards-grid">
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-01</div>
+          <strong>O/L Student 01</strong>
+          <span class="mentee-sub">Science &amp; Maths Focus</span>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-02</div>
+          <strong>O/L Student 02</strong>
+          <span class="mentee-sub">Theory &amp; Concept Revision</span>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-03</div>
+          <strong>O/L Student 03</strong>
+          <span class="mentee-sub">Model Paper Practice</span>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-04</div>
+          <strong>O/L Student 04</strong>
+          <span class="mentee-sub">Structured Essay Guidance</span>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar">ST-05</div>
+          <strong>O/L Student 05</strong>
+          <span class="mentee-sub">Doubt Clearing &amp; Methods</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. How Mentorship Helps (3-Phase Academic Journey) ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow--bar">Pedagogical Framework</span>
+      <h2 data-en="Three-Stage Mentorship Journey" data-si="තෙවැදෑරුම් උපදේශන ගමන්මඟ">Three-Stage Mentorship Journey</h2>
+      <p class="section__subtitle">A structured progression taking students from diagnostic assessment to examination mastery.</p>
+    </div>
+
+    <div class="journey-grid">
+      <!-- Stage 1 -->
+      <div class="journey-step journey-step--active">
+        <span class="journey-phase-tag">Stage 01 &bull; Assessment &amp; Cohort</span>
+        <h3>Diagnostic &amp; Group Formation</h3>
+        <p>
+          Every mentee undergoes a gentle, non-judgmental diagnostic evaluation to identify specific learning hurdles in Science and Mathematics. Mentors establish a dedicated 1:5 study circle with agreed weekly revision targets.
+        </p>
+        <div class="journey-deliverable">
+          <strong>Key Deliverable:</strong> Personalised syllabus checklist and baseline competency profile.
+        </div>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="journey-step">
+        <span class="journey-phase-tag">Stage 02 &bull; Active Learning</span>
+        <h3>Weekly Problem Dissection &amp; Doubt Clearing</h3>
+        <p>
+          Small-group sessions focus on breaking down difficult past paper questions, practicing complex algebraic formulations, understanding chemical equation balancing, and clarifying textbook ambiguities with university mentors.
+        </p>
+        <div class="journey-deliverable">
+          <strong>Key Deliverable:</strong> Weekly worked problem dossiers and doubt resolution logs.
+        </div>
+      </div>
+
+      <!-- Stage 3 -->
+      <div class="journey-step">
+        <span class="journey-phase-tag">Stage 03 &bull; Examination Mastery</span>
+        <h3>Technique, Timing &amp; Mental Readiness</h3>
+        <p>
+          Mentors coach candidates on examination strategy — navigating the structured essay sections, optimal time allocation per question, accurate scientific drawing, and handling examination anxiety with self-assurance.
+        </p>
+        <div class="journey-deliverable">
+          <strong>Key Deliverable:</strong> Timed mock exam simulation and final mark optimization strategy.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. Call to Action ===== -->
+<section class="section section--primary">
+  <div class="container text-center">
+    <h2 style="color: #FFFFFF; margin-bottom: 12px;">Get Involved in මංසල Manasala</h2>
+    <p class="section__subtitle" style="color: rgba(255,255,255,0.9); max-width: 650px; margin-inline: auto; text-align: center; margin-bottom: 24px;">
+      Whether you're an O/L student looking for guidance or a university student wanting to volunteer as a mentor, we'd love to hear from you. Reach out to learn more about how you can participate in the programme.
+    </p>
+    <div class="btn-group btn-group--center" style="justify-content: center; align-items: center; margin-inline: auto; display: flex;">
+      <a href="contact.html" class="btn btn--white btn--lg">Contact &amp; Enquiries</a>
+      <a href="resources.html" class="btn btn--ghost btn--lg" style="border-color:#fff; color:#fff;">Browse Resources</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" title="මංසල | University of Ruhuna">
+            <img src="assets/images/logo-transparent.png" alt="මංසල Logo" class="site-logo-img">
+            <span class="logo-title">මංසල</span>
+          </a>
+          <p data-en="An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics." data-si="සා/පෙළ සිසුන්ට විද්‍යාව සහ ගණිතය විෂයයන් සඳහා සහයෝගය දක්වමින් රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය විසින් සංවිධානය කරනු ලබන අධ්‍යාපනික වැඩසටහනකි.">An educational programme organised by the Students' Union of the Faculty of Science of the University of Ruhuna, supporting O/L students in Science and Mathematics.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Navigation" data-si="සංචලනය">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-en="Home" data-si="මුල් පිටුව">Home</a></li>
+            <li><a href="about.html" data-en="About" data-si="අප ගැන">About</a></li>
+            <li><a href="projects.html" data-en="Projects" data-si="ප්‍රජා ව්‍යාපෘති">Projects</a></li>
+            <li><a href="resources.html" data-en="Learning Resources" data-si="ඉගෙනුම් සම්පත්">Learning Resources</a></li>
+            <li><a href="quizzes.html" data-en="Quizzes" data-si="ප්‍රශ්නාවලි">Quizzes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Programme" data-si="වැඩසටහන">Programme</h4>
+          <ul>
+            <li><a href="mentorship.html" data-en="Mentorship" data-si="උපදේශනය">Mentorship</a></li>
+            <li><a href="contact.html" data-en="Help Desk" data-si="උපකාරක කවුළුව">Help Desk</a></li>
+            <li><a href="about.html#documents" data-en="Documents" data-si="ලේඛන">Documents</a></li>
+            <li><a href="login.html" data-en="Staff &amp; Coordinator Portal" data-si="කාර්ය මණ්ඩල සහ සම්බන්ධීකාරක පිවිසුම">Staff &amp; Coordinator Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Contact" data-si="සම්බන්ධ වන්න">Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@manasala.ruh.ac.lk">contact@manasala.ruh.ac.lk</a></li>
+            <li><a href="tel:+94412222681">+94 41 2222681</a></li>
+            <li data-en="University of Ruhuna, Wellamadama, Matara" data-si="රුහුණ විශ්වවිද්‍යාලය, වැල්ලමඩම, මාතර">University of Ruhuna, Wellamadama, Matara</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-en="&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna." data-si="&copy; මංසල – Mansala. විද්‍යා පීඨ ශිෂ්‍ය සංගමය, රුහුණ විශ්වවිද්‍යාලය.">&copy; මංසල – Mansala. Students' Union, Faculty of Science, University of Ruhuna.</span>
+        <span data-en="Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna." data-si="රුහුණ විශ්වවිද්‍යාලයේ විද්‍යා පීඨ ශිෂ්‍ය සංගමය මඟින් මෙහෙයවනු ලබන නිල අධ්‍යාපනික සත්කාරයකි.">Official educational outreach by the Students' Union of the Faculty of Science, University of Ruhuna.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Official Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>if(typeof lucide==='undefined'){document.write('<script src="js/lucide.js"><\/script>');}</script>
+  <script>document.addEventListener('DOMContentLoaded',function(){if(typeof lucide!=='undefined'&&lucide.createIcons){lucide.createIcons();}});</script>
+  <script src="js/lang.js"></script>
+</body>
+</html>

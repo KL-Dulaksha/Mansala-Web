@@ -1,0 +1,22 @@
+{
+  "name": "mansala-education-platform",
+  "version": "1.0.0",
+  "description": "Mansala (මංසල) - Free O/L & A/L Educational Support & Mentorship Platform prototype by Faculty of Science Students' Union, University of Ruhuna",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node -e \"console.log('Mansala prototype structure valid')\""
+  },
+  "keywords": [
+    "education",
+    "e-learning",
+    "lms",
+    "university-of-ruhuna",
+    "mentorship",
+    "quizzes",
+    "sri-lanka",
+    "prototype"
+  ],
+  "author": "Faculty of Science Students' Union, University of Ruhuna",
+  "license": "ISC"
+}
